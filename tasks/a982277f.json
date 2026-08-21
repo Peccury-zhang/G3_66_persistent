@@ -1,0 +1,242 @@
+{
+  "id": "a982277f",
+  "name": "拿盲盒",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-20T11:04:26.676156+00:00",
+  "updated_at": "2026-08-20T12:16:30.023372+00:00",
+  "root": {
+    "id": "node_1787228097084_5",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1787223849717_1",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "both",
+          "enable_mode": "joint_follow",
+          "pose_name": "a161dacd",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787224199120_1",
+        "type": "PostureMoveTo",
+        "params": {
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "6ce27164",
+          "height_mm": 710.0028376876153,
+          "forward_mm": -0.023778300438370703,
+          "bend_deg": 0.18676757812500056,
+          "yaw_deg": 0.10986328125
+        }
+      },
+      {
+        "id": "node_1787224266446_5",
+        "type": "PostureMoveTo",
+        "params": {
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "a1f5ef9e",
+          "height_mm": 661.9976894082224,
+          "forward_mm": 0.003899668759799191,
+          "bend_deg": -0.01647949218749219,
+          "yaw_deg": 90
+        }
+      },
+      {
+        "id": "node_1787224302059_9",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "1e4cab96",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787224319226_10",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "d0d55be2",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787224351807_13",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "1e4cab96",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787224475844_17",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "both",
+          "enable_mode": "joint_follow",
+          "pose_name": "a161dacd",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787224583083_1",
+        "type": "PostureMoveTo",
+        "params": {
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "4d6c842e",
+          "height_mm": 750.0053959265124,
+          "forward_mm": -0.01482818142992115,
+          "bend_deg": 0.19226074218749478,
+          "yaw_deg": -90
+        }
+      },
+      {
+        "id": "node_1787228059243_1",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "eb3bc92c",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.3,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787228071624_2",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "d0255e14",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787228088737_4",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "eb3bc92c",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "both",
+        "enable_mode": "joint_follow",
+        "pose_name": "a161dacd",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1787223849717_1": {
+        "x": 460,
+        "y": 380
+      },
+      "node_1787224199120_1": {
+        "x": 460,
+        "y": 480
+      },
+      "node_1787224266446_5": {
+        "x": 460,
+        "y": 580
+      },
+      "node_1787224302059_9": {
+        "x": 460,
+        "y": 700
+      },
+      "node_1787224319226_10": {
+        "x": 460,
+        "y": 820
+      },
+      "node_1787224351807_13": {
+        "x": 460,
+        "y": 940
+      },
+      "node_1787224475844_17": {
+        "x": 460,
+        "y": 1060
+      },
+      "node_1787224583083_1": {
+        "x": 460,
+        "y": 1180
+      },
+      "node_1787228059243_1": {
+        "x": 460,
+        "y": 1300
+      },
+      "node_1787228071624_2": {
+        "x": 460,
+        "y": 1420
+      },
+      "node_1787228088737_4": {
+        "x": 460,
+        "y": 1540
+      }
+    }
+  },
+  "status": "completed"
+}

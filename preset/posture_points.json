@@ -1,0 +1,28 @@
+{
+  "type": "posture_pose",
+  "version": "1.0",
+  "updated_at": "2026-08-21T13:51:18.851325",
+  "points": [
+    {
+      "id": "e2c2f062",
+      "name": "右",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-21T13:44:56.773105",
+      "updated_at": "2026-08-21T13:51:18.851208",
+      "yaw_deg": -90.0,
+      "height_mm": 662.0244583975152,
+      "forward_mm": 0.0,
+      "bend_deg": 0.10000000000000014,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        -90,
+        -34,
+        92,
+        -57.9
+      ]
+    }
+  ]
+}

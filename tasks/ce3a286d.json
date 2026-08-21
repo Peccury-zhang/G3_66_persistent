@@ -1,0 +1,284 @@
+{
+  "id": "ce3a286d",
+  "name": "人脸识别",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-19T05:19:02.696560+00:00",
+  "updated_at": "2026-08-20T11:04:33.220872+00:00",
+  "root": {
+    "id": "node_1787220451549_49",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1787220262090_31",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "51b246c1",
+          "pitch_deg": 0,
+          "yaw_deg": 0.0054931640625,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1787124188494_2",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "both",
+          "enable_mode": "joint_follow",
+          "pose_name": "63993bc7",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787116569237_1",
+        "type": "FaceRecognition",
+        "params": {
+          "similarity_threshold": 0.45,
+          "topk_gap": 0.05,
+          "target_names": [
+            "张亚洲",
+            "张盛军区长"
+          ],
+          "output_display": "",
+          "wait_timeout": 5,
+          "hold_seconds": 1.5
+        }
+      },
+      {
+        "id": "node_1787116769612_3",
+        "type": "IfElse",
+        "params": {
+          "operator": "==",
+          "key": "$bb.face.result.success",
+          "value": "true"
+        },
+        "children": [
+          {
+            "id": "node_1787220451548_47",
+            "type": "Sequence",
+            "params": {
+              "auto_wrap": true
+            },
+            "children": [
+              {
+                "id": "node_1787116832203_4",
+                "type": "Wait",
+                "params": {
+                  "duration": 3
+                }
+              },
+              {
+                "id": "node_1787209752829_18",
+                "type": "Parallel",
+                "params": {
+                  "success_threshold": -1
+                },
+                "children": [
+                  {
+                    "id": "node_1787209464268_1",
+                    "type": "TTSSpeak",
+                    "params": {
+                      "voice": "dylan",
+                      "play_mode": "queue",
+                      "play": true,
+                      "wait_complete": true,
+                      "volume": -1,
+                      "timeout": 120,
+                      "text": "尊敬的 $bb.face.result.name 您好，欢迎您参加本次服贸会，我是景晨数智自研的首款机器人景睿，接下来让我给您演示一下我的功能吧。"
+                    }
+                  },
+                  {
+                    "id": "node_1787209871184_26",
+                    "type": "ArmMoveJ",
+                    "params": {
+                      "side": "right",
+                      "enable_mode": "joint_follow",
+                      "pose_name": "c33b303c",
+                      "target_source": "preset",
+                      "left_joints": "",
+                      "right_joints": "",
+                      "velocity": 0.5,
+                      "acceleration": 0.3
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node_1787220451549_48",
+            "type": "Sequence",
+            "params": {
+              "auto_wrap": true
+            },
+            "children": [
+              {
+                "id": "node_1787116846502_5",
+                "type": "Wait",
+                "params": {
+                  "duration": 3
+                }
+              },
+              {
+                "id": "node_1787209958674_33",
+                "type": "Parallel",
+                "params": {
+                  "success_threshold": -1
+                },
+                "children": [
+                  {
+                    "id": "node_1787116930490_9",
+                    "type": "ArmMoveJ",
+                    "params": {
+                      "side": "right",
+                      "enable_mode": "joint_follow",
+                      "pose_name": "c33b303c",
+                      "target_source": "preset",
+                      "left_joints": "",
+                      "right_joints": "",
+                      "velocity": 0.5,
+                      "acceleration": 0.3
+                    }
+                  },
+                  {
+                    "id": "node_1787209969848_34",
+                    "type": "TTSSpeak",
+                    "params": {
+                      "voice": "vivian",
+                      "play_mode": "queue",
+                      "play": true,
+                      "wait_complete": true,
+                      "volume": -1,
+                      "timeout": 120,
+                      "text": "没看出来你是谁呀"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1787124188494_2": {
+        "x": 220,
+        "y": 0
+      },
+      "node_1787116569237_1": {
+        "x": 220,
+        "y": 100
+      },
+      "node_1787116769612_3": {
+        "x": 220,
+        "y": 240
+      },
+      "node_1787116832203_4": {
+        "x": 80,
+        "y": 460
+      },
+      "node_1787209752829_18": {
+        "x": 80,
+        "y": 580
+      },
+      "node_1787209464268_1": {
+        "x": -20,
+        "y": 720
+      },
+      "node_1787209871184_26": {
+        "x": 180,
+        "y": 720
+      },
+      "node_1787116846502_5": {
+        "x": 400,
+        "y": 460
+      },
+      "node_1787209958674_33": {
+        "x": 400,
+        "y": 580
+      },
+      "node_1787116930490_9": {
+        "x": 540,
+        "y": 720
+      },
+      "node_1787209969848_34": {
+        "x": 360,
+        "y": 720
+      },
+      "node_1787220262090_31": {
+        "x": 220,
+        "y": -120
+      }
+    }
+  },
+  "program": [
+    {
+      "type": "FaceRecognition",
+      "params": {
+        "similarity_threshold": 0.45,
+        "topk_gap": 0.05,
+        "target_names": [
+          "张亚洲"
+        ],
+        "output_display": "",
+        "wait_timeout": 5,
+        "hold_seconds": 1.5
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 3
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "left",
+        "enable_mode": "joint_follow",
+        "pose_name": "c33b303c",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.2,
+        "acceleration": 0.2
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 3
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_name": "c33b303c",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    }
+  ],
+  "status": "completed"
+}
