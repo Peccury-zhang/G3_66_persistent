@@ -1,16 +1,16 @@
 {
   "type": "posture_pose",
   "version": "1.0",
-  "updated_at": "2026-08-21T13:51:18.851325",
+  "updated_at": "2026-08-21T15:08:55.511876",
   "points": [
     {
       "id": "e2c2f062",
-      "name": "右",
+      "name": "右-半蹲",
       "description": "采集自当前状态",
       "category": "captured",
       "is_builtin": false,
       "created_at": "2026-08-21T13:44:56.773105",
-      "updated_at": "2026-08-21T13:51:18.851208",
+      "updated_at": "2026-08-21T15:08:55.511449",
       "yaw_deg": -90.0,
       "height_mm": 662.0244583975152,
       "forward_mm": 0.0,
@@ -22,6 +22,69 @@
         -34,
         92,
         -57.9
+      ]
+    },
+    {
+      "id": "b5730736",
+      "name": "前-半蹲",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-21T15:07:08.491301",
+      "updated_at": "2026-08-21T15:07:08.491301",
+      "yaw_deg": -0.1263427734375,
+      "height_mm": 661.9976894082224,
+      "forward_mm": 0.003899668759799191,
+      "bend_deg": 6.3611093629270335e-15,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        -0.1263427734375,
+        -34.16748046875,
+        92.021484375,
+        -57.85400390625
+      ]
+    },
+    {
+      "id": "f5b995ef",
+      "name": "前-站直",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-21T15:07:34.867592",
+      "updated_at": "2026-08-21T15:07:34.867592",
+      "yaw_deg": 0.0,
+      "height_mm": 877.9983822844429,
+      "forward_mm": -0.012145133467957037,
+      "bend_deg": -3.975693351829396e-16,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        0.0,
+        2.6202392578125,
+        5.855712890625,
+        -8.4759521484375
+      ]
+    },
+    {
+      "id": "ff515245",
+      "name": "左-半蹲",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-21T15:08:47.702546",
+      "updated_at": "2026-08-21T15:08:47.702546",
+      "yaw_deg": 90.0,
+      "height_mm": 661.9709005637612,
+      "forward_mm": -0.012933133730935742,
+      "bend_deg": -6.3611093629270335e-15,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        90.0,
+        -34.16748046875,
+        92.0269775390625,
+        -57.8594970703125
       ]
     }
   ]
