@@ -1,0 +1,2 @@
+# G3_66_persistent
+这是G3_66号机器的persistent
