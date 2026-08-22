@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-21T09:39:27.258900+00:00",
-  "updated_at": "2026-08-21T10:24:13.598298+00:00",
+  "updated_at": "2026-08-22T11:04:54.640020+00:00",
   "root": {
-    "id": "node_1787307701037_2",
+    "id": "node_1787396511338_4",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -16,21 +16,6 @@
         "params": {
           "task_id": "8c801c62",
           "task_id_name": "初始化组"
-        }
-      },
-      {
-        "id": "node_1787305307735_12",
-        "type": "PostureMoveTo",
-        "params": {
-          "motion_mode": 2,
-          "wait_for_reached": false,
-          "settle_time": 0.5,
-          "timeout": 30,
-          "pose_name": "48b3dfef",
-          "height_mm": 700.0011430862382,
-          "forward_mm": -0.0007093232789745496,
-          "bend_deg": 6.3611093629270335e-15,
-          "yaw_deg": 89.8681640625
         }
       },
       {
@@ -89,7 +74,9 @@
         "type": "GripperControl",
         "params": {
           "side": "left",
-          "action": "close"
+          "action": "close",
+          "speed": 100,
+          "object_name": "0da57291"
         }
       },
       {
@@ -171,7 +158,9 @@
         "type": "GripperControl",
         "params": {
           "side": "left",
-          "action": "open"
+          "action": "open",
+          "speed": 100,
+          "object_name": "0da57291"
         }
       },
       {
@@ -242,11 +231,7 @@
     "nodes": {
       "node_1787305131516_11": {
         "x": 720,
-        "y": 560
-      },
-      "node_1787305307735_12": {
-        "x": 720,
-        "y": 660
+        "y": 620
       },
       "node_1787305770604_1": {
         "x": 720,
