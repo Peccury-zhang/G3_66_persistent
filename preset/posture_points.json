@@ -1,7 +1,7 @@
 {
   "type": "posture_pose",
   "version": "1.0",
-  "updated_at": "2026-08-21T15:08:55.511876",
+  "updated_at": "2026-08-21T17:44:13.623523",
   "points": [
     {
       "id": "e2c2f062",
@@ -85,6 +85,90 @@
         -34.16748046875,
         92.0269775390625,
         -57.8594970703125
+      ]
+    },
+    {
+      "id": "a449a453",
+      "name": "中间等待",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-21T17:33:17.769218",
+      "updated_at": "2026-08-21T17:33:17.769218",
+      "yaw_deg": 0.0,
+      "height_mm": 700.0011430862382,
+      "forward_mm": -0.0007093232789745496,
+      "bend_deg": 6.3611093629270335e-15,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        0.0,
+        -30.882568359375,
+        83.16650390625,
+        -52.283935546875
+      ]
+    },
+    {
+      "id": "48b3dfef",
+      "name": "左边等待",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-21T17:40:34.798626",
+      "updated_at": "2026-08-21T17:40:34.798626",
+      "yaw_deg": 89.8681640625,
+      "height_mm": 700.0011430862382,
+      "forward_mm": -0.0007093232789745496,
+      "bend_deg": 6.3611093629270335e-15,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        89.8681640625,
+        -30.882568359375,
+        83.16650390625,
+        -52.283935546875
+      ]
+    },
+    {
+      "id": "4366d773",
+      "name": "盲盒1层等待",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-21T17:43:26.733373",
+      "updated_at": "2026-08-21T17:43:26.733373",
+      "yaw_deg": -90.0,
+      "height_mm": 662.5488036723517,
+      "forward_mm": 0.09267526775508239,
+      "bend_deg": -0.09338378906250663,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        -90.0,
+        -34.2279052734375,
+        91.900634765625,
+        -57.76611328125
+      ]
+    },
+    {
+      "id": "f8c87402",
+      "name": "盲盒2层等待",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-21T17:44:13.623404",
+      "updated_at": "2026-08-21T17:44:13.623404",
+      "yaw_deg": -90.0,
+      "height_mm": 877.9983822844429,
+      "forward_mm": -0.012145133467957037,
+      "bend_deg": -0.06042480468750039,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        -90.0,
+        2.559814453125,
+        5.855712890625,
+        -8.4759521484375
       ]
     }
   ]

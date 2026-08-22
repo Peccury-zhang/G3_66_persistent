@@ -1,0 +1,310 @@
+{
+  "id": "1f57554a",
+  "name": "拿盲盒-下2",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-21T09:39:27.258900+00:00",
+  "updated_at": "2026-08-21T10:24:13.598298+00:00",
+  "root": {
+    "id": "node_1787307701037_2",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1787305131516_11",
+        "type": "SubTask",
+        "params": {
+          "task_id": "8c801c62",
+          "task_id_name": "初始化组"
+        }
+      },
+      {
+        "id": "node_1787305307735_12",
+        "type": "PostureMoveTo",
+        "params": {
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "48b3dfef",
+          "height_mm": 700.0011430862382,
+          "forward_mm": -0.0007093232789745496,
+          "bend_deg": 6.3611093629270335e-15,
+          "yaw_deg": 89.8681640625
+        }
+      },
+      {
+        "id": "node_1787305770604_1",
+        "type": "Wait",
+        "params": {
+          "duration": 2
+        }
+      },
+      {
+        "id": "node_1787305778503_2",
+        "type": "PostureMoveTo",
+        "params": {
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "4366d773",
+          "height_mm": 662.5488036723517,
+          "forward_mm": 0.09267526775508239,
+          "bend_deg": -0.09338378906250663,
+          "yaw_deg": -90
+        }
+      },
+      {
+        "id": "node_1787305810666_3",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "8fdb3372",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787305826334_4",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "910bf551",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787305842742_6",
+        "type": "GripperControl",
+        "params": {
+          "side": "left",
+          "action": "close"
+        }
+      },
+      {
+        "id": "node_1787305879902_9",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "a4f105e7",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787306160840_1",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "0d39b6ec",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787306186119_3",
+        "type": "PostureMoveTo",
+        "params": {
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "48b3dfef",
+          "height_mm": 700.0011430862382,
+          "forward_mm": -0.0007093232789745496,
+          "bend_deg": 6.3611093629270335e-15,
+          "yaw_deg": 89.8681640625
+        }
+      },
+      {
+        "id": "node_1787307378273_1",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "5b98e167",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787307396979_3",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "c6acec02",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.2,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787307424528_4",
+        "type": "GripperControl",
+        "params": {
+          "side": "left",
+          "action": "open"
+        }
+      },
+      {
+        "id": "node_1787307433446_5",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "5b98e167",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.2,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787307445973_6",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "a161dacd",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.2,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787307667913_1",
+        "type": "TTSSpeak",
+        "params": {
+          "voice": "vivian",
+          "play_mode": "queue",
+          "play": true,
+          "wait_complete": true,
+          "volume": -1,
+          "timeout": 120,
+          "text": "请拿取您的盲盒"
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "SubTask",
+      "params": {
+        "task_id": "8c801c62",
+        "task_id_name": "初始化组"
+      },
+      "timeout": null
+    },
+    {
+      "type": "PostureMoveTo",
+      "params": {
+        "motion_mode": 2,
+        "wait_for_reached": false,
+        "settle_time": 0.5,
+        "timeout": 30
+      },
+      "timeout": 30.0
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1787305131516_11": {
+        "x": 720,
+        "y": 560
+      },
+      "node_1787305307735_12": {
+        "x": 720,
+        "y": 660
+      },
+      "node_1787305770604_1": {
+        "x": 720,
+        "y": 760
+      },
+      "node_1787305778503_2": {
+        "x": 720,
+        "y": 880
+      },
+      "node_1787305810666_3": {
+        "x": 720,
+        "y": 1020
+      },
+      "node_1787305826334_4": {
+        "x": 720,
+        "y": 1140
+      },
+      "node_1787305842742_6": {
+        "x": 720,
+        "y": 1260
+      },
+      "node_1787305879902_9": {
+        "x": 720,
+        "y": 1360
+      },
+      "node_1787306160840_1": {
+        "x": 720,
+        "y": 1480
+      },
+      "node_1787306186119_3": {
+        "x": 1040,
+        "y": 620
+      },
+      "node_1787307378273_1": {
+        "x": 1040,
+        "y": 720
+      },
+      "node_1787307396979_3": {
+        "x": 1040,
+        "y": 840
+      },
+      "node_1787307424528_4": {
+        "x": 1040,
+        "y": 960
+      },
+      "node_1787307433446_5": {
+        "x": 1040,
+        "y": 1080
+      },
+      "node_1787307445973_6": {
+        "x": 1040,
+        "y": 1200
+      },
+      "node_1787307667913_1": {
+        "x": 1040,
+        "y": 1320
+      }
+    }
+  },
+  "status": "completed"
+}

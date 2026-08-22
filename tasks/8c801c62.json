@@ -1,0 +1,129 @@
+{
+  "id": "8c801c62",
+  "name": "初始化组",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-21T09:33:24.159383+00:00",
+  "updated_at": "2026-08-21T09:51:41.207804+00:00",
+  "root": {
+    "id": "node_1787305040520_9",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1787304742524_1",
+        "type": "PostureMoveTo",
+        "params": {
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "a449a453",
+          "height_mm": 700.0011430862382,
+          "forward_mm": -0.0007093232789745496,
+          "bend_deg": 6.3611093629270335e-15,
+          "yaw_deg": 0
+        }
+      },
+      {
+        "id": "node_1787304872680_4",
+        "type": "Parallel",
+        "params": {
+          "success_threshold": -1
+        },
+        "children": [
+          {
+            "id": "node_1787304845300_2",
+            "type": "GripperControl",
+            "params": {
+              "side": "left",
+              "action": "open"
+            }
+          },
+          {
+            "id": "node_1787304849967_3",
+            "type": "GripperControl",
+            "params": {
+              "side": "right",
+              "action": "open"
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_1787304955531_6",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "632b4054",
+          "pitch_deg": 29.9871826171875,
+          "yaw_deg": 0.0164794921875,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1787305003555_8",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "both",
+          "enable_mode": "joint_follow",
+          "pose_name": "a161dacd",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "PostureMoveTo",
+      "params": {
+        "motion_mode": 2,
+        "wait_for_reached": false,
+        "settle_time": 0.5,
+        "timeout": 30,
+        "pose_name": "b5730736",
+        "height_mm": 661.9976894082224,
+        "forward_mm": 0.003899668759799191,
+        "bend_deg": 6.3611093629270335e-15,
+        "yaw_deg": -0.1263427734375
+      },
+      "timeout": 30.0
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1787304742524_1": {
+        "x": 440,
+        "y": 300
+      },
+      "node_1787304845300_2": {
+        "x": 320,
+        "y": 520
+      },
+      "node_1787304849967_3": {
+        "x": 600,
+        "y": 520
+      },
+      "node_1787304872680_4": {
+        "x": 440,
+        "y": 400
+      },
+      "node_1787304955531_6": {
+        "x": 740,
+        "y": 640
+      },
+      "node_1787305003555_8": {
+        "x": 740,
+        "y": 760
+      }
+    }
+  },
+  "status": "completed"
+}
