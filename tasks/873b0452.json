@@ -1,0 +1,55 @@
+{
+  "id": "873b0452",
+  "name": "总任务",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-23T10:04:26.624697+00:00",
+  "updated_at": "2026-08-23T10:09:43.923937+00:00",
+  "root": {
+    "id": "node_1787479521459_2",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1787479447125_6",
+        "type": "SubTask",
+        "params": {
+          "task_id": "1f57554a",
+          "task_id_name": "拿盲盒-下2"
+        }
+      },
+      {
+        "id": "node_1787479513308_1",
+        "type": "SubTask",
+        "params": {
+          "task_id": "efac3b51",
+          "task_id_name": "拿盲盒-下1"
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "SubTask",
+      "params": {
+        "task_id": "1f57554a",
+        "task_id_name": "拿盲盒-下2"
+      },
+      "timeout": null
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1787479447125_6": {
+        "x": 820,
+        "y": 620
+      },
+      "node_1787479513308_1": {
+        "x": 820,
+        "y": 740
+      }
+    }
+  },
+  "status": "completed"
+}

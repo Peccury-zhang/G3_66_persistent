@@ -1,7 +1,7 @@
 {
   "type": "gripper_torque",
   "version": "1.0",
-  "updated_at": "2026-08-22T18:05:17.548897",
+  "updated_at": "2026-08-23T16:38:05.621939",
   "points": [
     {
       "id": "0da57291",
@@ -13,6 +13,17 @@
       "updated_at": "2026-08-22T18:05:17.548732",
       "left_tau_nm": 0.55,
       "right_tau_nm": 0.55
+    },
+    {
+      "id": "42fb257f",
+      "name": "默认",
+      "description": "物品扭矩预设: 左 0.5 / 右 0.5 N·m",
+      "category": "custom",
+      "is_builtin": false,
+      "created_at": "2026-08-23T16:37:36.197004",
+      "updated_at": "2026-08-23T16:37:36.197004",
+      "left_tau_nm": 0.5,
+      "right_tau_nm": 0.5
     }
   ]
 }

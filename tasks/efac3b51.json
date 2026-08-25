@@ -1,28 +1,21 @@
 {
-  "id": "1f57554a",
-  "name": "拿盲盒-下2",
+  "id": "efac3b51",
+  "name": "拿盲盒-下1",
   "description": "",
   "category": "default",
-  "created_at": "2026-08-21T09:39:27.258900+00:00",
-  "updated_at": "2026-08-23T09:16:24.314890+00:00",
+  "created_at": "2026-08-23T09:41:51.755228+00:00",
+  "updated_at": "2026-08-23T10:07:12.458350+00:00",
   "root": {
-    "id": "node_1787476584466_3",
+    "id": "node_1787479632573_4",
     "type": "Sequence",
     "params": {},
     "children": [
       {
-        "id": "node_1787305131516_11",
+        "id": "node_1787479362153_3",
         "type": "SubTask",
         "params": {
           "task_id": "8c801c62",
           "task_id_name": "初始化组"
-        }
-      },
-      {
-        "id": "node_1787305770604_1",
-        "type": "Wait",
-        "params": {
-          "duration": 2
         }
       },
       {
@@ -46,7 +39,7 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "8fdb3372",
+          "pose_name": "06a393f0",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
@@ -60,7 +53,7 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "910bf551",
+          "pose_name": "44cee5be",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
@@ -85,7 +78,7 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "a4f105e7",
+          "pose_name": "c78515d2",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
@@ -100,13 +93,27 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "0d39b6ec",
+          "pose_name": "29d53f5a",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
           "target_both": "",
           "velocity": 0.2,
           "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787479207048_1",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "0d39b6ec",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.3,
+          "acceleration": 0.3
         }
       },
       {
@@ -229,11 +236,7 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
-      "node_1787305131516_11": {
-        "x": 720,
-        "y": 640
-      },
-      "node_1787305770604_1": {
+      "node_1787479362153_3": {
         "x": 720,
         "y": 760
       },
@@ -260,6 +263,10 @@
       "node_1787306160840_1": {
         "x": 720,
         "y": 1480
+      },
+      "node_1787479207048_1": {
+        "x": 720,
+        "y": 1600
       },
       "node_1787306186119_3": {
         "x": 1040,

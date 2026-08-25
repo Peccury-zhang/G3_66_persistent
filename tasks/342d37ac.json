@@ -4,7 +4,7 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-20T06:28:39.996226+00:00",
-  "updated_at": "2026-08-21T07:50:54.124145+00:00",
+  "updated_at": "2026-08-23T09:09:20.992798+00:00",
   "root": {
     "id": "node_1787207295342_2",
     "type": "TTSSpeak",
@@ -15,7 +15,7 @@
       "wait_complete": true,
       "volume": -1,
       "timeout": 120,
-      "text": "请拿取你的盲盒"
+      "text": "你好，我是G3机器人"
     }
   },
   "program": [
