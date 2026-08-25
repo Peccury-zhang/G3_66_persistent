@@ -1,7 +1,7 @@
 {
   "type": "head_position",
   "version": "1.0",
-  "updated_at": "2026-08-25T14:47:59.075203",
+  "updated_at": "2026-08-25T19:26:01.433836",
   "points": [
     {
       "id": "0d9a5985",
@@ -14,7 +14,8 @@
       "pitch_deg": 0.0,
       "yaw_deg": 37.001953125,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "sort_index": 0
     },
     {
       "id": "51b246c1",
@@ -27,7 +28,8 @@
       "pitch_deg": 0.0,
       "yaw_deg": 0.0054931640625,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "sort_index": 1
     },
     {
       "id": "632b4054",
@@ -40,7 +42,8 @@
       "pitch_deg": 29.9871826171875,
       "yaw_deg": 0.0164794921875,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "sort_index": 2
     },
     {
       "id": "e97ec11f",
@@ -53,7 +56,8 @@
       "pitch_deg": 34,
       "yaw_deg": 34,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "sort_index": 3
     },
     {
       "id": "db0c1802",
@@ -66,7 +70,8 @@
       "pitch_deg": 32.0086669921875,
       "yaw_deg": 20.0006103515625,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "sort_index": 4
     },
     {
       "id": "a8560ea0",
@@ -78,6 +83,35 @@
       "updated_at": "2026-08-25T14:47:59.075069",
       "pitch_deg": 32.0086669921875,
       "yaw_deg": -19.9896240234375,
+      "pitch_velocity_deg_s": 0.0,
+      "yaw_velocity_deg_s": 0.0,
+      "sort_index": 5
+    },
+    {
+      "id": "802632c9",
+      "name": "微左下",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "sort_index": 6,
+      "created_at": "2026-08-25T19:25:46.672566",
+      "updated_at": "2026-08-25T19:25:46.672566",
+      "pitch_deg": 20.0006103515625,
+      "yaw_deg": 30.003662109375,
+      "pitch_velocity_deg_s": 0.0,
+      "yaw_velocity_deg_s": 0.0
+    },
+    {
+      "id": "d3ac0843",
+      "name": "微右下",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "sort_index": 7,
+      "created_at": "2026-08-25T19:26:01.433663",
+      "updated_at": "2026-08-25T19:26:01.433663",
+      "pitch_deg": 20.0006103515625,
+      "yaw_deg": -29.9981689453125,
       "pitch_velocity_deg_s": 0.0,
       "yaw_velocity_deg_s": 0.0
     }
