@@ -4,25 +4,25 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-21T09:39:27.258900+00:00",
-  "updated_at": "2026-08-23T09:16:24.314890+00:00",
+  "updated_at": "2026-08-25T08:43:54.523020+00:00",
   "root": {
-    "id": "node_1787476584466_3",
+    "id": "node_1787647434333_9",
     "type": "Sequence",
     "params": {},
     "children": [
       {
-        "id": "node_1787305131516_11",
-        "type": "SubTask",
+        "id": "node_1787647429139_8",
+        "type": "PostureMoveTo",
         "params": {
-          "task_id": "8c801c62",
-          "task_id_name": "初始化组"
-        }
-      },
-      {
-        "id": "node_1787305770604_1",
-        "type": "Wait",
-        "params": {
-          "duration": 2
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "48b3dfef",
+          "height_mm": 700.0011430862382,
+          "forward_mm": -0.0007093232789745496,
+          "bend_deg": 6.3611093629270335e-15,
+          "yaw_deg": 89.8681640625
         }
       },
       {
@@ -41,18 +41,40 @@
         }
       },
       {
-        "id": "node_1787305810666_3",
-        "type": "ArmMoveJ",
+        "id": "node_1787640031152_13",
+        "type": "Parallel",
         "params": {
-          "side": "left",
-          "enable_mode": "joint_follow",
-          "pose_name": "8fdb3372",
-          "target_source": "preset",
-          "left_joints": "",
-          "right_joints": "",
-          "velocity": 0.5,
-          "acceleration": 0.3
-        }
+          "success_threshold": -1
+        },
+        "children": [
+          {
+            "id": "node_1787305810666_3",
+            "type": "ArmMoveJ",
+            "params": {
+              "side": "left",
+              "enable_mode": "joint_follow",
+              "pose_name": "8fdb3372",
+              "target_source": "preset",
+              "left_joints": "",
+              "right_joints": "",
+              "velocity": 0.4,
+              "acceleration": 0.3
+            }
+          },
+          {
+            "id": "node_1787640051146_14",
+            "type": "HeadControl",
+            "params": {
+              "point_name": "e97ec11f",
+              "pitch_deg": 34,
+              "yaw_deg": 34,
+              "pitch_velocity_deg_s": 30,
+              "yaw_velocity_deg_s": 30,
+              "wait_for_reached": false,
+              "timeout": 30
+            }
+          }
+        ]
       },
       {
         "id": "node_1787305826334_4",
@@ -65,8 +87,8 @@
           "target_left": "",
           "target_right": "",
           "target_both": "",
-          "velocity": 0.2,
-          "acceleration": 0.2
+          "velocity": 0.3,
+          "acceleration": 0.3
         }
       },
       {
@@ -80,18 +102,24 @@
         }
       },
       {
-        "id": "node_1787305879902_9",
-        "type": "ArmMoveL",
+        "id": "node_1787645640456_7",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      },
+      {
+        "id": "node_1787644872677_5",
+        "type": "ArmMoveJ",
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
           "pose_name": "a4f105e7",
           "target_source": "preset",
-          "target_left": "",
-          "target_right": "",
-          "target_both": "",
-          "velocity": 0.2,
-          "acceleration": 0.2
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.25,
+          "acceleration": 0.3
         }
       },
       {
@@ -105,8 +133,21 @@
           "target_left": "",
           "target_right": "",
           "target_both": "",
-          "velocity": 0.2,
-          "acceleration": 0.2
+          "velocity": 0.3,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787640169684_19",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "51b246c1",
+          "pitch_deg": 0,
+          "yaw_deg": 0.0054931640625,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
         }
       },
       {
@@ -125,6 +166,19 @@
         }
       },
       {
+        "id": "node_1787640269664_21",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "db0c1802",
+          "pitch_deg": 32.0086669921875,
+          "yaw_deg": 20.0006103515625,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
         "id": "node_1787307378273_1",
         "type": "ArmMoveL",
         "params": {
@@ -135,8 +189,8 @@
           "target_left": "",
           "target_right": "",
           "target_both": "",
-          "velocity": 0.2,
-          "acceleration": 0.2
+          "velocity": 0.3,
+          "acceleration": 0.3
         }
       },
       {
@@ -149,7 +203,7 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.2,
+          "velocity": 0.25,
           "acceleration": 0.3
         }
       },
@@ -173,7 +227,7 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.2,
+          "velocity": 0.25,
           "acceleration": 0.3
         }
       },
@@ -187,8 +241,21 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.2,
+          "velocity": 0.25,
           "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787640071057_15",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "51b246c1",
+          "pitch_deg": 0,
+          "yaw_deg": 0.0054931640625,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
         }
       },
       {
@@ -229,31 +296,35 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
-      "node_1787305131516_11": {
-        "x": 720,
-        "y": 640
-      },
-      "node_1787305770604_1": {
-        "x": 720,
-        "y": 760
-      },
       "node_1787305778503_2": {
-        "x": 720,
-        "y": 880
+        "x": 460,
+        "y": 740
+      },
+      "node_1787640031152_13": {
+        "x": 460,
+        "y": 860
       },
       "node_1787305810666_3": {
-        "x": 720,
-        "y": 1020
+        "x": 380,
+        "y": 980
+      },
+      "node_1787640051146_14": {
+        "x": 540,
+        "y": 980
       },
       "node_1787305826334_4": {
         "x": 720,
-        "y": 1140
+        "y": 980
       },
       "node_1787305842742_6": {
         "x": 720,
-        "y": 1260
+        "y": 1100
       },
-      "node_1787305879902_9": {
+      "node_1787645640456_7": {
+        "x": 720,
+        "y": 1220
+      },
+      "node_1787644872677_5": {
         "x": 720,
         "y": 1360
       },
@@ -261,35 +332,71 @@
         "x": 720,
         "y": 1480
       },
+      "node_1787640169684_19": {
+        "x": 720,
+        "y": 1600
+      },
       "node_1787306186119_3": {
         "x": 1040,
-        "y": 620
+        "y": 560
+      },
+      "node_1787640269664_21": {
+        "x": 1040,
+        "y": 660
       },
       "node_1787307378273_1": {
         "x": 1040,
-        "y": 720
+        "y": 760
       },
       "node_1787307396979_3": {
         "x": 1040,
-        "y": 840
+        "y": 880
       },
       "node_1787307424528_4": {
         "x": 1040,
-        "y": 960
+        "y": 980
       },
       "node_1787307433446_5": {
         "x": 1040,
-        "y": 1080
+        "y": 1100
       },
       "node_1787307445973_6": {
         "x": 1040,
-        "y": 1200
+        "y": 1220
+      },
+      "node_1787640071057_15": {
+        "x": 1040,
+        "y": 1320
       },
       "node_1787307667913_1": {
         "x": 1040,
-        "y": 1320
+        "y": 1420
+      },
+      "node_1787647429139_8": {
+        "x": 460,
+        "y": 640
       }
-    }
+    },
+    "annotations": [
+      {
+        "id": "anno_1787641029907_2",
+        "x": 540,
+        "y": 940,
+        "width": 409.23655537541026,
+        "height": 639.7926186615935,
+        "color": "#a855f7",
+        "note": "拿取盲盒"
+      },
+      {
+        "id": "anno_1787644916028_1",
+        "x": 1000,
+        "y": 520,
+        "width": 280,
+        "height": 880,
+        "color": "#f59e0b",
+        "note": "左边放置盲盒"
+      }
+    ]
   },
   "status": "completed"
 }

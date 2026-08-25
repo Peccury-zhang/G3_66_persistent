@@ -1,17 +1,17 @@
 {
-  "id": "efac3b51",
-  "name": "拿盲盒-下1",
+  "id": "e504cce4",
+  "name": "拿盲盒-中2",
   "description": "",
   "category": "default",
-  "created_at": "2026-08-23T09:41:51.755228+00:00",
-  "updated_at": "2026-08-25T08:44:14.489577+00:00",
+  "created_at": "2026-08-25T07:35:30.337178+00:00",
+  "updated_at": "2026-08-25T09:00:41.866916+00:00",
   "root": {
-    "id": "node_1787647454241_11",
+    "id": "node_1787648441722_6",
     "type": "Sequence",
     "params": {},
     "children": [
       {
-        "id": "node_1787647448174_10",
+        "id": "node_1787647413187_6",
         "type": "PostureMoveTo",
         "params": {
           "motion_mode": 2,
@@ -33,10 +33,10 @@
           "wait_for_reached": false,
           "settle_time": 0.5,
           "timeout": 30,
-          "pose_name": "4366d773",
-          "height_mm": 662.5488036723517,
-          "forward_mm": 0.09267526775508239,
-          "bend_deg": -0.09338378906250663,
+          "pose_name": "f8c87402",
+          "height_mm": 877.9840514299042,
+          "forward_mm": 0,
+          "bend_deg": -3.975693351829396e-16,
           "yaw_deg": -90
         }
       },
@@ -66,7 +66,7 @@
             "params": {
               "side": "left",
               "enable_mode": "joint_follow",
-              "pose_name": "06a393f0",
+              "pose_name": "e7a3489e",
               "target_source": "preset",
               "left_joints": "",
               "right_joints": "",
@@ -82,7 +82,7 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "44cee5be",
+          "pose_name": "fd115799",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
@@ -102,19 +102,19 @@
         }
       },
       {
-        "id": "node_1787645537814_2",
+        "id": "node_1787645751361_11",
         "type": "Wait",
         "params": {
-          "duration": 0.8
+          "duration": 1
         }
       },
       {
-        "id": "node_1787644846520_3",
+        "id": "node_1787644585320_5",
         "type": "ArmMoveJ",
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "c78515d2",
+          "pose_name": "fff3667e",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
@@ -128,7 +128,7 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "29d53f5a",
+          "pose_name": "407381f8",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
@@ -310,6 +310,10 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
+      "node_1787647413187_6": {
+        "x": 280,
+        "y": 460
+      },
       "node_1787305778503_2": {
         "x": 280,
         "y": 680
@@ -328,17 +332,17 @@
       },
       "node_1787305826334_4": {
         "x": 680,
-        "y": 900
+        "y": 920
       },
       "node_1787305842742_6": {
         "x": 680,
         "y": 1020
       },
-      "node_1787645537814_2": {
+      "node_1787645751361_11": {
         "x": 680,
         "y": 1120
       },
-      "node_1787644846520_3": {
+      "node_1787644585320_5": {
         "x": 680,
         "y": 1220
       },
@@ -389,16 +393,21 @@
       "node_1787307667913_1": {
         "x": 1080,
         "y": 1420
-      },
-      "node_1787647448174_10": {
-        "x": 280,
-        "y": 580
       }
     },
     "annotations": [
       {
+        "id": "anno_1787643636350_2",
+        "x": 1020,
+        "y": 480,
+        "width": 300.3091558425763,
+        "height": 914.8156957301308,
+        "color": "#f59e0b",
+        "note": "左边放置盲盒"
+      },
+      {
         "id": "anno_1787640970496_1",
-        "x": 400,
+        "x": 380,
         "y": 880,
         "width": 532.5,
         "height": 664.5,
@@ -406,13 +415,13 @@
         "note": "拿取盲盒"
       },
       {
-        "id": "anno_1787644943182_2",
-        "x": 1020,
-        "y": 460,
-        "width": 260,
-        "height": 920,
-        "color": "#f59e0b",
-        "note": "左边放置盲盒"
+        "id": "anno_1787643742918_1",
+        "x": 600,
+        "y": 1440,
+        "width": 360,
+        "height": 120,
+        "color": "#ef4444",
+        "note": "都用这个"
       }
     ]
   },

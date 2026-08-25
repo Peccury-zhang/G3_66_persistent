@@ -4,26 +4,34 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-23T10:04:26.624697+00:00",
-  "updated_at": "2026-08-23T10:09:43.923937+00:00",
+  "updated_at": "2026-08-25T09:00:51.670478+00:00",
   "root": {
-    "id": "node_1787479521459_2",
+    "id": "node_1787647538374_1",
     "type": "Sequence",
     "params": {},
     "children": [
       {
+        "id": "node_1787647480462_12",
+        "type": "SubTask",
+        "params": {
+          "task_id": "8c801c62",
+          "task_id_name": "初始化组"
+        }
+      },
+      {
         "id": "node_1787479447125_6",
         "type": "SubTask",
         "params": {
-          "task_id": "1f57554a",
-          "task_id_name": "拿盲盒-下2"
+          "task_id": "e504cce4",
+          "task_id_name": "拿盲盒-中2"
         }
       },
       {
         "id": "node_1787479513308_1",
         "type": "SubTask",
         "params": {
-          "task_id": "efac3b51",
-          "task_id_name": "拿盲盒-下1"
+          "task_id": "79f8b0fb",
+          "task_id_name": "拿盲盒-中1"
         }
       }
     ]
@@ -41,6 +49,10 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
+      "node_1787647480462_12": {
+        "x": 820,
+        "y": 500
+      },
       "node_1787479447125_6": {
         "x": 820,
         "y": 620
@@ -49,7 +61,8 @@
         "x": 820,
         "y": 740
       }
-    }
+    },
+    "annotations": []
   },
   "status": "completed"
 }

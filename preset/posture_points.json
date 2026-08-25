@@ -1,7 +1,7 @@
 {
   "type": "posture_pose",
   "version": "1.0",
-  "updated_at": "2026-08-21T17:44:13.623523",
+  "updated_at": "2026-08-25T16:49:04.061651",
   "points": [
     {
       "id": "e2c2f062",
@@ -131,44 +131,65 @@
     },
     {
       "id": "4366d773",
-      "name": "盲盒1层等待",
+      "name": "盲盒下层等待",
       "description": "采集自当前状态",
       "category": "captured",
       "is_builtin": false,
       "created_at": "2026-08-21T17:43:26.733373",
-      "updated_at": "2026-08-21T17:43:26.733373",
+      "updated_at": "2026-08-25T15:24:41.664921",
       "yaw_deg": -90.0,
-      "height_mm": 662.5488036723517,
-      "forward_mm": 0.09267526775508239,
-      "bend_deg": -0.09338378906250663,
+      "height_mm": 662.5120982598887,
+      "forward_mm": 0.0,
+      "bend_deg": -0.09999999999998742,
       "velocity_scale": 1.0,
       "motion_mode": 1,
       "motor_angles_deg": [
-        -90.0,
-        -34.2279052734375,
-        91.900634765625,
-        -57.76611328125
+        -90,
+        -34.2,
+        91.9,
+        -57.8
       ]
     },
     {
       "id": "f8c87402",
-      "name": "盲盒2层等待",
+      "name": "盲盒中层等待",
       "description": "采集自当前状态",
       "category": "captured",
       "is_builtin": false,
       "created_at": "2026-08-21T17:44:13.623404",
-      "updated_at": "2026-08-21T17:44:13.623404",
+      "updated_at": "2026-08-25T15:24:48.411570",
       "yaw_deg": -90.0,
-      "height_mm": 877.9983822844429,
-      "forward_mm": -0.012145133467957037,
-      "bend_deg": -0.06042480468750039,
+      "height_mm": 877.9840514299042,
+      "forward_mm": 0.0,
+      "bend_deg": -3.975693351829396e-16,
+      "velocity_scale": 1.0,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        -90,
+        2.6,
+        5.9,
+        -8.5
+      ]
+    },
+    {
+      "id": "661453b3",
+      "name": "右边等待",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "created_at": "2026-08-25T16:49:04.061543",
+      "updated_at": "2026-08-25T16:49:04.061543",
+      "yaw_deg": -90.0,
+      "height_mm": 700.0011430862382,
+      "forward_mm": -0.0007093232789745496,
+      "bend_deg": 6.3611093629270335e-15,
       "velocity_scale": 1.0,
       "motion_mode": 1,
       "motor_angles_deg": [
         -90.0,
-        2.559814453125,
-        5.855712890625,
-        -8.4759521484375
+        -30.882568359375,
+        83.16650390625,
+        -52.283935546875
       ]
     }
   ]
