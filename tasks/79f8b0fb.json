@@ -4,12 +4,19 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-25T08:17:37.522951+00:00",
-  "updated_at": "2026-08-25T09:00:51.779441+00:00",
+  "updated_at": "2026-08-26T09:06:43.486558+00:00",
   "root": {
-    "id": "node_1787648451626_7",
+    "id": "node_1787735203234_10",
     "type": "Sequence",
     "params": {},
     "children": [
+      {
+        "id": "node_1787735185957_8",
+        "type": "LightControl",
+        "params": {
+          "color": "purple"
+        }
+      },
       {
         "id": "node_1787647379283_4",
         "type": "PostureMoveTo",
@@ -284,6 +291,13 @@
           "timeout": 120,
           "text": "请拿取您的盲盒"
         }
+      },
+      {
+        "id": "node_1787735196799_9",
+        "type": "LightControl",
+        "params": {
+          "color": "green"
+        }
       }
     ]
   },
@@ -393,6 +407,14 @@
       "node_1787307667913_1": {
         "x": 1080,
         "y": 1420
+      },
+      "node_1787735185957_8": {
+        "x": 280,
+        "y": 400
+      },
+      "node_1787735196799_9": {
+        "x": 1080,
+        "y": 1500
       }
     },
     "annotations": [

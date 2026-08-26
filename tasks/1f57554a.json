@@ -4,12 +4,19 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-21T09:39:27.258900+00:00",
-  "updated_at": "2026-08-25T08:43:54.523020+00:00",
+  "updated_at": "2026-08-26T09:07:59.245060+00:00",
   "root": {
-    "id": "node_1787647434333_9",
+    "id": "node_1787735278981_18",
     "type": "Sequence",
     "params": {},
     "children": [
+      {
+        "id": "node_1787735254421_17",
+        "type": "LightControl",
+        "params": {
+          "color": "purple"
+        }
+      },
       {
         "id": "node_1787647429139_8",
         "type": "PostureMoveTo",
@@ -270,6 +277,13 @@
           "timeout": 120,
           "text": "请拿取您的盲盒"
         }
+      },
+      {
+        "id": "node_1787735252331_16",
+        "type": "LightControl",
+        "params": {
+          "color": "green"
+        }
       }
     ]
   },
@@ -296,6 +310,10 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
+      "node_1787647429139_8": {
+        "x": 460,
+        "y": 640
+      },
       "node_1787305778503_2": {
         "x": 460,
         "y": 740
@@ -372,9 +390,13 @@
         "x": 1040,
         "y": 1420
       },
-      "node_1787647429139_8": {
+      "node_1787735252331_16": {
+        "x": 1040,
+        "y": 1540
+      },
+      "node_1787735254421_17": {
         "x": 460,
-        "y": 640
+        "y": 540
       }
     },
     "annotations": [
