@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-25T11:00:21.921547+00:00",
-  "updated_at": "2026-08-26T09:09:12.866469+00:00",
+  "updated_at": "2026-08-26T09:33:36.384674+00:00",
   "root": {
-    "id": "node_1787735066069_3",
+    "id": "node_1787736731689_24",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -135,7 +135,7 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "4bc53020",
+          "pose_name": "eab9e216",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
@@ -338,6 +338,10 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
+      "node_1787735008814_1": {
+        "x": 280,
+        "y": 400
+      },
       "node_1787647379283_4": {
         "x": 280,
         "y": 520
@@ -425,10 +429,6 @@
       "node_1787307667913_1": {
         "x": 1080,
         "y": 1420
-      },
-      "node_1787735008814_1": {
-        "x": 280,
-        "y": 400
       },
       "node_1787735041419_2": {
         "x": 1080,
