@@ -1,0 +1,872 @@
+{
+  "id": "3df23623",
+  "name": "盖章1",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-27T10:48:21.690195+00:00",
+  "updated_at": "2026-08-27T11:40:00.738382+00:00",
+  "root": {
+    "id": "node_1787830727074_78",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1787827677359_2",
+        "type": "LightControl",
+        "params": {
+          "color": "magenta"
+        }
+      },
+      {
+        "id": "node_1787827656761_1",
+        "type": "PostureMoveTo",
+        "params": {
+          "motion_mode": 2,
+          "wait_for_reached": false,
+          "settle_time": 0.5,
+          "timeout": 30,
+          "pose_name": "48b3dfef",
+          "height_mm": 700.0011430862382,
+          "forward_mm": -0.0007093232789745496,
+          "bend_deg": 6.3611093629270335e-15,
+          "yaw_deg": 89.8681640625
+        }
+      },
+      {
+        "id": "node_1787829312177_11",
+        "type": "Parallel",
+        "params": {
+          "success_threshold": -1
+        },
+        "children": [
+          {
+            "id": "node_1787829318615_12",
+            "type": "GripperControl",
+            "params": {
+              "side": "left",
+              "action": "open",
+              "speed": 100
+            }
+          },
+          {
+            "id": "node_1787829321664_13",
+            "type": "GripperControl",
+            "params": {
+              "side": "right",
+              "action": "open",
+              "speed": 100
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_1787829211445_8",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "632b4054",
+          "pitch_deg": 29.9871826171875,
+          "yaw_deg": 0.0164794921875,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1787829171731_4",
+        "type": "Parallel",
+        "params": {
+          "success_threshold": -1
+        },
+        "children": [
+          {
+            "id": "node_1787830727073_76",
+            "type": "Sequence",
+            "params": {
+              "auto_wrap": true
+            },
+            "children": [
+              {
+                "id": "node_1787829181026_5",
+                "type": "ArmMoveJ",
+                "params": {
+                  "side": "left",
+                  "enable_mode": "joint_follow",
+                  "pose_group": "盖章",
+                  "pose_name": "4c90420a",
+                  "target_source": "preset",
+                  "left_joints": "",
+                  "right_joints": "",
+                  "velocity": 0.5,
+                  "acceleration": 0.3
+                }
+              },
+              {
+                "id": "node_1787829238936_10",
+                "type": "ArmMoveL",
+                "params": {
+                  "side": "left",
+                  "enable_mode": "joint_follow",
+                  "pose_group": "盖章",
+                  "pose_name": "6329d144",
+                  "target_source": "preset",
+                  "target_left": "",
+                  "target_right": "",
+                  "target_both": "",
+                  "velocity": 0.2,
+                  "acceleration": 0.2
+                }
+              },
+              {
+                "id": "node_1787829377959_15",
+                "type": "GripperControl",
+                "params": {
+                  "side": "left",
+                  "action": "close",
+                  "speed": 100
+                }
+              },
+              {
+                "id": "node_1787829392905_16",
+                "type": "ArmMoveL",
+                "params": {
+                  "side": "left",
+                  "enable_mode": "joint_follow",
+                  "pose_group": "盖章",
+                  "pose_name": "e7b66919",
+                  "target_source": "preset",
+                  "target_left": "",
+                  "target_right": "",
+                  "target_both": "",
+                  "velocity": 0.2,
+                  "acceleration": 0.2
+                }
+              },
+              {
+                "id": "node_1787829412295_17",
+                "type": "ArmMoveJ",
+                "params": {
+                  "side": "left",
+                  "enable_mode": "joint_follow",
+                  "pose_group": "盖章",
+                  "pose_name": "56f3d1ea",
+                  "target_source": "preset",
+                  "left_joints": "",
+                  "right_joints": "",
+                  "velocity": 0.5,
+                  "acceleration": 0.3
+                }
+              }
+            ]
+          },
+          {
+            "id": "node_1787830727074_77",
+            "type": "Sequence",
+            "params": {
+              "auto_wrap": true
+            },
+            "children": [
+              {
+                "id": "node_1787829712973_19",
+                "type": "ArmMoveJ",
+                "params": {
+                  "side": "right",
+                  "enable_mode": "joint_follow",
+                  "pose_group": "盖章",
+                  "pose_name": "256ad31c",
+                  "target_source": "preset",
+                  "left_joints": "",
+                  "right_joints": "",
+                  "velocity": 0.5,
+                  "acceleration": 0.3
+                }
+              },
+              {
+                "id": "node_1787829739118_20",
+                "type": "ArmMoveL",
+                "params": {
+                  "side": "right",
+                  "enable_mode": "joint_follow",
+                  "pose_group": "盖章",
+                  "pose_name": "2eb176e7",
+                  "target_source": "preset",
+                  "target_left": "",
+                  "target_right": "",
+                  "target_both": "",
+                  "velocity": 0.2,
+                  "acceleration": 0.2
+                }
+              },
+              {
+                "id": "node_1787829805350_22",
+                "type": "GripperControl",
+                "params": {
+                  "side": "right",
+                  "action": "close",
+                  "speed": 100
+                }
+              },
+              {
+                "id": "node_1787829799653_21",
+                "type": "ArmMoveL",
+                "params": {
+                  "side": "right",
+                  "enable_mode": "joint_follow",
+                  "pose_group": "盖章",
+                  "pose_name": "dc7d3a60",
+                  "target_source": "preset",
+                  "target_left": "",
+                  "target_right": "",
+                  "target_both": "",
+                  "velocity": 0.2,
+                  "acceleration": 0.2
+                }
+              },
+              {
+                "id": "node_1787829833410_23",
+                "type": "ArmMoveJ",
+                "params": {
+                  "side": "right",
+                  "enable_mode": "joint_follow",
+                  "pose_group": "盖章",
+                  "pose_name": "05cdc095",
+                  "target_source": "preset",
+                  "left_joints": "",
+                  "right_joints": "",
+                  "velocity": 0.5,
+                  "acceleration": 0.3
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "node_1787830169764_39",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "b7e3aa9f",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787829972328_29",
+        "type": "Wait",
+        "params": {
+          "duration": 2
+        }
+      },
+      {
+        "id": "node_1787830180773_40",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "05cdc095",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787830643247_65",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "d3ac0843",
+          "pitch_deg": 20.0006103515625,
+          "yaw_deg": -29.9981689453125,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1787830294129_44",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "dc7d3a60",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787830345182_45",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "2eb176e7",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787830384003_46",
+        "type": "GripperControl",
+        "params": {
+          "side": "right",
+          "action": "open",
+          "speed": 100
+        }
+      },
+      {
+        "id": "node_1787830394332_47",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "dc7d3a60",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.2,
+          "acceleration": 0.2
+        }
+      },
+      {
+        "id": "node_1787830477722_54",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盲盒放置",
+          "pose_name": "a161dacd",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.5,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787830672464_69",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "632b4054",
+          "pitch_deg": 29.9871826171875,
+          "yaw_deg": 0.0164794921875,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "LightControl",
+      "params": {
+        "color": "magenta"
+      },
+      "timeout": null
+    },
+    {
+      "type": "PostureMoveTo",
+      "params": {
+        "motion_mode": 2,
+        "wait_for_reached": false,
+        "settle_time": 0.5,
+        "timeout": 30,
+        "pose_name": "48b3dfef",
+        "height_mm": 700.0011430862382,
+        "forward_mm": -0.0007093232789745496,
+        "bend_deg": 6.3611093629270335e-15,
+        "yaw_deg": 89.8681640625
+      },
+      "timeout": 30.0
+    },
+    {
+      "type": "GripperControl",
+      "params": {
+        "side": "left",
+        "action": "open",
+        "speed": 100
+      },
+      "timeout": null
+    },
+    {
+      "type": "GripperControl",
+      "params": {
+        "side": "right",
+        "action": "open",
+        "speed": 100
+      },
+      "timeout": null
+    },
+    {
+      "type": "HeadControl",
+      "params": {
+        "point_name": "632b4054",
+        "pitch_deg": 29.9871826171875,
+        "yaw_deg": 0.0164794921875,
+        "pitch_velocity_deg_s": 30,
+        "yaw_velocity_deg_s": 30,
+        "wait_for_reached": false,
+        "timeout": 30
+      },
+      "timeout": 30.0
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "left",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "4c90420a",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveL",
+      "params": {
+        "side": "left",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "6329d144",
+        "target_source": "preset",
+        "target_left": "",
+        "target_right": "",
+        "target_both": "",
+        "velocity": 0.2,
+        "acceleration": 0.2
+      },
+      "timeout": null
+    },
+    {
+      "type": "GripperControl",
+      "params": {
+        "side": "left",
+        "action": "close",
+        "speed": 100
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveL",
+      "params": {
+        "side": "left",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "e7b66919",
+        "target_source": "preset",
+        "target_left": "",
+        "target_right": "",
+        "target_both": "",
+        "velocity": 0.2,
+        "acceleration": 0.2
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "left",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "56f3d1ea",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "256ad31c",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveL",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "2eb176e7",
+        "target_source": "preset",
+        "target_left": "",
+        "target_right": "",
+        "target_both": "",
+        "velocity": 0.2,
+        "acceleration": 0.2
+      },
+      "timeout": null
+    },
+    {
+      "type": "GripperControl",
+      "params": {
+        "side": "right",
+        "action": "close",
+        "speed": 100
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveL",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "dc7d3a60",
+        "target_source": "preset",
+        "target_left": "",
+        "target_right": "",
+        "target_both": "",
+        "velocity": 0.2,
+        "acceleration": 0.2
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "05cdc095",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "b7e3aa9f",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 2
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "05cdc095",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    },
+    {
+      "type": "HeadControl",
+      "params": {
+        "point_name": "d3ac0843",
+        "pitch_deg": 20.0006103515625,
+        "yaw_deg": -29.9981689453125,
+        "pitch_velocity_deg_s": 30,
+        "yaw_velocity_deg_s": 30,
+        "wait_for_reached": false,
+        "timeout": 30
+      },
+      "timeout": 30.0
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "dc7d3a60",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveL",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "2eb176e7",
+        "target_source": "preset",
+        "target_left": "",
+        "target_right": "",
+        "target_both": "",
+        "velocity": 0.2,
+        "acceleration": 0.2
+      },
+      "timeout": null
+    },
+    {
+      "type": "GripperControl",
+      "params": {
+        "side": "right",
+        "action": "open",
+        "speed": 100
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveL",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盖章",
+        "pose_name": "dc7d3a60",
+        "target_source": "preset",
+        "target_left": "",
+        "target_right": "",
+        "target_both": "",
+        "velocity": 0.2,
+        "acceleration": 0.2
+      },
+      "timeout": null
+    },
+    {
+      "type": "ArmMoveJ",
+      "params": {
+        "side": "right",
+        "enable_mode": "joint_follow",
+        "pose_group": "盲盒放置",
+        "pose_name": "a161dacd",
+        "target_source": "preset",
+        "left_joints": "",
+        "right_joints": "",
+        "velocity": 0.5,
+        "acceleration": 0.3
+      },
+      "timeout": null
+    },
+    {
+      "type": "HeadControl",
+      "params": {
+        "point_name": "632b4054",
+        "pitch_deg": 29.9871826171875,
+        "yaw_deg": 0.0164794921875,
+        "pitch_velocity_deg_s": 30,
+        "yaw_velocity_deg_s": 30,
+        "wait_for_reached": false,
+        "timeout": 30
+      },
+      "timeout": 30.0
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1787827656761_1": {
+        "x": 200,
+        "y": 180
+      },
+      "node_1787827677359_2": {
+        "x": 200,
+        "y": 80
+      },
+      "node_1787829171731_4": {
+        "x": 500,
+        "y": 500
+      },
+      "node_1787829181026_5": {
+        "x": 500,
+        "y": 600
+      },
+      "node_1787829211445_8": {
+        "x": 500,
+        "y": 280
+      },
+      "node_1787829238936_10": {
+        "x": 500,
+        "y": 720
+      },
+      "node_1787829312177_11": {
+        "x": 200,
+        "y": 280
+      },
+      "node_1787829318615_12": {
+        "x": 120,
+        "y": 400
+      },
+      "node_1787829321664_13": {
+        "x": 280,
+        "y": 400
+      },
+      "node_1787829377959_15": {
+        "x": 500,
+        "y": 820
+      },
+      "node_1787829392905_16": {
+        "x": 500,
+        "y": 940
+      },
+      "node_1787829412295_17": {
+        "x": 500,
+        "y": 1060
+      },
+      "node_1787829712973_19": {
+        "x": 840,
+        "y": 620
+      },
+      "node_1787829739118_20": {
+        "x": 840,
+        "y": 720
+      },
+      "node_1787829799653_21": {
+        "x": 840,
+        "y": 940
+      },
+      "node_1787829805350_22": {
+        "x": 840,
+        "y": 820
+      },
+      "node_1787829833410_23": {
+        "x": 840,
+        "y": 1060
+      },
+      "node_1787829972328_29": {
+        "x": 1240,
+        "y": 700
+      },
+      "node_1787830169764_39": {
+        "x": 1240,
+        "y": 600
+      },
+      "node_1787830180773_40": {
+        "x": 1240,
+        "y": 820
+      },
+      "node_1787830294129_44": {
+        "x": 1640,
+        "y": 600
+      },
+      "node_1787830345182_45": {
+        "x": 1640,
+        "y": 720
+      },
+      "node_1787830384003_46": {
+        "x": 1640,
+        "y": 820
+      },
+      "node_1787830394332_47": {
+        "x": 1640,
+        "y": 920
+      },
+      "node_1787830477722_54": {
+        "x": 1640,
+        "y": 1020
+      },
+      "node_1787830643247_65": {
+        "x": 1240,
+        "y": 960
+      },
+      "node_1787830672464_69": {
+        "x": 1640,
+        "y": 1100
+      }
+    },
+    "annotations": [
+      {
+        "id": "anno_1787829341637_1",
+        "x": 20,
+        "y": 40,
+        "width": 733.7151922850351,
+        "height": 449.5907248547579,
+        "color": "#f59e0b",
+        "note": "准备"
+      },
+      {
+        "id": "anno_1787829434432_2",
+        "x": 340,
+        "y": 580,
+        "width": 398.6052722088939,
+        "height": 597.643585397194,
+        "color": "#22c55e",
+        "note": "拿明信片"
+      },
+      {
+        "id": "anno_1787829885086_3",
+        "x": 760,
+        "y": 580,
+        "width": 360,
+        "height": 600,
+        "color": "#22c55e",
+        "note": "拿印章"
+      },
+      {
+        "id": "anno_1787830052552_4",
+        "x": 1160,
+        "y": 580,
+        "width": 340,
+        "height": 600,
+        "color": "#f59e0b",
+        "note": "盖章"
+      },
+      {
+        "id": "anno_1787830514508_5",
+        "x": 1540,
+        "y": 580,
+        "width": 340,
+        "height": 600,
+        "color": "#f59e0b",
+        "note": "印章放回"
+      }
+    ]
+  },
+  "status": "failed"
+}
