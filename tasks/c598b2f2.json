@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-25T11:00:21.921547+00:00",
-  "updated_at": "2026-08-26T09:33:36.384674+00:00",
+  "updated_at": "2026-08-27T07:53:23.182365+00:00",
   "root": {
-    "id": "node_1787736731689_24",
+    "id": "node_1787816865949_1",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -78,7 +78,8 @@
               "left_joints": "",
               "right_joints": "",
               "velocity": 0.3,
-              "acceleration": 0.3
+              "acceleration": 0.3,
+              "pose_group": "盲盒上1"
             }
           }
         ]
@@ -95,7 +96,8 @@
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒上1"
         }
       },
       {
@@ -125,8 +127,9 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.25,
-          "acceleration": 0.3
+          "velocity": 0.3,
+          "acceleration": 0.3,
+          "pose_group": "盲盒上1"
         }
       },
       {
@@ -141,7 +144,8 @@
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒上1"
         }
       },
       {
@@ -154,8 +158,9 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.25,
-          "acceleration": 0.25
+          "velocity": 0.3,
+          "acceleration": 0.3,
+          "pose_group": "盲盒上1"
         }
       },
       {
@@ -164,12 +169,13 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "0d39b6ec",
+          "pose_name": "a161dacd",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -219,13 +225,14 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "5b98e167",
+          "pose_name": "c6acec02",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -234,12 +241,13 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "c6acec02",
+          "pose_name": "5b98e167",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -258,12 +266,13 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "5b98e167",
+          "pose_name": "c6acec02",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.25,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -396,7 +405,7 @@
       },
       "node_1787306186119_3": {
         "x": 1080,
-        "y": 520
+        "y": 460
       },
       "node_1787640627211_5": {
         "x": 1080,
@@ -439,7 +448,7 @@
       {
         "id": "anno_1787643636350_2",
         "x": 1020,
-        "y": 480,
+        "y": 440,
         "width": 300.3091558425763,
         "height": 914.8156957301308,
         "color": "#f59e0b",

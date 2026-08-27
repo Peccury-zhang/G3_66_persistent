@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-21T09:39:27.258900+00:00",
-  "updated_at": "2026-08-26T09:07:59.245060+00:00",
+  "updated_at": "2026-08-27T08:06:21.884779+00:00",
   "root": {
-    "id": "node_1787735278981_18",
+    "id": "node_1787817613067_12",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -65,7 +65,8 @@
               "left_joints": "",
               "right_joints": "",
               "velocity": 0.4,
-              "acceleration": 0.3
+              "acceleration": 0.3,
+              "pose_group": "盲盒下2"
             }
           },
           {
@@ -95,7 +96,8 @@
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒下2"
         }
       },
       {
@@ -126,7 +128,8 @@
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.25,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒下2"
         }
       },
       {
@@ -141,7 +144,23 @@
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒下2"
+        }
+      },
+      {
+        "id": "node_1787817558811_11",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_name": "a161dacd",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.25,
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -191,13 +210,14 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "5b98e167",
+          "pose_name": "c6acec02",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -206,12 +226,13 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "c6acec02",
+          "pose_name": "5b98e167",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.25,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -230,12 +251,13 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "5b98e167",
+          "pose_name": "c6acec02",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.25,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -249,7 +271,8 @@
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.25,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -310,6 +333,10 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
+      "node_1787735254421_17": {
+        "x": 460,
+        "y": 540
+      },
       "node_1787647429139_8": {
         "x": 460,
         "y": 640
@@ -344,15 +371,15 @@
       },
       "node_1787644872677_5": {
         "x": 720,
-        "y": 1360
+        "y": 1320
       },
       "node_1787306160840_1": {
         "x": 720,
-        "y": 1480
+        "y": 1420
       },
       "node_1787640169684_19": {
         "x": 720,
-        "y": 1600
+        "y": 1640
       },
       "node_1787306186119_3": {
         "x": 1040,
@@ -394,9 +421,9 @@
         "x": 1040,
         "y": 1540
       },
-      "node_1787735254421_17": {
-        "x": 460,
-        "y": 540
+      "node_1787817558811_11": {
+        "x": 720,
+        "y": 1500
       }
     },
     "annotations": [

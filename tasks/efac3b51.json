@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-23T09:41:51.755228+00:00",
-  "updated_at": "2026-08-26T09:07:12.178789+00:00",
+  "updated_at": "2026-08-27T08:07:01.499785+00:00",
   "root": {
-    "id": "node_1787735231874_13",
+    "id": "node_1787817906017_17",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -78,7 +78,8 @@
               "left_joints": "",
               "right_joints": "",
               "velocity": 0.5,
-              "acceleration": 0.3
+              "acceleration": 0.3,
+              "pose_group": "盲盒下1"
             }
           }
         ]
@@ -95,7 +96,8 @@
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒下1"
         }
       },
       {
@@ -126,7 +128,8 @@
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.25,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒下1"
         }
       },
       {
@@ -141,7 +144,8 @@
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒下1"
         }
       },
       {
@@ -150,12 +154,13 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "0d39b6ec",
+          "pose_name": "a161dacd",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -205,13 +210,14 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "5b98e167",
+          "pose_name": "c6acec02",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -220,12 +226,13 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "c6acec02",
+          "pose_name": "5b98e167",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.3,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -244,12 +251,13 @@
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
-          "pose_name": "5b98e167",
+          "pose_name": "c6acec02",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.25,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -263,7 +271,8 @@
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.25,
-          "acceleration": 0.3
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -324,6 +333,10 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
+      "node_1787735211801_11": {
+        "x": 280,
+        "y": 460
+      },
       "node_1787647448174_10": {
         "x": 280,
         "y": 580
@@ -362,11 +375,11 @@
       },
       "node_1787306160840_1": {
         "x": 680,
-        "y": 1340
+        "y": 1300
       },
       "node_1787479207048_1": {
         "x": 680,
-        "y": 1460
+        "y": 1380
       },
       "node_1787640578189_3": {
         "x": 680,
@@ -407,10 +420,6 @@
       "node_1787307667913_1": {
         "x": 1080,
         "y": 1420
-      },
-      "node_1787735211801_11": {
-        "x": 280,
-        "y": 460
       },
       "node_1787735212326_12": {
         "x": 1080,
