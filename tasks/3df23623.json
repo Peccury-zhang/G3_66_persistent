@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-27T10:48:21.690195+00:00",
-  "updated_at": "2026-08-27T11:40:00.738382+00:00",
+  "updated_at": "2026-08-27T11:59:05.458936+00:00",
   "root": {
-    "id": "node_1787830727074_78",
+    "id": "node_1787831884742_111",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -63,6 +63,173 @@
         "id": "node_1787829211445_8",
         "type": "HeadControl",
         "params": {
+          "point_name": "db0c1802",
+          "pitch_deg": 32.0086669921875,
+          "yaw_deg": 20.0006103515625,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1787829181026_5",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "4c90420a",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.35,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787829238936_10",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "6329d144",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.3,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787829377959_15",
+        "type": "GripperControl",
+        "params": {
+          "side": "left",
+          "action": "close",
+          "speed": 100
+        }
+      },
+      {
+        "id": "node_1787831349327_94",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      },
+      {
+        "id": "node_1787829392905_16",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "e7b66919",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.3,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787829412295_17",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "left",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "56f3d1ea",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.35,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787831173440_86",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "a8560ea0",
+          "pitch_deg": 32.0086669921875,
+          "yaw_deg": -19.9896240234375,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1787829712973_19",
+        "type": "ArmMoveJ",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "256ad31c",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.35,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787829739118_20",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "2eb176e7",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.3,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787829805350_22",
+        "type": "GripperControl",
+        "params": {
+          "side": "right",
+          "action": "close",
+          "speed": 100
+        }
+      },
+      {
+        "id": "node_1787831394512_97",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      },
+      {
+        "id": "node_1787829799653_21",
+        "type": "ArmMoveL",
+        "params": {
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "dc7d3a60",
+          "target_source": "preset",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.3,
+          "acceleration": 0.3
+        }
+      },
+      {
+        "id": "node_1787831200914_87",
+        "type": "HeadControl",
+        "params": {
           "point_name": "632b4054",
           "pitch_deg": 29.9871826171875,
           "yaw_deg": 0.0164794921875,
@@ -73,173 +240,19 @@
         }
       },
       {
-        "id": "node_1787829171731_4",
-        "type": "Parallel",
+        "id": "node_1787829833410_23",
+        "type": "ArmMoveJ",
         "params": {
-          "success_threshold": -1
-        },
-        "children": [
-          {
-            "id": "node_1787830727073_76",
-            "type": "Sequence",
-            "params": {
-              "auto_wrap": true
-            },
-            "children": [
-              {
-                "id": "node_1787829181026_5",
-                "type": "ArmMoveJ",
-                "params": {
-                  "side": "left",
-                  "enable_mode": "joint_follow",
-                  "pose_group": "盖章",
-                  "pose_name": "4c90420a",
-                  "target_source": "preset",
-                  "left_joints": "",
-                  "right_joints": "",
-                  "velocity": 0.5,
-                  "acceleration": 0.3
-                }
-              },
-              {
-                "id": "node_1787829238936_10",
-                "type": "ArmMoveL",
-                "params": {
-                  "side": "left",
-                  "enable_mode": "joint_follow",
-                  "pose_group": "盖章",
-                  "pose_name": "6329d144",
-                  "target_source": "preset",
-                  "target_left": "",
-                  "target_right": "",
-                  "target_both": "",
-                  "velocity": 0.2,
-                  "acceleration": 0.2
-                }
-              },
-              {
-                "id": "node_1787829377959_15",
-                "type": "GripperControl",
-                "params": {
-                  "side": "left",
-                  "action": "close",
-                  "speed": 100
-                }
-              },
-              {
-                "id": "node_1787829392905_16",
-                "type": "ArmMoveL",
-                "params": {
-                  "side": "left",
-                  "enable_mode": "joint_follow",
-                  "pose_group": "盖章",
-                  "pose_name": "e7b66919",
-                  "target_source": "preset",
-                  "target_left": "",
-                  "target_right": "",
-                  "target_both": "",
-                  "velocity": 0.2,
-                  "acceleration": 0.2
-                }
-              },
-              {
-                "id": "node_1787829412295_17",
-                "type": "ArmMoveJ",
-                "params": {
-                  "side": "left",
-                  "enable_mode": "joint_follow",
-                  "pose_group": "盖章",
-                  "pose_name": "56f3d1ea",
-                  "target_source": "preset",
-                  "left_joints": "",
-                  "right_joints": "",
-                  "velocity": 0.5,
-                  "acceleration": 0.3
-                }
-              }
-            ]
-          },
-          {
-            "id": "node_1787830727074_77",
-            "type": "Sequence",
-            "params": {
-              "auto_wrap": true
-            },
-            "children": [
-              {
-                "id": "node_1787829712973_19",
-                "type": "ArmMoveJ",
-                "params": {
-                  "side": "right",
-                  "enable_mode": "joint_follow",
-                  "pose_group": "盖章",
-                  "pose_name": "256ad31c",
-                  "target_source": "preset",
-                  "left_joints": "",
-                  "right_joints": "",
-                  "velocity": 0.5,
-                  "acceleration": 0.3
-                }
-              },
-              {
-                "id": "node_1787829739118_20",
-                "type": "ArmMoveL",
-                "params": {
-                  "side": "right",
-                  "enable_mode": "joint_follow",
-                  "pose_group": "盖章",
-                  "pose_name": "2eb176e7",
-                  "target_source": "preset",
-                  "target_left": "",
-                  "target_right": "",
-                  "target_both": "",
-                  "velocity": 0.2,
-                  "acceleration": 0.2
-                }
-              },
-              {
-                "id": "node_1787829805350_22",
-                "type": "GripperControl",
-                "params": {
-                  "side": "right",
-                  "action": "close",
-                  "speed": 100
-                }
-              },
-              {
-                "id": "node_1787829799653_21",
-                "type": "ArmMoveL",
-                "params": {
-                  "side": "right",
-                  "enable_mode": "joint_follow",
-                  "pose_group": "盖章",
-                  "pose_name": "dc7d3a60",
-                  "target_source": "preset",
-                  "target_left": "",
-                  "target_right": "",
-                  "target_both": "",
-                  "velocity": 0.2,
-                  "acceleration": 0.2
-                }
-              },
-              {
-                "id": "node_1787829833410_23",
-                "type": "ArmMoveJ",
-                "params": {
-                  "side": "right",
-                  "enable_mode": "joint_follow",
-                  "pose_group": "盖章",
-                  "pose_name": "05cdc095",
-                  "target_source": "preset",
-                  "left_joints": "",
-                  "right_joints": "",
-                  "velocity": 0.5,
-                  "acceleration": 0.3
-                }
-              }
-            ]
-          }
-        ]
+          "side": "right",
+          "enable_mode": "joint_follow",
+          "pose_group": "盖章",
+          "pose_name": "05cdc095",
+          "target_source": "preset",
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.3,
+          "acceleration": 0.3
+        }
       },
       {
         "id": "node_1787830169764_39",
@@ -252,7 +265,7 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.5,
+          "velocity": 0.35,
           "acceleration": 0.3
         }
       },
@@ -260,7 +273,7 @@
         "id": "node_1787829972328_29",
         "type": "Wait",
         "params": {
-          "duration": 2
+          "duration": 1.5
         }
       },
       {
@@ -274,7 +287,7 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.5,
+          "velocity": 0.3,
           "acceleration": 0.3
         }
       },
@@ -282,9 +295,9 @@
         "id": "node_1787830643247_65",
         "type": "HeadControl",
         "params": {
-          "point_name": "d3ac0843",
-          "pitch_deg": 20.0006103515625,
-          "yaw_deg": -29.9981689453125,
+          "point_name": "a8560ea0",
+          "pitch_deg": 32.0086669921875,
+          "yaw_deg": -19.9896240234375,
           "pitch_velocity_deg_s": 30,
           "yaw_velocity_deg_s": 30,
           "wait_for_reached": false,
@@ -302,7 +315,7 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.5,
+          "velocity": 0.35,
           "acceleration": 0.3
         }
       },
@@ -318,8 +331,8 @@
           "target_left": "",
           "target_right": "",
           "target_both": "",
-          "velocity": 0.2,
-          "acceleration": 0.2
+          "velocity": 0.3,
+          "acceleration": 0.3
         }
       },
       {
@@ -329,6 +342,13 @@
           "side": "right",
           "action": "open",
           "speed": 100
+        }
+      },
+      {
+        "id": "node_1787831410125_98",
+        "type": "Wait",
+        "params": {
+          "duration": 1
         }
       },
       {
@@ -343,8 +363,8 @@
           "target_left": "",
           "target_right": "",
           "target_both": "",
-          "velocity": 0.2,
-          "acceleration": 0.2
+          "velocity": 0.3,
+          "acceleration": 0.3
         }
       },
       {
@@ -358,7 +378,7 @@
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
-          "velocity": 0.5,
+          "velocity": 0.3,
           "acceleration": 0.3
         }
       },
@@ -421,9 +441,9 @@
     {
       "type": "HeadControl",
       "params": {
-        "point_name": "632b4054",
-        "pitch_deg": 29.9871826171875,
-        "yaw_deg": 0.0164794921875,
+        "point_name": "db0c1802",
+        "pitch_deg": 32.0086669921875,
+        "yaw_deg": 20.0006103515625,
         "pitch_velocity_deg_s": 30,
         "yaw_velocity_deg_s": 30,
         "wait_for_reached": false,
@@ -441,7 +461,7 @@
         "target_source": "preset",
         "left_joints": "",
         "right_joints": "",
-        "velocity": 0.5,
+        "velocity": 0.35,
         "acceleration": 0.3
       },
       "timeout": null
@@ -457,8 +477,8 @@
         "target_left": "",
         "target_right": "",
         "target_both": "",
-        "velocity": 0.2,
-        "acceleration": 0.2
+        "velocity": 0.3,
+        "acceleration": 0.3
       },
       "timeout": null
     },
@@ -468,6 +488,13 @@
         "side": "left",
         "action": "close",
         "speed": 100
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 1
       },
       "timeout": null
     },
@@ -482,8 +509,8 @@
         "target_left": "",
         "target_right": "",
         "target_both": "",
-        "velocity": 0.2,
-        "acceleration": 0.2
+        "velocity": 0.3,
+        "acceleration": 0.3
       },
       "timeout": null
     },
@@ -497,10 +524,23 @@
         "target_source": "preset",
         "left_joints": "",
         "right_joints": "",
-        "velocity": 0.5,
+        "velocity": 0.35,
         "acceleration": 0.3
       },
       "timeout": null
+    },
+    {
+      "type": "HeadControl",
+      "params": {
+        "point_name": "a8560ea0",
+        "pitch_deg": 32.0086669921875,
+        "yaw_deg": -19.9896240234375,
+        "pitch_velocity_deg_s": 30,
+        "yaw_velocity_deg_s": 30,
+        "wait_for_reached": false,
+        "timeout": 30
+      },
+      "timeout": 30.0
     },
     {
       "type": "ArmMoveJ",
@@ -512,7 +552,7 @@
         "target_source": "preset",
         "left_joints": "",
         "right_joints": "",
-        "velocity": 0.5,
+        "velocity": 0.35,
         "acceleration": 0.3
       },
       "timeout": null
@@ -528,8 +568,8 @@
         "target_left": "",
         "target_right": "",
         "target_both": "",
-        "velocity": 0.2,
-        "acceleration": 0.2
+        "velocity": 0.3,
+        "acceleration": 0.3
       },
       "timeout": null
     },
@@ -539,6 +579,13 @@
         "side": "right",
         "action": "close",
         "speed": 100
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 1
       },
       "timeout": null
     },
@@ -553,10 +600,23 @@
         "target_left": "",
         "target_right": "",
         "target_both": "",
-        "velocity": 0.2,
-        "acceleration": 0.2
+        "velocity": 0.3,
+        "acceleration": 0.3
       },
       "timeout": null
+    },
+    {
+      "type": "HeadControl",
+      "params": {
+        "point_name": "632b4054",
+        "pitch_deg": 29.9871826171875,
+        "yaw_deg": 0.0164794921875,
+        "pitch_velocity_deg_s": 30,
+        "yaw_velocity_deg_s": 30,
+        "wait_for_reached": false,
+        "timeout": 30
+      },
+      "timeout": 30.0
     },
     {
       "type": "ArmMoveJ",
@@ -568,7 +628,7 @@
         "target_source": "preset",
         "left_joints": "",
         "right_joints": "",
-        "velocity": 0.5,
+        "velocity": 0.3,
         "acceleration": 0.3
       },
       "timeout": null
@@ -583,7 +643,7 @@
         "target_source": "preset",
         "left_joints": "",
         "right_joints": "",
-        "velocity": 0.5,
+        "velocity": 0.35,
         "acceleration": 0.3
       },
       "timeout": null
@@ -591,7 +651,7 @@
     {
       "type": "Wait",
       "params": {
-        "duration": 2
+        "duration": 1.5
       },
       "timeout": null
     },
@@ -605,7 +665,7 @@
         "target_source": "preset",
         "left_joints": "",
         "right_joints": "",
-        "velocity": 0.5,
+        "velocity": 0.3,
         "acceleration": 0.3
       },
       "timeout": null
@@ -613,9 +673,9 @@
     {
       "type": "HeadControl",
       "params": {
-        "point_name": "d3ac0843",
-        "pitch_deg": 20.0006103515625,
-        "yaw_deg": -29.9981689453125,
+        "point_name": "a8560ea0",
+        "pitch_deg": 32.0086669921875,
+        "yaw_deg": -19.9896240234375,
         "pitch_velocity_deg_s": 30,
         "yaw_velocity_deg_s": 30,
         "wait_for_reached": false,
@@ -633,7 +693,7 @@
         "target_source": "preset",
         "left_joints": "",
         "right_joints": "",
-        "velocity": 0.5,
+        "velocity": 0.35,
         "acceleration": 0.3
       },
       "timeout": null
@@ -649,8 +709,8 @@
         "target_left": "",
         "target_right": "",
         "target_both": "",
-        "velocity": 0.2,
-        "acceleration": 0.2
+        "velocity": 0.3,
+        "acceleration": 0.3
       },
       "timeout": null
     },
@@ -660,6 +720,13 @@
         "side": "right",
         "action": "open",
         "speed": 100
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 1
       },
       "timeout": null
     },
@@ -674,8 +741,8 @@
         "target_left": "",
         "target_right": "",
         "target_both": "",
-        "velocity": 0.2,
-        "acceleration": 0.2
+        "velocity": 0.3,
+        "acceleration": 0.3
       },
       "timeout": null
     },
@@ -689,7 +756,7 @@
         "target_source": "preset",
         "left_joints": "",
         "right_joints": "",
-        "velocity": 0.5,
+        "velocity": 0.3,
         "acceleration": 0.3
       },
       "timeout": null
@@ -719,13 +786,9 @@
         "x": 200,
         "y": 80
       },
-      "node_1787829171731_4": {
-        "x": 500,
-        "y": 500
-      },
       "node_1787829181026_5": {
         "x": 500,
-        "y": 600
+        "y": 800
       },
       "node_1787829211445_8": {
         "x": 500,
@@ -733,7 +796,7 @@
       },
       "node_1787829238936_10": {
         "x": 500,
-        "y": 720
+        "y": 900
       },
       "node_1787829312177_11": {
         "x": 200,
@@ -749,75 +812,95 @@
       },
       "node_1787829377959_15": {
         "x": 500,
-        "y": 820
+        "y": 1000
       },
       "node_1787829392905_16": {
         "x": 500,
-        "y": 940
+        "y": 1180
       },
       "node_1787829412295_17": {
         "x": 500,
-        "y": 1060
+        "y": 1280
       },
       "node_1787829712973_19": {
         "x": 840,
-        "y": 620
+        "y": 820
       },
       "node_1787829739118_20": {
         "x": 840,
-        "y": 720
+        "y": 920
       },
       "node_1787829799653_21": {
         "x": 840,
-        "y": 940
+        "y": 1240
       },
       "node_1787829805350_22": {
         "x": 840,
-        "y": 820
+        "y": 1020
       },
       "node_1787829833410_23": {
-        "x": 840,
-        "y": 1060
+        "x": 1240,
+        "y": 800
       },
       "node_1787829972328_29": {
         "x": 1240,
-        "y": 700
+        "y": 1000
       },
       "node_1787830169764_39": {
         "x": 1240,
-        "y": 600
+        "y": 900
       },
       "node_1787830180773_40": {
         "x": 1240,
-        "y": 820
+        "y": 1120
       },
       "node_1787830294129_44": {
         "x": 1640,
-        "y": 600
+        "y": 800
       },
       "node_1787830345182_45": {
         "x": 1640,
-        "y": 720
+        "y": 880
       },
       "node_1787830384003_46": {
         "x": 1640,
-        "y": 820
+        "y": 960
       },
       "node_1787830394332_47": {
         "x": 1640,
-        "y": 920
+        "y": 1120
       },
       "node_1787830477722_54": {
         "x": 1640,
-        "y": 1020
+        "y": 1220
       },
       "node_1787830643247_65": {
         "x": 1240,
-        "y": 960
+        "y": 1260
       },
       "node_1787830672464_69": {
         "x": 1640,
+        "y": 1300
+      },
+      "node_1787831173440_86": {
+        "x": 840,
+        "y": 620
+      },
+      "node_1787831200914_87": {
+        "x": 1240,
+        "y": 620
+      },
+      "node_1787831349327_94": {
+        "x": 500,
         "y": 1100
+      },
+      "node_1787831394512_97": {
+        "x": 840,
+        "y": 1120
+      },
+      "node_1787831410125_98": {
+        "x": 1640,
+        "y": 1040
       }
     },
     "annotations": [
@@ -833,7 +916,7 @@
       {
         "id": "anno_1787829434432_2",
         "x": 340,
-        "y": 580,
+        "y": 780,
         "width": 398.6052722088939,
         "height": 597.643585397194,
         "color": "#22c55e",
@@ -842,7 +925,7 @@
       {
         "id": "anno_1787829885086_3",
         "x": 760,
-        "y": 580,
+        "y": 780,
         "width": 360,
         "height": 600,
         "color": "#22c55e",
@@ -851,7 +934,7 @@
       {
         "id": "anno_1787830052552_4",
         "x": 1160,
-        "y": 580,
+        "y": 780,
         "width": 340,
         "height": 600,
         "color": "#f59e0b",
@@ -860,7 +943,7 @@
       {
         "id": "anno_1787830514508_5",
         "x": 1540,
-        "y": 580,
+        "y": 780,
         "width": 340,
         "height": 600,
         "color": "#f59e0b",
@@ -868,5 +951,5 @@
       }
     ]
   },
-  "status": "failed"
+  "status": "completed"
 }

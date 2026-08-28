@@ -1,0 +1,65 @@
+{
+  "id": "93bd4f1f",
+  "name": "新任务",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-28T02:27:52.291324+00:00",
+  "updated_at": "2026-08-28T02:27:52.291324+00:00",
+  "root": {
+    "id": "node_1787884071502_3",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1787884044412_1",
+        "type": "PadReceive",
+        "params": {
+          "expect": "any",
+          "timeout": 60
+        }
+      },
+      {
+        "id": "node_1787884065947_2",
+        "type": "PadSend",
+        "params": {
+          "category": "status",
+          "value": "ok",
+          "type": 1
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "PadReceive",
+      "params": {
+        "expect": "any",
+        "timeout": 60
+      },
+      "timeout": 60.0
+    },
+    {
+      "type": "PadSend",
+      "params": {
+        "category": "status",
+        "value": "ok",
+        "type": 1
+      },
+      "timeout": null
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1787884044412_1": {
+        "x": 420,
+        "y": 300
+      },
+      "node_1787884065947_2": {
+        "x": 420,
+        "y": 420
+      }
+    },
+    "annotations": []
+  }
+}
