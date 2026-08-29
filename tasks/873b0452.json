@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-23T10:04:26.624697+00:00",
-  "updated_at": "2026-08-25T11:47:55.889744+00:00",
+  "updated_at": "2026-08-28T09:14:32.753107+00:00",
   "root": {
-    "id": "node_1787658092198_2",
+    "id": "node_1787907883487_14",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -19,27 +19,19 @@
         }
       },
       {
-        "id": "node_1787479447125_6",
+        "id": "node_1787907862100_12",
         "type": "SubTask",
         "params": {
-          "task_id": "c598b2f2",
-          "task_id_name": "拿盲盒-上1"
+          "task_id": "3df23623",
+          "task_id_name": "盖章1"
         }
       },
       {
-        "id": "node_1787479513308_1",
+        "id": "node_1787907862866_13",
         "type": "SubTask",
         "params": {
-          "task_id": "79f8b0fb",
-          "task_id_name": "拿盲盒-中1"
-        }
-      },
-      {
-        "id": "node_1787658082570_1",
-        "type": "SubTask",
-        "params": {
-          "task_id": "efac3b51",
-          "task_id_name": "拿盲盒-下1"
+          "task_id": "10543ea8",
+          "task_id_name": "盖章2"
         }
       }
     ]
@@ -61,17 +53,13 @@
         "x": 820,
         "y": 500
       },
-      "node_1787479447125_6": {
+      "node_1787907862100_12": {
         "x": 820,
         "y": 620
       },
-      "node_1787479513308_1": {
+      "node_1787907862866_13": {
         "x": 820,
         "y": 740
-      },
-      "node_1787658082570_1": {
-        "x": 820,
-        "y": 860
       }
     },
     "annotations": []

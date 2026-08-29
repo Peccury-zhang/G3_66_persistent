@@ -1,7 +1,7 @@
 {
   "type": "head_position",
   "version": "1.0",
-  "updated_at": "2026-08-27T14:31:04.776031",
+  "updated_at": "2026-08-28T15:26:23.133546",
   "points": [
     {
       "id": "0d9a5985",
@@ -119,6 +119,21 @@
       "updated_at": "2026-08-25T19:26:01.433663",
       "pitch_deg": 20.0006103515625,
       "yaw_deg": -29.9981689453125,
+      "pitch_velocity_deg_s": 0.0,
+      "yaw_velocity_deg_s": 0.0,
+      "group": "默认组"
+    },
+    {
+      "id": "0a1beae6",
+      "name": "看筒",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "sort_index": 8,
+      "created_at": "2026-08-28T13:58:36.617230",
+      "updated_at": "2026-08-28T13:58:36.617230",
+      "pitch_deg": 10.0030517578125,
+      "yaw_deg": 30.003662109375,
       "pitch_velocity_deg_s": 0.0,
       "yaw_velocity_deg_s": 0.0,
       "group": "默认组"

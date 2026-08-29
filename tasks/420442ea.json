@@ -1,12 +1,12 @@
 {
-  "id": "3df23623",
-  "name": "盖章1",
+  "id": "420442ea",
+  "name": "盖章2",
   "description": "",
   "category": "default",
-  "created_at": "2026-08-27T10:48:21.690195+00:00",
-  "updated_at": "2026-08-28T09:16:57.226338+00:00",
+  "created_at": "2026-08-28T09:16:05.815186+00:00",
+  "updated_at": "2026-08-28T09:17:55.841975+00:00",
   "root": {
-    "id": "node_1787908432099_24",
+    "id": "node_1787908595291_30",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -94,7 +94,7 @@
           "side": "left",
           "enable_mode": "joint_follow",
           "pose_group": "盖章",
-          "pose_name": "4c90420a",
+          "pose_name": "6ca96868",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
@@ -109,7 +109,7 @@
           "side": "left",
           "enable_mode": "joint_follow",
           "pose_group": "盖章",
-          "pose_name": "6329d144",
+          "pose_name": "5e1ae717",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
@@ -142,7 +142,7 @@
           "side": "left",
           "enable_mode": "joint_follow",
           "pose_group": "盖章",
-          "pose_name": "e7b66919",
+          "pose_name": "486807de",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
@@ -445,7 +445,7 @@
             }
           },
           {
-            "id": "node_1787908432099_23",
+            "id": "node_1787908595291_29",
             "type": "Sequence",
             "params": {
               "auto_wrap": true

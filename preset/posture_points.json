@@ -1,7 +1,7 @@
 {
   "type": "posture_pose",
   "version": "1.0",
-  "updated_at": "2026-08-27T15:46:56.787414",
+  "updated_at": "2026-08-28T15:26:23.132198",
   "points": [
     {
       "id": "e2c2f062",
@@ -230,6 +230,29 @@
         -25.72998046875,
         70.15869140625,
         -44.4232177734375
+      ],
+      "group": "默认组"
+    },
+    {
+      "id": "dc3c9e7d",
+      "name": "明信片投放等待",
+      "description": "采集自当前状态",
+      "category": "captured",
+      "is_builtin": false,
+      "sort_index": 10,
+      "created_at": "2026-08-28T13:42:41.113669",
+      "updated_at": "2026-08-28T13:42:52.921875",
+      "yaw_deg": 140.0,
+      "height_mm": 699.8685874363092,
+      "forward_mm": 0.0,
+      "bend_deg": 6.3611093629270335e-15,
+      "velocity_scale": 0.3,
+      "motion_mode": 1,
+      "motor_angles_deg": [
+        140,
+        -30.9,
+        83.2,
+        -52.3
       ],
       "group": "默认组"
     }
