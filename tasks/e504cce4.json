@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-25T07:35:30.337178+00:00",
-  "updated_at": "2026-08-27T07:56:59.189974+00:00",
+  "updated_at": "2026-08-29T09:24:59.806696+00:00",
   "root": {
-    "id": "node_1787817184516_4",
+    "id": "node_1787995395800_9",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -133,17 +133,16 @@
         }
       },
       {
-        "id": "node_1787306160840_1",
-        "type": "ArmMoveL",
+        "id": "node_1787995377655_8",
+        "type": "ArmMoveJ",
         "params": {
           "side": "left",
           "enable_mode": "joint_follow",
           "pose_name": "407381f8",
           "target_source": "preset",
-          "target_left": "",
-          "target_right": "",
-          "target_both": "",
-          "velocity": 0.3,
+          "left_joints": "",
+          "right_joints": "",
+          "velocity": 0.25,
           "acceleration": 0.3,
           "pose_group": "盲盒中2"
         }
@@ -373,10 +372,6 @@
         "x": 680,
         "y": 1220
       },
-      "node_1787306160840_1": {
-        "x": 680,
-        "y": 1340
-      },
       "node_1787479207048_1": {
         "x": 680,
         "y": 1460
@@ -424,6 +419,10 @@
       "node_1787735309670_20": {
         "x": 1080,
         "y": 1520
+      },
+      "node_1787995377655_8": {
+        "x": 680,
+        "y": 1340
       }
     },
     "annotations": [
