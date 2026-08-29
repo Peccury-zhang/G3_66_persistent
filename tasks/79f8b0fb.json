@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-25T08:17:37.522951+00:00",
-  "updated_at": "2026-08-29T09:24:17.340699+00:00",
+  "updated_at": "2026-08-29T10:03:39.635102+00:00",
   "root": {
-    "id": "node_1787817415042_8",
+    "id": "node_1787997819356_3",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -77,7 +77,7 @@
               "target_source": "preset",
               "left_joints": "",
               "right_joints": "",
-              "velocity": 0.5,
+              "velocity": 0.35,
               "acceleration": 0.3,
               "pose_group": "盲盒中1"
             }

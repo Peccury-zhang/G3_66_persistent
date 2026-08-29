@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-21T09:39:27.258900+00:00",
-  "updated_at": "2026-08-29T08:58:28.887467+00:00",
+  "updated_at": "2026-08-29T10:04:27.428318+00:00",
   "root": {
-    "id": "node_1787817613067_12",
+    "id": "node_1787997867094_6",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -64,7 +64,7 @@
               "target_source": "preset",
               "left_joints": "",
               "right_joints": "",
-              "velocity": 0.4,
+              "velocity": 0.35,
               "acceleration": 0.3,
               "pose_group": "盲盒下2"
             }
@@ -377,6 +377,10 @@
         "x": 720,
         "y": 1420
       },
+      "node_1787817558811_11": {
+        "x": 720,
+        "y": 1500
+      },
       "node_1787640169684_19": {
         "x": 720,
         "y": 1640
@@ -420,10 +424,6 @@
       "node_1787735252331_16": {
         "x": 1040,
         "y": 1540
-      },
-      "node_1787817558811_11": {
-        "x": 720,
-        "y": 1500
       }
     },
     "annotations": [
