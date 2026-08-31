@@ -1,12 +1,12 @@
 {
-  "id": "c598b2f2",
-  "name": "拿盲盒-上1",
+  "id": "96f4c811",
+  "name": "拿盲盒-上4",
   "description": "",
   "category": "default",
-  "created_at": "2026-08-25T11:00:21.921547+00:00",
-  "updated_at": "2026-08-31T05:52:58.847174+00:00",
+  "created_at": "2026-08-31T05:41:22.609852+00:00",
+  "updated_at": "2026-08-31T05:52:58.680741+00:00",
   "root": {
-    "id": "node_1788155578528_19",
+    "id": "node_1788155435939_15",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -58,9 +58,9 @@
             "id": "node_1787639730738_6",
             "type": "HeadControl",
             "params": {
-              "point_name": "0d9a5985",
+              "point_name": "6ea862a9",
               "pitch_deg": 0,
-              "yaw_deg": 37.001953125,
+              "yaw_deg": -36.0076904296875,
               "pitch_velocity_deg_s": 30,
               "yaw_velocity_deg_s": 30,
               "wait_for_reached": false,
@@ -71,15 +71,15 @@
             "id": "node_1787305810666_3",
             "type": "ArmMoveJ",
             "params": {
-              "side": "left",
+              "side": "right",
               "enable_mode": "joint_follow",
-              "pose_name": "90809327",
+              "pose_name": "09046f00",
               "target_source": "preset",
               "left_joints": "",
               "right_joints": "",
               "velocity": 0.3,
               "acceleration": 0.3,
-              "pose_group": "盲盒上1"
+              "pose_group": "盲盒上4"
             }
           }
         ]
@@ -88,23 +88,23 @@
         "id": "node_1787305826334_4",
         "type": "ArmMoveL",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
-          "pose_name": "a6205449",
+          "pose_name": "ca22ecac",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
           "acceleration": 0.3,
-          "pose_group": "盲盒上1"
+          "pose_group": "盲盒上4"
         }
       },
       {
         "id": "node_1787305842742_6",
         "type": "GripperControl",
         "params": {
-          "side": "left",
+          "side": "right",
           "action": "close",
           "speed": 100,
           "object_name": "22fef549"
@@ -121,53 +121,53 @@
         "id": "node_1787644585320_5",
         "type": "ArmMoveJ",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
-          "pose_name": "c3254958",
+          "pose_name": "960bc6cc",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.4,
           "acceleration": 0.3,
-          "pose_group": "盲盒上1"
+          "pose_group": "盲盒上4"
         }
       },
       {
         "id": "node_1787306160840_1",
         "type": "ArmMoveL",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
-          "pose_name": "eab9e216",
+          "pose_name": "e44b8703",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
           "target_both": "",
           "velocity": 0.3,
           "acceleration": 0.3,
-          "pose_group": "盲盒上1"
+          "pose_group": "盲盒上4"
         }
       },
       {
         "id": "node_1787657014001_1",
         "type": "ArmMoveJ",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
-          "pose_name": "7aca1c42",
+          "pose_name": "6de6f775",
           "target_source": "preset",
           "left_joints": "",
           "right_joints": "",
           "velocity": 0.3,
           "acceleration": 0.3,
-          "pose_group": "盲盒上1"
+          "pose_group": "盲盒上4"
         }
       },
       {
         "id": "node_1787479207048_1",
         "type": "ArmMoveJ",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
           "pose_name": "a161dacd",
           "target_source": "preset",
@@ -210,9 +210,9 @@
         "id": "node_1787640627211_5",
         "type": "HeadControl",
         "params": {
-          "point_name": "e97ec11f",
-          "pitch_deg": 34,
-          "yaw_deg": 34,
+          "point_name": "a6c1efa2",
+          "pitch_deg": 32.9864501953125,
+          "yaw_deg": -32.991943359375,
           "pitch_velocity_deg_s": 30,
           "yaw_velocity_deg_s": 30,
           "wait_for_reached": false,
@@ -223,9 +223,9 @@
         "id": "node_1787307378273_1",
         "type": "ArmMoveL",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
-          "pose_name": "c6acec02",
+          "pose_name": "66455e82",
           "target_source": "preset",
           "target_left": "",
           "target_right": "",
@@ -236,15 +236,16 @@
         }
       },
       {
-        "id": "node_1787307396979_3",
-        "type": "ArmMoveJ",
+        "id": "node_1788155323021_11",
+        "type": "ArmMoveL",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
-          "pose_name": "5b98e167",
+          "pose_name": "1f7bce91",
           "target_source": "preset",
-          "left_joints": "",
-          "right_joints": "",
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
           "velocity": 0.3,
           "acceleration": 0.3,
           "pose_group": "盲盒放置"
@@ -254,39 +255,42 @@
         "id": "node_1787307424528_4",
         "type": "GripperControl",
         "params": {
-          "side": "left",
+          "side": "right",
           "action": "open",
           "speed": 100,
           "object_name": "22fef549"
         }
       },
       {
-        "id": "node_1787307433446_5",
-        "type": "ArmMoveJ",
+        "id": "node_1788155399252_13",
+        "type": "ArmMoveL",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
-          "pose_name": "c6acec02",
+          "pose_name": "66455e82",
           "target_source": "preset",
-          "left_joints": "",
-          "right_joints": "",
-          "velocity": 0.25,
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.3,
           "acceleration": 0.3,
           "pose_group": "盲盒放置"
         }
       },
       {
-        "id": "node_1787307445973_6",
-        "type": "ArmMoveJ",
+        "id": "node_1788155400110_14",
+        "type": "ArmMoveL",
         "params": {
-          "side": "left",
+          "side": "right",
           "enable_mode": "joint_follow",
           "pose_name": "a161dacd",
           "target_source": "preset",
-          "left_joints": "",
-          "right_joints": "",
-          "velocity": 0.25,
-          "acceleration": 0.3
+          "target_left": "",
+          "target_right": "",
+          "target_both": "",
+          "velocity": 0.3,
+          "acceleration": 0.3,
+          "pose_group": "盲盒放置"
         }
       },
       {
@@ -415,21 +419,13 @@
         "x": 1080,
         "y": 720
       },
-      "node_1787307396979_3": {
+      "node_1788155323021_11": {
         "x": 1080,
         "y": 840
       },
       "node_1787307424528_4": {
         "x": 1080,
         "y": 960
-      },
-      "node_1787307433446_5": {
-        "x": 1080,
-        "y": 1080
-      },
-      "node_1787307445973_6": {
-        "x": 1080,
-        "y": 1200
       },
       "node_1787639978676_11": {
         "x": 1080,
@@ -442,6 +438,14 @@
       "node_1787735041419_2": {
         "x": 1080,
         "y": 1520
+      },
+      "node_1788155399252_13": {
+        "x": 1080,
+        "y": 1080
+      },
+      "node_1788155400110_14": {
+        "x": 1080,
+        "y": 1180
       }
     },
     "annotations": [
@@ -449,8 +453,8 @@
         "id": "anno_1787643636350_2",
         "x": 1020,
         "y": 440,
-        "width": 300.3091558425763,
-        "height": 914.8156957301308,
+        "width": 295.08585246279955,
+        "height": 945.2849654454951,
         "color": "#f59e0b",
         "note": "左边放置盲盒"
       },
