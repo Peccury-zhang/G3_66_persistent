@@ -1,7 +1,7 @@
 {
   "type": "head_position",
   "version": "1.0",
-  "updated_at": "2026-08-31T13:43:25.733261",
+  "updated_at": "2026-08-31T14:27:07.821248",
   "points": [
     {
       "id": "0d9a5985",
@@ -165,7 +165,8 @@
       "pitch_deg": 0.0,
       "yaw_deg": -36.0076904296875,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "group": "默认组"
     }
   ]
 }

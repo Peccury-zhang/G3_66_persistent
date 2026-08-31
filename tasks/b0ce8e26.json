@@ -1,0 +1,127 @@
+{
+  "id": "b0ce8e26",
+  "name": "点头",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-31T06:15:51.942474+00:00",
+  "updated_at": "2026-08-31T07:02:24.256273+00:00",
+  "root": {
+    "id": "node_1788156879568_2",
+    "type": "Loop",
+    "params": {
+      "count": 0,
+      "break_on_failure": true
+    },
+    "children": [
+      {
+        "id": "node_1788156874409_1",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "51b246c1",
+          "pitch_deg": 0,
+          "yaw_deg": 0.0054931640625,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1788156914097_3",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      },
+      {
+        "id": "node_1788156928785_6",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "632b4054",
+          "pitch_deg": 29.9871826171875,
+          "yaw_deg": 0.0164794921875,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1788156946397_7",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "HeadControl",
+      "params": {
+        "point_name": "51b246c1",
+        "pitch_deg": 0,
+        "yaw_deg": 0.0054931640625,
+        "pitch_velocity_deg_s": 30,
+        "yaw_velocity_deg_s": 30,
+        "wait_for_reached": false,
+        "timeout": 30
+      },
+      "timeout": 30.0
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 1
+      },
+      "timeout": null
+    },
+    {
+      "type": "HeadControl",
+      "params": {
+        "point_name": "632b4054",
+        "pitch_deg": 29.9871826171875,
+        "yaw_deg": 0.0164794921875,
+        "pitch_velocity_deg_s": 30,
+        "yaw_velocity_deg_s": 30,
+        "wait_for_reached": false,
+        "timeout": 30
+      },
+      "timeout": 30.0
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 1
+      },
+      "timeout": null
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1788156874409_1": {
+        "x": 400,
+        "y": 480
+      },
+      "node_1788156879568_2": {
+        "x": 400,
+        "y": 360
+      },
+      "node_1788156914097_3": {
+        "x": 400,
+        "y": 580
+      },
+      "node_1788156928785_6": {
+        "x": 400,
+        "y": 680
+      },
+      "node_1788156946397_7": {
+        "x": 400,
+        "y": 800
+      }
+    },
+    "annotations": []
+  },
+  "status": "running"
+}
