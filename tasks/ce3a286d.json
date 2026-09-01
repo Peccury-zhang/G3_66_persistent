@@ -4,37 +4,28 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-19T05:19:02.696560+00:00",
-  "updated_at": "2026-08-20T11:04:33.220872+00:00",
+  "updated_at": "2026-08-31T09:15:14.089175+00:00",
   "root": {
-    "id": "node_1787220451549_49",
+    "id": "node_1788165986519_31",
     "type": "Sequence",
     "params": {},
     "children": [
       {
+        "id": "node_1788165945570_19",
+        "type": "ClearBlackboard",
+        "params": {}
+      },
+      {
         "id": "node_1787220262090_31",
         "type": "HeadControl",
         "params": {
-          "point_name": "51b246c1",
-          "pitch_deg": 0,
-          "yaw_deg": 0.0054931640625,
+          "point_name": "a6c1efa2",
+          "pitch_deg": 32.9864501953125,
+          "yaw_deg": -32.991943359375,
           "pitch_velocity_deg_s": 30,
           "yaw_velocity_deg_s": 30,
           "wait_for_reached": false,
           "timeout": 30
-        }
-      },
-      {
-        "id": "node_1787124188494_2",
-        "type": "ArmMoveJ",
-        "params": {
-          "side": "both",
-          "enable_mode": "joint_follow",
-          "pose_name": "63993bc7",
-          "target_source": "preset",
-          "left_joints": "",
-          "right_joints": "",
-          "velocity": 0.2,
-          "acceleration": 0.2
         }
       },
       {
@@ -62,7 +53,7 @@
         },
         "children": [
           {
-            "id": "node_1787220451548_47",
+            "id": "node_1788165986519_29",
             "type": "Sequence",
             "params": {
               "auto_wrap": true
@@ -76,45 +67,22 @@
                 }
               },
               {
-                "id": "node_1787209752829_18",
-                "type": "Parallel",
+                "id": "node_1787209464268_1",
+                "type": "TTSSpeak",
                 "params": {
-                  "success_threshold": -1
-                },
-                "children": [
-                  {
-                    "id": "node_1787209464268_1",
-                    "type": "TTSSpeak",
-                    "params": {
-                      "voice": "dylan",
-                      "play_mode": "queue",
-                      "play": true,
-                      "wait_complete": true,
-                      "volume": -1,
-                      "timeout": 120,
-                      "text": "尊敬的 $bb.face.result.name 您好，欢迎您参加本次服贸会，我是景晨数智自研的首款机器人景睿，接下来让我给您演示一下我的功能吧。"
-                    }
-                  },
-                  {
-                    "id": "node_1787209871184_26",
-                    "type": "ArmMoveJ",
-                    "params": {
-                      "side": "right",
-                      "enable_mode": "joint_follow",
-                      "pose_name": "c33b303c",
-                      "target_source": "preset",
-                      "left_joints": "",
-                      "right_joints": "",
-                      "velocity": 0.5,
-                      "acceleration": 0.3
-                    }
-                  }
-                ]
+                  "voice": "dylan",
+                  "play_mode": "queue",
+                  "play": true,
+                  "wait_complete": true,
+                  "volume": -1,
+                  "timeout": 120,
+                  "text": "尊敬的 $bb.face.result.name 您好,欢迎您参加本次服贸会,我是景晨数智自研的首款机器人景睿,接下来让我给您演示一下我的功能吧"
+                }
               }
             ]
           },
           {
-            "id": "node_1787220451549_48",
+            "id": "node_1788165986519_30",
             "type": "Sequence",
             "params": {
               "auto_wrap": true
@@ -128,40 +96,17 @@
                 }
               },
               {
-                "id": "node_1787209958674_33",
-                "type": "Parallel",
+                "id": "node_1787209969848_34",
+                "type": "TTSSpeak",
                 "params": {
-                  "success_threshold": -1
-                },
-                "children": [
-                  {
-                    "id": "node_1787116930490_9",
-                    "type": "ArmMoveJ",
-                    "params": {
-                      "side": "right",
-                      "enable_mode": "joint_follow",
-                      "pose_name": "c33b303c",
-                      "target_source": "preset",
-                      "left_joints": "",
-                      "right_joints": "",
-                      "velocity": 0.5,
-                      "acceleration": 0.3
-                    }
-                  },
-                  {
-                    "id": "node_1787209969848_34",
-                    "type": "TTSSpeak",
-                    "params": {
-                      "voice": "vivian",
-                      "play_mode": "queue",
-                      "play": true,
-                      "wait_complete": true,
-                      "volume": -1,
-                      "timeout": 120,
-                      "text": "没看出来你是谁呀"
-                    }
-                  }
-                ]
+                  "voice": "vivian",
+                  "play_mode": "queue",
+                  "play": true,
+                  "wait_complete": true,
+                  "volume": -1,
+                  "timeout": 120,
+                  "text": "没看出来你是谁呀"
+                }
               }
             ]
           }
@@ -172,9 +117,9 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
-      "node_1787124188494_2": {
+      "node_1787220262090_31": {
         "x": 220,
-        "y": 0
+        "y": -40
       },
       "node_1787116569237_1": {
         "x": 220,
@@ -188,39 +133,24 @@
         "x": 80,
         "y": 460
       },
-      "node_1787209752829_18": {
-        "x": 80,
-        "y": 580
-      },
       "node_1787209464268_1": {
-        "x": -20,
-        "y": 720
-      },
-      "node_1787209871184_26": {
-        "x": 180,
+        "x": 80,
         "y": 720
       },
       "node_1787116846502_5": {
         "x": 400,
         "y": 460
       },
-      "node_1787209958674_33": {
-        "x": 400,
-        "y": 580
-      },
-      "node_1787116930490_9": {
-        "x": 540,
-        "y": 720
-      },
       "node_1787209969848_34": {
-        "x": 360,
+        "x": 400,
         "y": 720
       },
-      "node_1787220262090_31": {
+      "node_1788165945570_19": {
         "x": 220,
-        "y": -120
+        "y": -160
       }
-    }
+    },
+    "annotations": []
   },
   "program": [
     {

@@ -1,6 +1,6 @@
 {
-  "enabled": true,
-  "task_id": "b0ce8e26",
-  "task_name": "点头",
-  "delay_seconds": 30
+  "enabled": false,
+  "task_id": "",
+  "task_name": "",
+  "delay_seconds": 10
 }

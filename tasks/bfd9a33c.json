@@ -1,0 +1,100 @@
+{
+  "id": "bfd9a33c",
+  "name": "语音测试",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-08-31T07:32:01.906960+00:00",
+  "updated_at": "2026-08-31T08:35:21.243175+00:00",
+  "root": {
+    "id": "node_1788164381093_1",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1788161578864_27",
+        "type": "ClearBlackboard",
+        "params": {}
+      },
+      {
+        "id": "node_1788161489268_23",
+        "type": "SetBlackboard",
+        "params": {
+          "entries": [
+            {
+              "key": "face.result.name",
+              "value": "领导"
+            }
+          ],
+          "key": "",
+          "value": ""
+        }
+      },
+      {
+        "id": "node_1788161469933_22",
+        "type": "TTSSpeak",
+        "params": {
+          "voice": "vivian",
+          "play_mode": "queue",
+          "play": true,
+          "wait_complete": true,
+          "volume": -1,
+          "timeout": 120,
+          "text": "尊敬的 $bb.face.result.name 您好，欢迎您参加本次服贸会，我是，景晨数智自研的首款机器人景睿，接下来让我给您演示一下我的功能吧。"
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "ClearBlackboard",
+      "params": {},
+      "timeout": null
+    },
+    {
+      "type": "SetBlackboard",
+      "params": {
+        "entries": [
+          {
+            "key": "face.result.name",
+            "value": "领导"
+          }
+        ],
+        "key": "",
+        "value": ""
+      },
+      "timeout": null
+    },
+    {
+      "type": "TTSSpeak",
+      "params": {
+        "voice": "vivian",
+        "play_mode": "queue",
+        "play": true,
+        "wait_complete": true,
+        "volume": -1,
+        "timeout": 120,
+        "text": "尊敬的 $bb.face.result.name 您好，欢迎您参加本次服贸会，我是，景晨数智自研的首款机器人景睿，接下来让我给您演示一下我的功能吧。"
+      },
+      "timeout": 120.0
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1788161578864_27": {
+        "x": 260,
+        "y": 360
+      },
+      "node_1788161489268_23": {
+        "x": 260,
+        "y": 480
+      },
+      "node_1788161469933_22": {
+        "x": 260,
+        "y": 580
+      }
+    },
+    "annotations": []
+  },
+  "status": "completed"
+}
