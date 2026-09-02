@@ -1,0 +1,401 @@
+{
+  "id": "c58f16ea",
+  "name": "明信片任务",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-09-02T07:16:45.032191+00:00",
+  "updated_at": "2026-09-02T07:42:22.518841+00:00",
+  "root": {
+    "id": "node_1788334942312_12",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1788333374006_12",
+        "type": "VisionDetect",
+        "params": {
+          "result_type": "auto",
+          "coordinate_frame": "",
+          "service_name": "/vision/head/detect",
+          "output_key": "vision.result",
+          "parameters": {},
+          "save_debug_on_failure": true,
+          "debug_image_topic": "",
+          "debug_snapshot_dir": "~/qyh-robot-system/persistent/vision_debug",
+          "debug_snapshot_wait_sec": 0.8,
+          "timeout": 10,
+          "detection_type": "postcard_detect"
+        }
+      },
+      {
+        "id": "node_1788333374006_13",
+        "type": "IfElse",
+        "params": {
+          "operator": ">=",
+          "key": "vision.result.count",
+          "value": "1"
+        },
+        "children": [
+          {
+            "id": "node_1788333374006_14",
+            "type": "IfElse",
+            "params": {
+              "operator": "==",
+              "key": "vision.result.count",
+              "value": "1"
+            },
+            "children": [
+              {
+                "id": "node_1788334942312_7",
+                "type": "Sequence",
+                "params": {
+                  "auto_wrap": true
+                },
+                "children": [
+                  {
+                    "id": "node_1788333712032_8",
+                    "type": "Wait",
+                    "params": {
+                      "duration": 1
+                    }
+                  },
+                  {
+                    "id": "node_1788333757269_10",
+                    "type": "SetBlackboard",
+                    "params": {
+                      "entries": [
+                        {
+                          "key": "status",
+                          "value": "free"
+                        }
+                      ],
+                      "key": "",
+                      "value": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "node_1788333374006_16",
+                "type": "IfElse",
+                "params": {
+                  "operator": "==",
+                  "key": "vision.result.count",
+                  "value": "3"
+                },
+                "children": [
+                  {
+                    "id": "node_1788334942312_8",
+                    "type": "Sequence",
+                    "params": {
+                      "auto_wrap": true
+                    },
+                    "children": [
+                      {
+                        "id": "node_1788333976626_13",
+                        "type": "SetBlackboard",
+                        "params": {
+                          "entries": [
+                            {
+                              "key": "status",
+                              "value": "posting"
+                            }
+                          ],
+                          "key": "",
+                          "value": ""
+                        }
+                      },
+                      {
+                        "id": "node_1788334022930_16",
+                        "type": "SubTask",
+                        "params": {
+                          "task_id": "3df23623",
+                          "task_id_name": "盖章1"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "node_1788334942312_11",
+                    "type": "Sequence",
+                    "params": {
+                      "auto_wrap": true
+                    },
+                    "children": [
+                      {
+                        "id": "node_1788333374006_18",
+                        "type": "IfElse",
+                        "params": {
+                          "operator": "==",
+                          "key": "vision.result.detections.1.class",
+                          "value": "leftcard"
+                        },
+                        "children": [
+                          {
+                            "id": "node_1788334942312_9",
+                            "type": "Sequence",
+                            "params": {
+                              "auto_wrap": true
+                            },
+                            "children": [
+                              {
+                                "id": "node_1788334119800_20",
+                                "type": "SetBlackboard",
+                                "params": {
+                                  "entries": [
+                                    {
+                                      "key": "status",
+                                      "value": "posting"
+                                    }
+                                  ],
+                                  "key": "",
+                                  "value": ""
+                                }
+                              },
+                              {
+                                "id": "node_1788334119800_21",
+                                "type": "SubTask",
+                                "params": {
+                                  "task_id": "3df23623",
+                                  "task_id_name": "盖章1"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "id": "node_1788334942312_10",
+                            "type": "Sequence",
+                            "params": {
+                              "auto_wrap": true
+                            },
+                            "children": [
+                              {
+                                "id": "node_1788334180178_26",
+                                "type": "SetBlackboard",
+                                "params": {
+                                  "entries": [
+                                    {
+                                      "key": "status",
+                                      "value": "posting"
+                                    }
+                                  ],
+                                  "key": "",
+                                  "value": ""
+                                }
+                              },
+                              {
+                                "id": "node_1788334180178_27",
+                                "type": "SubTask",
+                                "params": {
+                                  "task_id": "420442ea",
+                                  "task_id_name": "盖章2"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "node_1788334222757_33",
+                        "type": "SetBlackboard",
+                        "params": {
+                          "entries": [
+                            {
+                              "key": "status",
+                              "value": "free"
+                            }
+                          ],
+                          "key": "",
+                          "value": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "VisionDetect",
+      "params": {
+        "result_type": "auto",
+        "coordinate_frame": "",
+        "service_name": "/vision/head/detect",
+        "output_key": "vision.result",
+        "parameters": {},
+        "save_debug_on_failure": true,
+        "debug_image_topic": "",
+        "debug_snapshot_dir": "~/qyh-robot-system/persistent/vision_debug",
+        "debug_snapshot_wait_sec": 0.8,
+        "timeout": 10,
+        "detection_type": "postcard_detect"
+      },
+      "timeout": 10.0
+    },
+    {
+      "type": "TTSSpeak",
+      "params": {
+        "voice": "dylan",
+        "play_mode": "queue",
+        "play": true,
+        "wait_complete": true,
+        "volume": -1,
+        "timeout": 120,
+        "text": "只有白色台子"
+      },
+      "timeout": 120.0
+    },
+    {
+      "type": "TTSSpeak",
+      "params": {
+        "voice": "dylan",
+        "play_mode": "queue",
+        "play": true,
+        "wait_complete": true,
+        "volume": -1,
+        "timeout": 120,
+        "text": "两边都有"
+      },
+      "timeout": 120.0
+    },
+    {
+      "type": "TTSSpeak",
+      "params": {
+        "voice": "dylan",
+        "play_mode": "queue",
+        "play": true,
+        "wait_complete": true,
+        "volume": -1,
+        "timeout": 120,
+        "text": "左边有明信片"
+      },
+      "timeout": 120.0
+    },
+    {
+      "type": "TTSSpeak",
+      "params": {
+        "voice": "dylan",
+        "play_mode": "queue",
+        "play": true,
+        "wait_complete": true,
+        "volume": -1,
+        "timeout": 120,
+        "text": "右边有明信片"
+      },
+      "timeout": 120.0
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1788333374006_12": {
+        "x": 900,
+        "y": -1260
+      },
+      "node_1788333374006_13": {
+        "x": 900,
+        "y": -1160
+      },
+      "node_1788333374006_14": {
+        "x": 820,
+        "y": -1040
+      },
+      "node_1788333712032_8": {
+        "x": 640,
+        "y": -880
+      },
+      "node_1788333757269_10": {
+        "x": 640,
+        "y": -780
+      },
+      "node_1788333374006_16": {
+        "x": 1060,
+        "y": -860
+      },
+      "node_1788333976626_13": {
+        "x": 1000,
+        "y": -720
+      },
+      "node_1788334022930_16": {
+        "x": 1000,
+        "y": -620
+      },
+      "node_1788333374006_18": {
+        "x": 1360,
+        "y": -640
+      },
+      "node_1788334119800_20": {
+        "x": 1260,
+        "y": -480
+      },
+      "node_1788334119800_21": {
+        "x": 1260,
+        "y": -380
+      },
+      "node_1788334180178_26": {
+        "x": 1560,
+        "y": -480
+      },
+      "node_1788334180178_27": {
+        "x": 1560,
+        "y": -380
+      },
+      "node_1788334222757_33": {
+        "x": 1820,
+        "y": -480
+      }
+    },
+    "annotations": [
+      {
+        "id": "anno_1788333885691_1",
+        "x": 540,
+        "y": -940,
+        "width": 300,
+        "height": 260,
+        "color": "#f59e0b",
+        "note": "台子上没有东西，无任务"
+      },
+      {
+        "id": "anno_1788334070254_2",
+        "x": 900,
+        "y": -760,
+        "width": 264.1226654549377,
+        "height": 242.9739670999407,
+        "color": "#f59e0b",
+        "note": "若两个都有，则设置状态posting，拿左边明信片。"
+      },
+      {
+        "id": "anno_1788334127505_3",
+        "x": 1180,
+        "y": -520,
+        "width": 275.609649004908,
+        "height": 239.52787203494958,
+        "color": "#f59e0b",
+        "note": "若只有左边有，则设置状态posting，拿左边明信片。"
+      },
+      {
+        "id": "anno_1788334191483_4",
+        "x": 1460,
+        "y": -520,
+        "width": 275.609649004908,
+        "height": 239.52787203494958,
+        "color": "#f59e0b",
+        "note": "若只有右边有，则设置状态posting，拿右边明信片。"
+      },
+      {
+        "id": "anno_1788334232083_5",
+        "x": 1740,
+        "y": -520,
+        "width": 275.609649004908,
+        "height": 239.52787203494958,
+        "color": "#f59e0b",
+        "note": "任务完成，置状态为free"
+      }
+    ]
+  }
+}

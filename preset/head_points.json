@@ -1,7 +1,7 @@
 {
   "type": "head_position",
   "version": "1.0",
-  "updated_at": "2026-09-01T14:07:51.913302",
+  "updated_at": "2026-09-02T09:54:24.837568",
   "points": [
     {
       "id": "0d9a5985",
@@ -180,7 +180,8 @@
       "pitch_deg": 36.1944580078125,
       "yaw_deg": 25.0433349609375,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "group": "默认组"
     },
     {
       "id": "3bea7a6e",
@@ -194,7 +195,8 @@
       "pitch_deg": 36.5570068359375,
       "yaw_deg": 14.996337890625,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "group": "默认组"
     },
     {
       "id": "bcc43456",
@@ -208,7 +210,8 @@
       "pitch_deg": 33.11279296875,
       "yaw_deg": 9.9920654296875,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "group": "默认组"
     },
     {
       "id": "1a71996c",
@@ -222,7 +225,8 @@
       "pitch_deg": 29.99267578125,
       "yaw_deg": -0.010986328125,
       "pitch_velocity_deg_s": 0.0,
-      "yaw_velocity_deg_s": 0.0
+      "yaw_velocity_deg_s": 0.0,
+      "group": "默认组"
     }
   ]
 }

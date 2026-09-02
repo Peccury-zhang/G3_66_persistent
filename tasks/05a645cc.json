@@ -1,0 +1,239 @@
+{
+  "id": "05a645cc",
+  "name": "视觉检测测试",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-09-02T02:03:28.435911+00:00",
+  "updated_at": "2026-09-02T06:25:42.632456+00:00",
+  "root": {
+    "id": "node_1788327509936_5",
+    "type": "Loop",
+    "params": {
+      "count": 0,
+      "break_on_failure": true
+    },
+    "children": [
+      {
+        "id": "node_1788327523573_6",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      },
+      {
+        "id": "node_1788328158324_8",
+        "type": "Selector",
+        "params": {},
+        "children": [
+          {
+            "id": "node_1788328348555_13",
+            "type": "Sequence",
+            "params": {
+              "auto_wrap": true
+            },
+            "children": [
+              {
+                "id": "node_1788314289487_1",
+                "type": "VisionDetect",
+                "params": {
+                  "result_type": "auto",
+                  "coordinate_frame": "",
+                  "service_name": "/vision/head/detect",
+                  "output_key": "vision.result",
+                  "parameters": {},
+                  "save_debug_on_failure": true,
+                  "debug_image_topic": "",
+                  "debug_snapshot_dir": "~/qyh-robot-system/persistent/vision_debug",
+                  "debug_snapshot_wait_sec": 0.8,
+                  "timeout": 10,
+                  "detection_type": "postcard_detect"
+                }
+              },
+              {
+                "id": "node_1788327337929_2",
+                "type": "IfElse",
+                "params": {
+                  "operator": ">=",
+                  "key": "vision.result.count",
+                  "value": "1"
+                },
+                "children": [
+                  {
+                    "id": "node_1788326220603_1",
+                    "type": "IfElse",
+                    "params": {
+                      "operator": "==",
+                      "key": "vision.result.count",
+                      "value": "1"
+                    },
+                    "children": [
+                      {
+                        "id": "node_1788326316470_2",
+                        "type": "TTSSpeak",
+                        "params": {
+                          "voice": "dylan",
+                          "play_mode": "queue",
+                          "play": true,
+                          "wait_complete": true,
+                          "volume": -1,
+                          "timeout": 120,
+                          "text": "只有白色台子"
+                        }
+                      },
+                      {
+                        "id": "node_1788326341619_3",
+                        "type": "IfElse",
+                        "params": {
+                          "operator": "==",
+                          "key": "vision.result.count",
+                          "value": "3"
+                        },
+                        "children": [
+                          {
+                            "id": "node_1788326392398_4",
+                            "type": "TTSSpeak",
+                            "params": {
+                              "voice": "dylan",
+                              "play_mode": "queue",
+                              "play": true,
+                              "wait_complete": true,
+                              "volume": -1,
+                              "timeout": 120,
+                              "text": "两边都有"
+                            }
+                          },
+                          {
+                            "id": "node_1788326525230_12",
+                            "type": "IfElse",
+                            "params": {
+                              "operator": "==",
+                              "key": "vision.result.detections.1.class",
+                              "value": "leftcard"
+                            },
+                            "children": [
+                              {
+                                "id": "node_1788326584534_13",
+                                "type": "TTSSpeak",
+                                "params": {
+                                  "voice": "dylan",
+                                  "play_mode": "queue",
+                                  "play": true,
+                                  "wait_complete": true,
+                                  "volume": -1,
+                                  "timeout": 120,
+                                  "text": "左边有明信片"
+                                }
+                              },
+                              {
+                                "id": "node_1788326608881_15",
+                                "type": "TTSSpeak",
+                                "params": {
+                                  "voice": "dylan",
+                                  "play_mode": "queue",
+                                  "play": true,
+                                  "wait_complete": true,
+                                  "volume": -1,
+                                  "timeout": 120,
+                                  "text": "右边有明信片"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node_1788328248672_10",
+            "type": "Wait",
+            "params": {
+              "duration": 0.1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "VisionDetect",
+      "params": {
+        "result_type": "auto",
+        "coordinate_frame": "",
+        "service_name": "/vision/head/detect",
+        "output_key": "vision.result",
+        "parameters": {},
+        "save_debug_on_failure": true,
+        "debug_image_topic": "",
+        "debug_snapshot_dir": "~/qyh-robot-system/persistent/vision_debug",
+        "debug_snapshot_wait_sec": 0.8,
+        "timeout": 10,
+        "detection_type": "postcard_detect"
+      },
+      "timeout": 10.0
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1788314289487_1": {
+        "x": 480,
+        "y": 300
+      },
+      "node_1788326220603_1": {
+        "x": 440,
+        "y": 520
+      },
+      "node_1788326316470_2": {
+        "x": 300,
+        "y": 700
+      },
+      "node_1788326341619_3": {
+        "x": 500,
+        "y": 700
+      },
+      "node_1788326392398_4": {
+        "x": 460,
+        "y": 860
+      },
+      "node_1788326525230_12": {
+        "x": 580,
+        "y": 940
+      },
+      "node_1788326584534_13": {
+        "x": 540,
+        "y": 1080
+      },
+      "node_1788326608881_15": {
+        "x": 700,
+        "y": 1080
+      },
+      "node_1788327337929_2": {
+        "x": 480,
+        "y": 400
+      },
+      "node_1788327509936_5": {
+        "x": 480,
+        "y": -60
+      },
+      "node_1788327523573_6": {
+        "x": 480,
+        "y": 60
+      },
+      "node_1788328158324_8": {
+        "x": 480,
+        "y": 180
+      },
+      "node_1788328248672_10": {
+        "x": 700,
+        "y": 300
+      }
+    },
+    "annotations": []
+  },
+  "status": "cancelled"
+}
