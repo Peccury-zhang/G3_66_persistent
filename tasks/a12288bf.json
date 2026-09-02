@@ -1,0 +1,62 @@
+{
+  "id": "a12288bf",
+  "name": "22",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-09-02T11:39:46.037818+00:00",
+  "updated_at": "2026-09-02T11:54:03.243901+00:00",
+  "root": {
+    "id": "node_1788350023936_13",
+    "type": "Sequence",
+    "params": {},
+    "children": [
+      {
+        "id": "node_1788349150940_2",
+        "type": "RandomSelect",
+        "params": {
+          "output_key": "random",
+          "options": "'15','25','hello','555'"
+        }
+      },
+      {
+        "id": "node_1788349156975_3",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "RandomSelect",
+      "params": {
+        "output_key": "random",
+        "options": "'1','2','10'"
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 1
+      },
+      "timeout": null
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1788349150940_2": {
+        "x": 380,
+        "y": 280
+      },
+      "node_1788349156975_3": {
+        "x": 380,
+        "y": 420
+      }
+    },
+    "annotations": []
+  },
+  "status": "completed"
+}
