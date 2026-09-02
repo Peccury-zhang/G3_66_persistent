@@ -4,7 +4,7 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T07:16:45.032191+00:00",
-  "updated_at": "2026-09-02T07:42:22.518841+00:00",
+  "updated_at": "2026-09-02T10:00:36.506895+00:00",
   "root": {
     "id": "node_1788334942312_12",
     "type": "Sequence",
@@ -397,5 +397,6 @@
         "note": "任务完成，置状态为free"
       }
     ]
-  }
+  },
+  "status": "completed"
 }

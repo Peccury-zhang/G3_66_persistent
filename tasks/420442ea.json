@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-28T09:16:05.815186+00:00",
-  "updated_at": "2026-08-29T06:01:27.496803+00:00",
+  "updated_at": "2026-09-02T08:38:56.493067+00:00",
   "root": {
-    "id": "node_1787983287119_8",
+    "id": "node_1788338336190_5",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -445,7 +445,7 @@
             }
           },
           {
-            "id": "node_1787983287118_7",
+            "id": "node_1788338336190_4",
             "type": "Sequence",
             "params": {
               "auto_wrap": true
@@ -558,9 +558,9 @@
             "id": "node_1787907323639_2",
             "type": "HeadControl",
             "params": {
-              "point_name": "632b4054",
-              "pitch_deg": 29.9871826171875,
-              "yaw_deg": 0.0164794921875,
+              "point_name": "1a71996c",
+              "pitch_deg": 29.99267578125,
+              "yaw_deg": -0.010986328125,
               "pitch_velocity_deg_s": 30,
               "yaw_velocity_deg_s": 30,
               "wait_for_reached": false,
