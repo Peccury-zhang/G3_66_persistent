@@ -1,7 +1,7 @@
 {
   "type": "arm_pose",
   "version": "1.0",
-  "updated_at": "2026-09-03T23:29:18.606044",
+  "updated_at": "2026-09-04T00:16:12.530995",
   "points": [
     {
       "id": "home",
@@ -32,8 +32,8 @@
       ],
       "velocity": 0.5,
       "acceleration": 0.3,
-      "created_at": "2026-09-03T23:29:18.603844",
-      "updated_at": "2026-09-03T23:29:18.603844",
+      "created_at": "2026-09-04T00:16:12.528136",
+      "updated_at": "2026-09-04T00:16:12.528136",
       "sort_index": 0
     },
     {
