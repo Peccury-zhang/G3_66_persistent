@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T07:16:45.032191+00:00",
-  "updated_at": "2026-09-03T14:42:49.076331+00:00",
+  "updated_at": "2026-09-03T15:04:07.143785+00:00",
   "root": {
-    "id": "node_1788446569017_218",
+    "id": "node_1788447847021_26",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -46,7 +46,7 @@
             },
             "children": [
               {
-                "id": "node_1788446569017_213",
+                "id": "node_1788447847021_21",
                 "type": "Sequence",
                 "params": {
                   "auto_wrap": true
@@ -65,7 +65,7 @@
                     "params": {
                       "entries": [
                         {
-                          "key": "status",
+                          "key": "status.run",
                           "value": "free"
                         }
                       ],
@@ -85,7 +85,7 @@
                 },
                 "children": [
                   {
-                    "id": "node_1788446569017_214",
+                    "id": "node_1788447847021_22",
                     "type": "Sequence",
                     "params": {
                       "auto_wrap": true
@@ -97,7 +97,7 @@
                         "params": {
                           "entries": [
                             {
-                              "key": "status",
+                              "key": "status.run",
                               "value": "posting"
                             }
                           ],
@@ -116,7 +116,7 @@
                     ]
                   },
                   {
-                    "id": "node_1788446569017_217",
+                    "id": "node_1788447847021_25",
                     "type": "Sequence",
                     "params": {
                       "auto_wrap": true
@@ -132,7 +132,7 @@
                         },
                         "children": [
                           {
-                            "id": "node_1788446569017_215",
+                            "id": "node_1788447847021_23",
                             "type": "Sequence",
                             "params": {
                               "auto_wrap": true
@@ -144,7 +144,7 @@
                                 "params": {
                                   "entries": [
                                     {
-                                      "key": "status",
+                                      "key": "status.run",
                                       "value": "posting"
                                     }
                                   ],
@@ -163,7 +163,7 @@
                             ]
                           },
                           {
-                            "id": "node_1788446569017_216",
+                            "id": "node_1788447847021_24",
                             "type": "Sequence",
                             "params": {
                               "auto_wrap": true
@@ -175,7 +175,7 @@
                                 "params": {
                                   "entries": [
                                     {
-                                      "key": "status",
+                                      "key": "status.run",
                                       "value": "posting"
                                     }
                                   ],
@@ -201,7 +201,7 @@
                         "params": {
                           "entries": [
                             {
-                              "key": "status",
+                              "key": "status.run",
                               "value": "free"
                             }
                           ],

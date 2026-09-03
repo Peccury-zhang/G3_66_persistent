@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T06:22:12.745339+00:00",
-  "updated_at": "2026-09-03T14:55:33.860165+00:00",
+  "updated_at": "2026-09-03T15:39:40.177505+00:00",
   "root": {
-    "id": "node_1788445778946_121",
+    "id": "node_1788449413975_39",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -92,7 +92,7 @@
                     },
                     "children": [
                       {
-                        "id": "node_1788445778943_106",
+                        "id": "node_1788449413973_25",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -116,7 +116,7 @@
                             },
                             "children": [
                               {
-                                "id": "node_1788445778943_102",
+                                "id": "node_1788449413972_21",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -178,7 +178,7 @@
                                 },
                                 "children": [
                                   {
-                                    "id": "node_1788445778943_103",
+                                    "id": "node_1788449413972_22",
                                     "type": "Sequence",
                                     "params": {
                                       "auto_wrap": true
@@ -240,7 +240,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1788445778943_104",
+                                        "id": "node_1788449413973_23",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -302,7 +302,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1788445778943_105",
+                                            "id": "node_1788449413973_24",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -381,7 +381,7 @@
                         },
                         "children": [
                           {
-                            "id": "node_1788445778944_111",
+                            "id": "node_1788449413974_30",
                             "type": "Sequence",
                             "params": {
                               "auto_wrap": true
@@ -405,7 +405,7 @@
                                 },
                                 "children": [
                                   {
-                                    "id": "node_1788445778944_107",
+                                    "id": "node_1788449413973_26",
                                     "type": "Sequence",
                                     "params": {
                                       "auto_wrap": true
@@ -467,7 +467,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1788445778944_108",
+                                        "id": "node_1788449413973_27",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -529,7 +529,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1788445778944_109",
+                                            "id": "node_1788449413973_28",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -591,7 +591,7 @@
                                             },
                                             "children": [
                                               {
-                                                "id": "node_1788445778944_110",
+                                                "id": "node_1788449413974_29",
                                                 "type": "Sequence",
                                                 "params": {
                                                   "auto_wrap": true
@@ -670,7 +670,7 @@
                             },
                             "children": [
                               {
-                                "id": "node_1788445778945_114",
+                                "id": "node_1788449413974_33",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -694,7 +694,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1788445778944_112",
+                                        "id": "node_1788449413974_31",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -756,7 +756,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1788445778945_113",
+                                            "id": "node_1788449413974_32",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -828,12 +828,25 @@
                     ]
                   },
                   {
-                    "id": "node_1788445778945_116",
+                    "id": "node_1788449413975_34",
                     "type": "Sequence",
                     "params": {
                       "auto_wrap": true
                     },
                     "children": [
+                      {
+                        "id": "node_1788449397264_1",
+                        "type": "HeadControl",
+                        "params": {
+                          "point_name": "1a71996c",
+                          "pitch_deg": 29.99267578125,
+                          "yaw_deg": -0.010986328125,
+                          "pitch_velocity_deg_s": 30,
+                          "yaw_velocity_deg_s": 30,
+                          "wait_for_reached": false,
+                          "timeout": 30
+                        }
+                      },
                       {
                         "id": "node_1788442591484_147",
                         "type": "Wait",
@@ -855,33 +868,11 @@
                             }
                           },
                           {
-                            "id": "node_1788445778945_115",
-                            "type": "Sequence",
+                            "id": "node_1788440886540_270",
+                            "type": "Wait",
                             "params": {
-                              "auto_wrap": true
-                            },
-                            "children": [
-                              {
-                                "id": "node_1788443842220_19",
-                                "type": "HeadControl",
-                                "params": {
-                                  "point_name": "1a71996c",
-                                  "pitch_deg": 29.99267578125,
-                                  "yaw_deg": -0.010986328125,
-                                  "pitch_velocity_deg_s": 30,
-                                  "yaw_velocity_deg_s": 30,
-                                  "wait_for_reached": false,
-                                  "timeout": 30
-                                }
-                              },
-                              {
-                                "id": "node_1788440886540_270",
-                                "type": "Wait",
-                                "params": {
-                                  "duration": 1
-                                }
-                              }
-                            ]
+                              "duration": 1
+                            }
                           }
                         ]
                       }
@@ -908,7 +899,7 @@
                     },
                     "children": [
                       {
-                        "id": "node_1788445778945_119",
+                        "id": "node_1788449413975_37",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -933,7 +924,7 @@
                             "params": {},
                             "children": [
                               {
-                                "id": "node_1788445778945_118",
+                                "id": "node_1788449413975_36",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -965,7 +956,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1788445778945_117",
+                                        "id": "node_1788449413975_35",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -1016,7 +1007,7 @@
                         ]
                       },
                       {
-                        "id": "node_1788445778946_120",
+                        "id": "node_1788449413975_38",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -1440,13 +1431,9 @@
         "x": 760,
         "y": 1420
       },
-      "node_1788443842220_19": {
-        "x": 920,
-        "y": 1420
-      },
       "node_1788440886540_270": {
         "x": 920,
-        "y": 1520
+        "y": 1420
       },
       "node_1788438745575_16": {
         "x": 900,
@@ -1499,6 +1486,10 @@
       "node_1788444237115_119": {
         "x": 1820,
         "y": 700
+      },
+      "node_1788449397264_1": {
+        "x": 820,
+        "y": 1120
       }
     },
     "annotations": [
@@ -1603,5 +1594,5 @@
       }
     ]
   },
-  "status": "failed"
+  "status": "running"
 }
