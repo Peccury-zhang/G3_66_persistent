@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-25T11:00:21.921547+00:00",
-  "updated_at": "2026-08-31T05:52:58.847174+00:00",
+  "updated_at": "2026-09-03T13:49:59.679749+00:00",
   "root": {
-    "id": "node_1788155578528_19",
+    "id": "node_1788443399597_296",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -321,6 +321,19 @@
         "params": {
           "color": "green"
         }
+      },
+      {
+        "id": "node_1788443395543_295",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "1a71996c",
+          "pitch_deg": 29.99267578125,
+          "yaw_deg": -0.010986328125,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
       }
     ]
   },
@@ -442,6 +455,10 @@
       "node_1787735041419_2": {
         "x": 1080,
         "y": 1520
+      },
+      "node_1788443395543_295": {
+        "x": 1080,
+        "y": 1620
       }
     },
     "annotations": [
