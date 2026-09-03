@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-23T09:41:51.755228+00:00",
-  "updated_at": "2026-09-03T13:47:27.567492+00:00",
+  "updated_at": "2026-09-03T14:32:00.542416+00:00",
   "root": {
-    "id": "node_1788443247398_280",
+    "id": "node_1788445920365_143",
     "type": "Sequence",
     "params": {},
     "children": [

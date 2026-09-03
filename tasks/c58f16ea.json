@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T07:16:45.032191+00:00",
-  "updated_at": "2026-09-03T13:41:39.942373+00:00",
+  "updated_at": "2026-09-03T14:42:49.076331+00:00",
   "root": {
-    "id": "node_1788442899827_224",
+    "id": "node_1788446569017_218",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -46,7 +46,7 @@
             },
             "children": [
               {
-                "id": "node_1788442899827_219",
+                "id": "node_1788446569017_213",
                 "type": "Sequence",
                 "params": {
                   "auto_wrap": true
@@ -85,7 +85,7 @@
                 },
                 "children": [
                   {
-                    "id": "node_1788442899827_220",
+                    "id": "node_1788446569017_214",
                     "type": "Sequence",
                     "params": {
                       "auto_wrap": true
@@ -112,33 +112,11 @@
                           "task_id": "3df23623",
                           "task_id_name": "盖章1"
                         }
-                      },
-                      {
-                        "id": "node_1788442711607_184",
-                        "type": "SetBlackboard",
-                        "params": {
-                          "entries": [
-                            {
-                              "key": "padtrans_id.card",
-                              "value": "1"
-                            }
-                          ],
-                          "key": "",
-                          "value": ""
-                        }
-                      },
-                      {
-                        "id": "node_1788442711607_185",
-                        "type": "PadSend",
-                        "params": {
-                          "category": "card",
-                          "value": "ok"
-                        }
                       }
                     ]
                   },
                   {
-                    "id": "node_1788442899827_223",
+                    "id": "node_1788446569017_217",
                     "type": "Sequence",
                     "params": {
                       "auto_wrap": true
@@ -154,7 +132,7 @@
                         },
                         "children": [
                           {
-                            "id": "node_1788442899827_221",
+                            "id": "node_1788446569017_215",
                             "type": "Sequence",
                             "params": {
                               "auto_wrap": true
@@ -181,33 +159,11 @@
                                   "task_id": "3df23623",
                                   "task_id_name": "盖章1"
                                 }
-                              },
-                              {
-                                "id": "node_1788442882283_215",
-                                "type": "SetBlackboard",
-                                "params": {
-                                  "entries": [
-                                    {
-                                      "key": "padtrans_id.card",
-                                      "value": "1"
-                                    }
-                                  ],
-                                  "key": "",
-                                  "value": ""
-                                }
-                              },
-                              {
-                                "id": "node_1788442882283_216",
-                                "type": "PadSend",
-                                "params": {
-                                  "category": "card",
-                                  "value": "ok"
-                                }
                               }
                             ]
                           },
                           {
-                            "id": "node_1788442899827_222",
+                            "id": "node_1788446569017_216",
                             "type": "Sequence",
                             "params": {
                               "auto_wrap": true
@@ -233,28 +189,6 @@
                                 "params": {
                                   "task_id": "420442ea",
                                   "task_id_name": "盖章2"
-                                }
-                              },
-                              {
-                                "id": "node_1788442887148_217",
-                                "type": "SetBlackboard",
-                                "params": {
-                                  "entries": [
-                                    {
-                                      "key": "padtrans_id.card",
-                                      "value": "2"
-                                    }
-                                  ],
-                                  "key": "",
-                                  "value": ""
-                                }
-                              },
-                              {
-                                "id": "node_1788442887148_218",
-                                "type": "PadSend",
-                                "params": {
-                                  "category": "card",
-                                  "value": "ok"
                                 }
                               }
                             ]
@@ -414,30 +348,6 @@
       "node_1788334222757_33": {
         "x": 1820,
         "y": -480
-      },
-      "node_1788442711607_184": {
-        "x": 980,
-        "y": -420
-      },
-      "node_1788442711607_185": {
-        "x": 980,
-        "y": -300
-      },
-      "node_1788442882283_215": {
-        "x": 1260,
-        "y": -240
-      },
-      "node_1788442882283_216": {
-        "x": 1260,
-        "y": -120
-      },
-      "node_1788442887148_217": {
-        "x": 1560,
-        "y": -240
-      },
-      "node_1788442887148_218": {
-        "x": 1560,
-        "y": -120
       }
     },
     "annotations": [
