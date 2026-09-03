@@ -4,26 +4,121 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T11:39:46.037818+00:00",
-  "updated_at": "2026-09-02T11:54:03.243901+00:00",
+  "updated_at": "2026-09-03T11:14:37.465777+00:00",
   "root": {
-    "id": "node_1788350023936_13",
+    "id": "node_1788433675969_2",
     "type": "Sequence",
     "params": {},
     "children": [
       {
-        "id": "node_1788349150940_2",
-        "type": "RandomSelect",
-        "params": {
-          "output_key": "random",
-          "options": "'15','25','hello','555'"
-        }
+        "id": "node_1788421509846_1",
+        "type": "PadReceive",
+        "params": {}
       },
       {
-        "id": "node_1788349156975_3",
-        "type": "Wait",
+        "id": "node_1788421553239_3",
+        "type": "Loop",
         "params": {
-          "duration": 1
-        }
+          "count": 0,
+          "break_on_failure": true
+        },
+        "children": [
+          {
+            "id": "node_1788421559940_4",
+            "type": "IfElse",
+            "params": {
+              "operator": "==",
+              "key": "status.padlink",
+              "value": "true"
+            },
+            "children": [
+              {
+                "id": "node_1788421597145_5",
+                "type": "LightControl",
+                "params": {
+                  "color": "purple"
+                }
+              },
+              {
+                "id": "node_1788421611463_6",
+                "type": "LightControl",
+                "params": {
+                  "color": "red"
+                }
+              }
+            ]
+          },
+          {
+            "id": "node_1788421636561_8",
+            "type": "Wait",
+            "params": {
+              "duration": 1
+            }
+          },
+          {
+            "id": "node_1788424689825_2",
+            "type": "IfElse",
+            "params": {
+              "operator": "==",
+              "key": "padget.box",
+              "value": "2"
+            },
+            "children": [
+              {
+                "id": "node_1788433675969_1",
+                "type": "Sequence",
+                "params": {
+                  "auto_wrap": true
+                },
+                "children": [
+                  {
+                    "id": "node_1788424841091_6",
+                    "type": "SetBlackboard",
+                    "params": {
+                      "entries": [
+                        {
+                          "key": "padtrans_id.box",
+                          "value": "$bb.padget.box"
+                        }
+                      ],
+                      "key": "",
+                      "value": ""
+                    }
+                  },
+                  {
+                    "id": "node_1788424735252_3",
+                    "type": "Wait",
+                    "params": {
+                      "duration": 3
+                    }
+                  },
+                  {
+                    "id": "node_1788424894278_9",
+                    "type": "PadSend",
+                    "params": {
+                      "category": "box",
+                      "value": "ok"
+                    }
+                  },
+                  {
+                    "id": "node_1788426307621_2",
+                    "type": "Wait",
+                    "params": {
+                      "duration": 5
+                    }
+                  },
+                  {
+                    "id": "node_1788426279749_1",
+                    "type": "ClearBlackboard",
+                    "params": {
+                      "keys": "padtrans_id.box,padget.box"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -47,16 +142,56 @@
   "editor_layout": {
     "version": 1,
     "nodes": {
-      "node_1788349150940_2": {
-        "x": 380,
+      "node_1788421509846_1": {
+        "x": 260,
         "y": 280
       },
-      "node_1788349156975_3": {
-        "x": 380,
-        "y": 420
+      "node_1788421553239_3": {
+        "x": 260,
+        "y": 400
+      },
+      "node_1788421559940_4": {
+        "x": 260,
+        "y": 520
+      },
+      "node_1788421597145_5": {
+        "x": 200,
+        "y": 660
+      },
+      "node_1788421611463_6": {
+        "x": 360,
+        "y": 660
+      },
+      "node_1788421636561_8": {
+        "x": 540,
+        "y": 600
+      },
+      "node_1788424689825_2": {
+        "x": 540,
+        "y": 740
+      },
+      "node_1788424841091_6": {
+        "x": 500,
+        "y": 880
+      },
+      "node_1788424735252_3": {
+        "x": 500,
+        "y": 1040
+      },
+      "node_1788424894278_9": {
+        "x": 500,
+        "y": 1180
+      },
+      "node_1788426307621_2": {
+        "x": 500,
+        "y": 1300
+      },
+      "node_1788426279749_1": {
+        "x": 500,
+        "y": 1420
       }
     },
     "annotations": []
   },
-  "status": "completed"
+  "status": "cancelled"
 }

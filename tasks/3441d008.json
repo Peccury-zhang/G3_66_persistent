@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T06:23:21.240162+00:00",
-  "updated_at": "2026-09-02T09:37:38.230384+00:00",
+  "updated_at": "2026-09-03T12:43:32.832208+00:00",
   "root": {
-    "id": "node_1788340648460_2",
+    "id": "node_1788434753204_14",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -31,6 +31,11 @@
         }
       },
       {
+        "id": "node_1788334298946_42",
+        "type": "ClearBlackboard",
+        "params": {}
+      },
+      {
         "id": "node_1788330233825_30",
         "type": "Wait",
         "params": {
@@ -38,9 +43,30 @@
         }
       },
       {
-        "id": "node_1788334298946_42",
-        "type": "ClearBlackboard",
-        "params": {}
+        "id": "node_1788433781678_5",
+        "type": "SetBlackboard",
+        "params": {
+          "entries": [
+            {
+              "key": "padget.box",
+              "value": "0"
+            },
+            {
+              "key": "padget.card",
+              "value": "0"
+            },
+            {
+              "key": "status.run",
+              "value": "free"
+            },
+            {
+              "key": "padget.model",
+              "value": "0"
+            }
+          ],
+          "key": "",
+          "value": ""
+        }
       },
       {
         "id": "node_1788330167366_26",
@@ -208,17 +234,21 @@
     "nodes": {
       "node_1788330183143_28": {
         "x": 540,
-        "y": -220
+        "y": -340
       },
       "node_1788330167366_20": {
         "x": 540,
-        "y": -120
+        "y": -240
+      },
+      "node_1788334298946_42": {
+        "x": 540,
+        "y": -140
       },
       "node_1788330233825_30": {
         "x": 540,
         "y": -20
       },
-      "node_1788334298946_42": {
+      "node_1788433781678_5": {
         "x": 540,
         "y": 100
       },
@@ -243,11 +273,11 @@
         "y": 560
       },
       "node_1788330399956_37": {
-        "x": 900,
-        "y": 560
+        "x": 920,
+        "y": 780
       }
     },
     "annotations": []
   },
-  "status": "completed"
+  "status": "cancelled"
 }

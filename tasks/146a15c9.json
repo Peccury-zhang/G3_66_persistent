@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T06:22:12.745339+00:00",
-  "updated_at": "2026-09-02T10:32:54.927530+00:00",
+  "updated_at": "2026-09-03T13:16:49.902209+00:00",
   "root": {
-    "id": "node_1788343869365_2",
+    "id": "node_1788441061547_343",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -19,7 +19,38 @@
         }
       },
       {
-        "id": "node_1788330083239_6",
+        "id": "node_1788426522508_9",
+        "type": "PadReceive",
+        "params": {}
+      },
+      {
+        "id": "node_1788431683321_6",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      },
+      {
+        "id": "node_1788426600458_11",
+        "type": "IfElse",
+        "params": {
+          "operator": "==",
+          "key": "status.padlink",
+          "value": "true"
+        },
+        "children": [
+          {
+            "id": "node_1788426561779_10",
+            "type": "PadSend",
+            "params": {
+              "category": "status",
+              "value": "ok"
+            }
+          }
+        ]
+      },
+      {
+        "id": "node_1788427853876_1",
         "type": "Loop",
         "params": {
           "count": 0,
@@ -27,31 +58,938 @@
         },
         "children": [
           {
-            "id": "node_1788330083239_7",
+            "id": "node_1788438653727_4",
             "type": "Wait",
             "params": {
-              "duration": 3
+              "duration": 1
             }
           },
           {
-            "id": "node_1788330083244_8",
-            "type": "Selector",
-            "params": {},
+            "id": "node_1788432018553_16",
+            "type": "IfElse",
+            "params": {
+              "operator": "==",
+              "key": "padget.model",
+              "value": "0"
+            },
             "children": [
               {
-                "id": "node_1788333555845_1",
-                "type": "SubTask",
+                "id": "node_1788432132374_17",
+                "type": "IfElse",
                 "params": {
-                  "task_id": "c58f16ea",
-                  "task_id_name": "明信片识别"
-                }
+                  "operator": ">",
+                  "key": "padget.box",
+                  "value": "0"
+                },
+                "children": [
+                  {
+                    "id": "node_1788439658750_17",
+                    "type": "IfElse",
+                    "params": {
+                      "operator": "==",
+                      "key": "padget.box",
+                      "value": "1"
+                    },
+                    "children": [
+                      {
+                        "id": "node_1788441061545_330",
+                        "type": "Sequence",
+                        "params": {
+                          "auto_wrap": true
+                        },
+                        "children": [
+                          {
+                            "id": "node_1788439708291_19",
+                            "type": "RandomSelect",
+                            "params": {
+                              "output_key": "random",
+                              "options": "'11','12','13','14'"
+                            }
+                          },
+                          {
+                            "id": "node_1788439762412_22",
+                            "type": "IfElse",
+                            "params": {
+                              "operator": "==",
+                              "key": "random",
+                              "value": "11"
+                            },
+                            "children": [
+                              {
+                                "id": "node_1788441061545_326",
+                                "type": "Sequence",
+                                "params": {
+                                  "auto_wrap": true
+                                },
+                                "children": [
+                                  {
+                                    "id": "node_1788439698670_18",
+                                    "type": "SubTask",
+                                    "params": {
+                                      "task_id": "efac3b51",
+                                      "task_id_name": "拿盲盒-下1"
+                                    }
+                                  },
+                                  {
+                                    "id": "node_1788440553149_130",
+                                    "type": "SetBlackboard",
+                                    "params": {
+                                      "entries": [
+                                        {
+                                          "key": "padtrans_id.box",
+                                          "value": "$bb.padget.box"
+                                        }
+                                      ],
+                                      "key": "",
+                                      "value": ""
+                                    }
+                                  },
+                                  {
+                                    "id": "node_1788440565572_131",
+                                    "type": "PadSend",
+                                    "params": {
+                                      "category": "card",
+                                      "value": "ok"
+                                    }
+                                  },
+                                  {
+                                    "id": "node_1788440750377_205",
+                                    "type": "SetBlackboard",
+                                    "params": {
+                                      "entries": [
+                                        {
+                                          "key": "padget.box",
+                                          "value": "0"
+                                        }
+                                      ],
+                                      "key": "",
+                                      "value": ""
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "node_1788439799561_23",
+                                "type": "IfElse",
+                                "params": {
+                                  "operator": "==",
+                                  "key": "random",
+                                  "value": "12"
+                                },
+                                "children": [
+                                  {
+                                    "id": "node_1788441061545_327",
+                                    "type": "Sequence",
+                                    "params": {
+                                      "auto_wrap": true
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "node_1788439809450_24",
+                                        "type": "SubTask",
+                                        "params": {
+                                          "task_id": "1f57554a",
+                                          "task_id_name": "拿盲盒-下2"
+                                        }
+                                      },
+                                      {
+                                        "id": "node_1788440596939_141",
+                                        "type": "SetBlackboard",
+                                        "params": {
+                                          "entries": [
+                                            {
+                                              "key": "padtrans_id.box",
+                                              "value": "$bb.padget.box"
+                                            }
+                                          ],
+                                          "key": "",
+                                          "value": ""
+                                        }
+                                      },
+                                      {
+                                        "id": "node_1788440596939_142",
+                                        "type": "PadSend",
+                                        "params": {
+                                          "category": "card",
+                                          "value": "ok"
+                                        }
+                                      },
+                                      {
+                                        "id": "node_1788440777027_224",
+                                        "type": "SetBlackboard",
+                                        "params": {
+                                          "entries": [
+                                            {
+                                              "key": "padget.box",
+                                              "value": "0"
+                                            }
+                                          ],
+                                          "key": "",
+                                          "value": ""
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "node_1788439830632_25",
+                                    "type": "IfElse",
+                                    "params": {
+                                      "operator": "==",
+                                      "key": "random",
+                                      "value": "13"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "node_1788441061545_328",
+                                        "type": "Sequence",
+                                        "params": {
+                                          "auto_wrap": true
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "node_1788439836504_26",
+                                            "type": "SubTask",
+                                            "params": {
+                                              "task_id": "4829e77d",
+                                              "task_id_name": "拿盲盒-下3"
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440603114_143",
+                                            "type": "SetBlackboard",
+                                            "params": {
+                                              "entries": [
+                                                {
+                                                  "key": "padtrans_id.box",
+                                                  "value": "$bb.padget.box"
+                                                }
+                                              ],
+                                              "key": "",
+                                              "value": ""
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440603114_144",
+                                            "type": "PadSend",
+                                            "params": {
+                                              "category": "card",
+                                              "value": "ok"
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440780497_225",
+                                            "type": "SetBlackboard",
+                                            "params": {
+                                              "entries": [
+                                                {
+                                                  "key": "padget.box",
+                                                  "value": "0"
+                                                }
+                                              ],
+                                              "key": "",
+                                              "value": ""
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "node_1788439852918_27",
+                                        "type": "IfElse",
+                                        "params": {
+                                          "operator": "==",
+                                          "key": "random",
+                                          "value": "14"
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "node_1788441061545_329",
+                                            "type": "Sequence",
+                                            "params": {
+                                              "auto_wrap": true
+                                            },
+                                            "children": [
+                                              {
+                                                "id": "node_1788439859640_28",
+                                                "type": "SubTask",
+                                                "params": {
+                                                  "task_id": "888b0c94",
+                                                  "task_id_name": "拿盲盒-下4"
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440614614_145",
+                                                "type": "SetBlackboard",
+                                                "params": {
+                                                  "entries": [
+                                                    {
+                                                      "key": "padtrans_id.box",
+                                                      "value": "$bb.padget.box"
+                                                    }
+                                                  ],
+                                                  "key": "",
+                                                  "value": ""
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440614614_146",
+                                                "type": "PadSend",
+                                                "params": {
+                                                  "category": "card",
+                                                  "value": "ok"
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440783271_226",
+                                                "type": "SetBlackboard",
+                                                "params": {
+                                                  "entries": [
+                                                    {
+                                                      "key": "padget.box",
+                                                      "value": "0"
+                                                    }
+                                                  ],
+                                                  "key": "",
+                                                  "value": ""
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "node_1788439872789_29",
+                                            "type": "Wait",
+                                            "params": {
+                                              "duration": 1
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "node_1788439905992_35",
+                        "type": "IfElse",
+                        "params": {
+                          "operator": "==",
+                          "key": "padget.box",
+                          "value": "2"
+                        },
+                        "children": [
+                          {
+                            "id": "node_1788441061546_335",
+                            "type": "Sequence",
+                            "params": {
+                              "auto_wrap": true
+                            },
+                            "children": [
+                              {
+                                "id": "node_1788439905992_37",
+                                "type": "RandomSelect",
+                                "params": {
+                                  "output_key": "random",
+                                  "options": "'21','22','23','24'"
+                                }
+                              },
+                              {
+                                "id": "node_1788439905992_38",
+                                "type": "IfElse",
+                                "params": {
+                                  "operator": "==",
+                                  "key": "random",
+                                  "value": "21"
+                                },
+                                "children": [
+                                  {
+                                    "id": "node_1788441061546_331",
+                                    "type": "Sequence",
+                                    "params": {
+                                      "auto_wrap": true
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "node_1788439905992_36",
+                                        "type": "SubTask",
+                                        "params": {
+                                          "task_id": "79f8b0fb",
+                                          "task_id_name": "拿盲盒-中1"
+                                        }
+                                      },
+                                      {
+                                        "id": "node_1788440625906_159",
+                                        "type": "SetBlackboard",
+                                        "params": {
+                                          "entries": [
+                                            {
+                                              "key": "padtrans_id.box",
+                                              "value": "$bb.padget.box"
+                                            }
+                                          ],
+                                          "key": "",
+                                          "value": ""
+                                        }
+                                      },
+                                      {
+                                        "id": "node_1788440625906_160",
+                                        "type": "PadSend",
+                                        "params": {
+                                          "category": "card",
+                                          "value": "ok"
+                                        }
+                                      },
+                                      {
+                                        "id": "node_1788440788062_227",
+                                        "type": "SetBlackboard",
+                                        "params": {
+                                          "entries": [
+                                            {
+                                              "key": "padget.box",
+                                              "value": "0"
+                                            }
+                                          ],
+                                          "key": "",
+                                          "value": ""
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "node_1788439905992_39",
+                                    "type": "IfElse",
+                                    "params": {
+                                      "operator": "==",
+                                      "key": "random",
+                                      "value": "22"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "node_1788441061546_332",
+                                        "type": "Sequence",
+                                        "params": {
+                                          "auto_wrap": true
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "node_1788439905992_40",
+                                            "type": "SubTask",
+                                            "params": {
+                                              "task_id": "e504cce4",
+                                              "task_id_name": "拿盲盒-中2"
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440629612_161",
+                                            "type": "SetBlackboard",
+                                            "params": {
+                                              "entries": [
+                                                {
+                                                  "key": "padtrans_id.box",
+                                                  "value": "$bb.padget.box"
+                                                }
+                                              ],
+                                              "key": "",
+                                              "value": ""
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440629612_162",
+                                            "type": "PadSend",
+                                            "params": {
+                                              "category": "card",
+                                              "value": "ok"
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440791061_228",
+                                            "type": "SetBlackboard",
+                                            "params": {
+                                              "entries": [
+                                                {
+                                                  "key": "padget.box",
+                                                  "value": "0"
+                                                }
+                                              ],
+                                              "key": "",
+                                              "value": ""
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "node_1788439905992_41",
+                                        "type": "IfElse",
+                                        "params": {
+                                          "operator": "==",
+                                          "key": "random",
+                                          "value": "23"
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "node_1788441061546_333",
+                                            "type": "Sequence",
+                                            "params": {
+                                              "auto_wrap": true
+                                            },
+                                            "children": [
+                                              {
+                                                "id": "node_1788439905992_42",
+                                                "type": "SubTask",
+                                                "params": {
+                                                  "task_id": "7d2b4d64",
+                                                  "task_id_name": "拿盲盒-中3"
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440631427_163",
+                                                "type": "SetBlackboard",
+                                                "params": {
+                                                  "entries": [
+                                                    {
+                                                      "key": "padtrans_id.box",
+                                                      "value": "$bb.padget.box"
+                                                    }
+                                                  ],
+                                                  "key": "",
+                                                  "value": ""
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440631427_164",
+                                                "type": "PadSend",
+                                                "params": {
+                                                  "category": "card",
+                                                  "value": "ok"
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440794716_229",
+                                                "type": "SetBlackboard",
+                                                "params": {
+                                                  "entries": [
+                                                    {
+                                                      "key": "padget.box",
+                                                      "value": "0"
+                                                    }
+                                                  ],
+                                                  "key": "",
+                                                  "value": ""
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "node_1788439905992_43",
+                                            "type": "IfElse",
+                                            "params": {
+                                              "operator": "==",
+                                              "key": "random",
+                                              "value": "24"
+                                            },
+                                            "children": [
+                                              {
+                                                "id": "node_1788441061546_334",
+                                                "type": "Sequence",
+                                                "params": {
+                                                  "auto_wrap": true
+                                                },
+                                                "children": [
+                                                  {
+                                                    "id": "node_1788439905992_44",
+                                                    "type": "SubTask",
+                                                    "params": {
+                                                      "task_id": "acf62a04",
+                                                      "task_id_name": "拿盲盒-中4"
+                                                    }
+                                                  },
+                                                  {
+                                                    "id": "node_1788440633485_165",
+                                                    "type": "SetBlackboard",
+                                                    "params": {
+                                                      "entries": [
+                                                        {
+                                                          "key": "padtrans_id.box",
+                                                          "value": "$bb.padget.box"
+                                                        }
+                                                      ],
+                                                      "key": "",
+                                                      "value": ""
+                                                    }
+                                                  },
+                                                  {
+                                                    "id": "node_1788440633485_166",
+                                                    "type": "PadSend",
+                                                    "params": {
+                                                      "category": "card",
+                                                      "value": "ok"
+                                                    }
+                                                  },
+                                                  {
+                                                    "id": "node_1788440797154_230",
+                                                    "type": "SetBlackboard",
+                                                    "params": {
+                                                      "entries": [
+                                                        {
+                                                          "key": "padget.box",
+                                                          "value": "0"
+                                                        }
+                                                      ],
+                                                      "key": "",
+                                                      "value": ""
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "id": "node_1788439905992_45",
+                                                "type": "Wait",
+                                                "params": {
+                                                  "duration": 1
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "node_1788439998528_70",
+                            "type": "IfElse",
+                            "params": {
+                              "operator": "==",
+                              "key": "padget.box",
+                              "value": "1"
+                            },
+                            "children": [
+                              {
+                                "id": "node_1788441061547_338",
+                                "type": "Sequence",
+                                "params": {
+                                  "auto_wrap": true
+                                },
+                                "children": [
+                                  {
+                                    "id": "node_1788439998528_72",
+                                    "type": "RandomSelect",
+                                    "params": {
+                                      "output_key": "random",
+                                      "options": "'31','32'"
+                                    }
+                                  },
+                                  {
+                                    "id": "node_1788439998528_73",
+                                    "type": "IfElse",
+                                    "params": {
+                                      "operator": "==",
+                                      "key": "random",
+                                      "value": "31"
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "node_1788441061547_336",
+                                        "type": "Sequence",
+                                        "params": {
+                                          "auto_wrap": true
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "node_1788439998528_71",
+                                            "type": "SubTask",
+                                            "params": {
+                                              "task_id": "c598b2f2",
+                                              "task_id_name": "拿盲盒-上1"
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440717350_183",
+                                            "type": "SetBlackboard",
+                                            "params": {
+                                              "entries": [
+                                                {
+                                                  "key": "padtrans_id.box",
+                                                  "value": "$bb.padget.box"
+                                                }
+                                              ],
+                                              "key": "",
+                                              "value": ""
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440717350_184",
+                                            "type": "PadSend",
+                                            "params": {
+                                              "category": "card",
+                                              "value": "ok"
+                                            }
+                                          },
+                                          {
+                                            "id": "node_1788440801515_231",
+                                            "type": "SetBlackboard",
+                                            "params": {
+                                              "entries": [
+                                                {
+                                                  "key": "padget.box",
+                                                  "value": "0"
+                                                }
+                                              ],
+                                              "key": "",
+                                              "value": ""
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "id": "node_1788439998528_74",
+                                        "type": "IfElse",
+                                        "params": {
+                                          "operator": "==",
+                                          "key": "random",
+                                          "value": "32"
+                                        },
+                                        "children": [
+                                          {
+                                            "id": "node_1788441061547_337",
+                                            "type": "Sequence",
+                                            "params": {
+                                              "auto_wrap": true
+                                            },
+                                            "children": [
+                                              {
+                                                "id": "node_1788439998528_75",
+                                                "type": "SubTask",
+                                                "params": {
+                                                  "task_id": "96f4c811",
+                                                  "task_id_name": "拿盲盒-上4"
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440718252_185",
+                                                "type": "SetBlackboard",
+                                                "params": {
+                                                  "entries": [
+                                                    {
+                                                      "key": "padtrans_id.box",
+                                                      "value": "$bb.padget.box"
+                                                    }
+                                                  ],
+                                                  "key": "",
+                                                  "value": ""
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440718252_186",
+                                                "type": "PadSend",
+                                                "params": {
+                                                  "category": "card",
+                                                  "value": "ok"
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788440804804_232",
+                                                "type": "SetBlackboard",
+                                                "params": {
+                                                  "entries": [
+                                                    {
+                                                      "key": "padget.box",
+                                                      "value": "0"
+                                                    }
+                                                  ],
+                                                  "key": "",
+                                                  "value": ""
+                                                }
+                                              }
+                                            ]
+                                          },
+                                          {
+                                            "id": "node_1788439998528_80",
+                                            "type": "Wait",
+                                            "params": {
+                                              "duration": 1
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "node_1788441061547_339",
+                    "type": "Sequence",
+                    "params": {
+                      "auto_wrap": true
+                    },
+                    "children": [
+                      {
+                        "id": "node_1788440288377_103",
+                        "type": "HeadControl",
+                        "params": {
+                          "point_name": "1a71996c",
+                          "pitch_deg": 29.99267578125,
+                          "yaw_deg": -0.010986328125,
+                          "pitch_velocity_deg_s": 30,
+                          "yaw_velocity_deg_s": 30,
+                          "wait_for_reached": false,
+                          "timeout": 30
+                        }
+                      },
+                      {
+                        "id": "node_1788440904082_271",
+                        "type": "Selector",
+                        "params": {},
+                        "children": [
+                          {
+                            "id": "node_1788440252581_102",
+                            "type": "SubTask",
+                            "params": {
+                              "task_id": "c58f16ea",
+                              "task_id_name": "明信片任务"
+                            }
+                          },
+                          {
+                            "id": "node_1788440886540_270",
+                            "type": "Wait",
+                            "params": {
+                              "duration": 0.1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "id": "node_1788330083244_18",
-                "type": "Wait",
+                "id": "node_1788438745575_16",
+                "type": "IfElse",
                 "params": {
-                  "duration": 0.1
-                }
+                  "operator": "==",
+                  "key": "padget.model",
+                  "value": "1"
+                },
+                "children": [
+                  {
+                    "id": "node_1788441061547_342",
+                    "type": "Sequence",
+                    "params": {
+                      "auto_wrap": true
+                    },
+                    "children": [
+                      {
+                        "id": "node_1788439242572_40",
+                        "type": "HeadControl",
+                        "params": {
+                          "point_name": "51b246c1",
+                          "pitch_deg": 0,
+                          "yaw_deg": 0.0054931640625,
+                          "pitch_velocity_deg_s": 30,
+                          "yaw_velocity_deg_s": 30,
+                          "wait_for_reached": false,
+                          "timeout": 30
+                        }
+                      },
+                      {
+                        "id": "node_1788438832415_17",
+                        "type": "Selector",
+                        "params": {},
+                        "children": [
+                          {
+                            "id": "node_1788441061547_341",
+                            "type": "Sequence",
+                            "params": {
+                              "auto_wrap": true
+                            },
+                            "children": [
+                              {
+                                "id": "node_1788439019804_21",
+                                "type": "FaceRecognition",
+                                "params": {
+                                  "similarity_threshold": 0.45,
+                                  "topk_gap": 0.05,
+                                  "target_names": [
+                                    "张亚洲",
+                                    "张盛军区长"
+                                  ],
+                                  "output_display": "",
+                                  "wait_timeout": 5,
+                                  "hold_seconds": 1.5
+                                }
+                              },
+                              {
+                                "id": "node_1788439019804_22",
+                                "type": "IfElse",
+                                "params": {
+                                  "operator": "==",
+                                  "key": "$bb.face.result.success",
+                                  "value": "true"
+                                },
+                                "children": [
+                                  {
+                                    "id": "node_1788441061547_340",
+                                    "type": "Sequence",
+                                    "params": {
+                                      "auto_wrap": true
+                                    },
+                                    "children": [
+                                      {
+                                        "id": "node_1788439019804_23",
+                                        "type": "Wait",
+                                        "params": {
+                                          "duration": 1
+                                        }
+                                      },
+                                      {
+                                        "id": "node_1788439019804_24",
+                                        "type": "TTSSpeak",
+                                        "params": {
+                                          "voice": "dylan",
+                                          "play_mode": "queue",
+                                          "play": true,
+                                          "wait_complete": true,
+                                          "volume": -1,
+                                          "timeout": 120,
+                                          "text": "尊敬的 $bb.face.result.name 您好,欢迎您参加本次服贸会,我是景晨数智自研的首款机器人景睿,接下来让我给您演示一下我的功能吧"
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "node_1788439019804_25",
+                                    "type": "Wait",
+                                    "params": {
+                                      "duration": 1
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "node_1788438855000_18",
+                            "type": "Wait",
+                            "params": {
+                              "duration": 0.1
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -151,38 +1089,526 @@
         "x": 400,
         "y": -580
       },
-      "node_1788330083239_6": {
+      "node_1788426522508_9": {
         "x": 400,
-        "y": -400
+        "y": -440
       },
-      "node_1788330083239_7": {
+      "node_1788431683321_6": {
         "x": 400,
-        "y": -280
+        "y": -300
       },
-      "node_1788330083244_8": {
+      "node_1788426600458_11": {
         "x": 400,
         "y": -160
       },
-      "node_1788333555845_1": {
-        "x": 260,
+      "node_1788426561779_10": {
+        "x": 400,
         "y": -20
       },
+      "node_1788427853876_1": {
+        "x": 820,
+        "y": -180
+      },
+      "node_1788438653727_4": {
+        "x": 820,
+        "y": -60
+      },
+      "node_1788432018553_16": {
+        "x": 820,
+        "y": 40
+      },
+      "node_1788432132374_17": {
+        "x": 340,
+        "y": 340
+      },
+      "node_1788439658750_17": {
+        "x": -1080,
+        "y": 560
+      },
+      "node_1788439708291_19": {
+        "x": -1120,
+        "y": 700
+      },
+      "node_1788439762412_22": {
+        "x": -1260,
+        "y": 840
+      },
+      "node_1788439698670_18": {
+        "x": -1400,
+        "y": 960
+      },
+      "node_1788439799561_23": {
+        "x": -1200,
+        "y": 960
+      },
+      "node_1788439809450_24": {
+        "x": -1320,
+        "y": 1080
+      },
+      "node_1788439830632_25": {
+        "x": -1120,
+        "y": 1080
+      },
+      "node_1788439836504_26": {
+        "x": -1240,
+        "y": 1200
+      },
+      "node_1788439852918_27": {
+        "x": -1060,
+        "y": 1200
+      },
+      "node_1788439859640_28": {
+        "x": -1140,
+        "y": 1320
+      },
+      "node_1788439872789_29": {
+        "x": -980,
+        "y": 1320
+      },
+      "node_1788439905992_35": {
+        "x": -420,
+        "y": 580
+      },
+      "node_1788439905992_37": {
+        "x": -460,
+        "y": 720
+      },
+      "node_1788439905992_38": {
+        "x": -600,
+        "y": 860
+      },
+      "node_1788439905992_36": {
+        "x": -740,
+        "y": 980
+      },
+      "node_1788439905992_39": {
+        "x": -540,
+        "y": 980
+      },
+      "node_1788439905992_40": {
+        "x": -640,
+        "y": 1100
+      },
+      "node_1788439905992_41": {
+        "x": -460,
+        "y": 1100
+      },
+      "node_1788439905992_42": {
+        "x": -580,
+        "y": 1220
+      },
+      "node_1788439905992_43": {
+        "x": -400,
+        "y": 1220
+      },
+      "node_1788439905992_44": {
+        "x": -480,
+        "y": 1340
+      },
+      "node_1788439905992_45": {
+        "x": -320,
+        "y": 1340
+      },
+      "node_1788439998528_70": {
+        "x": 240,
+        "y": 580
+      },
+      "node_1788439998528_72": {
+        "x": 200,
+        "y": 720
+      },
+      "node_1788439998528_73": {
+        "x": 60,
+        "y": 860
+      },
+      "node_1788439998528_71": {
+        "x": -80,
+        "y": 980
+      },
+      "node_1788439998528_74": {
+        "x": 120,
+        "y": 980
+      },
+      "node_1788439998528_75": {
+        "x": 0,
+        "y": 1100
+      },
+      "node_1788439998528_80": {
+        "x": 180,
+        "y": 1100
+      },
+      "node_1788440288377_103": {
+        "x": 820,
+        "y": 1180
+      },
+      "node_1788440252581_102": {
+        "x": 760,
+        "y": 1400
+      },
+      "node_1788438745575_16": {
+        "x": 900,
+        "y": 160
+      },
+      "node_1788439242572_40": {
+        "x": 1100,
+        "y": 340
+      },
+      "node_1788438832415_17": {
+        "x": 1100,
+        "y": 440
+      },
+      "node_1788439019804_21": {
+        "x": 1040,
+        "y": 580
+      },
+      "node_1788439019804_22": {
+        "x": 1040,
+        "y": 680
+      },
+      "node_1788439019804_23": {
+        "x": 980,
+        "y": 820
+      },
+      "node_1788439019804_24": {
+        "x": 980,
+        "y": 920
+      },
+      "node_1788439019804_25": {
+        "x": 1140,
+        "y": 820
+      },
+      "node_1788438855000_18": {
+        "x": 1200,
+        "y": 580
+      },
+      "node_1788330083239_6": {
+        "x": 1760,
+        "y": 220
+      },
+      "node_1788330083239_7": {
+        "x": 1760,
+        "y": 340
+      },
+      "node_1788330083244_8": {
+        "x": 1760,
+        "y": 460
+      },
+      "node_1788333555845_1": {
+        "x": 1620,
+        "y": 600
+      },
       "node_1788330083244_18": {
-        "x": 560,
-        "y": -20
+        "x": 1920,
+        "y": 600
+      },
+      "node_1788440553149_130": {
+        "x": -1720,
+        "y": 1520
+      },
+      "node_1788440565572_131": {
+        "x": -1720,
+        "y": 1620
+      },
+      "node_1788440596939_141": {
+        "x": -1540,
+        "y": 1520
+      },
+      "node_1788440596939_142": {
+        "x": -1540,
+        "y": 1620
+      },
+      "node_1788440603114_143": {
+        "x": -1360,
+        "y": 1520
+      },
+      "node_1788440603114_144": {
+        "x": -1360,
+        "y": 1620
+      },
+      "node_1788440614614_145": {
+        "x": -1180,
+        "y": 1520
+      },
+      "node_1788440614614_146": {
+        "x": -1180,
+        "y": 1620
+      },
+      "node_1788440625906_159": {
+        "x": -880,
+        "y": 1520
+      },
+      "node_1788440625906_160": {
+        "x": -880,
+        "y": 1620
+      },
+      "node_1788440629612_161": {
+        "x": -700,
+        "y": 1520
+      },
+      "node_1788440629612_162": {
+        "x": -700,
+        "y": 1620
+      },
+      "node_1788440631427_163": {
+        "x": -520,
+        "y": 1520
+      },
+      "node_1788440631427_164": {
+        "x": -520,
+        "y": 1620
+      },
+      "node_1788440633485_165": {
+        "x": -340,
+        "y": 1520
+      },
+      "node_1788440633485_166": {
+        "x": -340,
+        "y": 1620
+      },
+      "node_1788440717350_183": {
+        "x": -100,
+        "y": 1520
+      },
+      "node_1788440717350_184": {
+        "x": -100,
+        "y": 1620
+      },
+      "node_1788440718252_185": {
+        "x": 100,
+        "y": 1520
+      },
+      "node_1788440718252_186": {
+        "x": 100,
+        "y": 1620
+      },
+      "node_1788440750377_205": {
+        "x": -1720,
+        "y": 1740
+      },
+      "node_1788440777027_224": {
+        "x": -1540,
+        "y": 1740
+      },
+      "node_1788440780497_225": {
+        "x": -1360,
+        "y": 1740
+      },
+      "node_1788440783271_226": {
+        "x": -1180,
+        "y": 1740
+      },
+      "node_1788440788062_227": {
+        "x": -880,
+        "y": 1740
+      },
+      "node_1788440791061_228": {
+        "x": -700,
+        "y": 1740
+      },
+      "node_1788440794716_229": {
+        "x": -520,
+        "y": 1740
+      },
+      "node_1788440797154_230": {
+        "x": -340,
+        "y": 1740
+      },
+      "node_1788440801515_231": {
+        "x": -100,
+        "y": 1740
+      },
+      "node_1788440804804_232": {
+        "x": 100,
+        "y": 1740
+      },
+      "node_1788440886540_270": {
+        "x": 920,
+        "y": 1400
+      },
+      "node_1788440904082_271": {
+        "x": 820,
+        "y": 1280
       }
     },
     "annotations": [
       {
         "id": "anno_1788330486757_1",
         "x": 320,
-        "y": -580,
-        "width": 248.01403365987224,
-        "height": 85.05122755395381,
+        "y": -600,
+        "width": 261.6554827584658,
+        "height": 99.45053493580258,
         "color": "#f59e0b",
         "note": "初始化"
+      },
+      {
+        "id": "anno_1788430989437_1",
+        "x": 1500,
+        "y": 120,
+        "width": 734.9117647058824,
+        "height": 631.4264705882354,
+        "color": "#64748b",
+        "note": ""
+      },
+      {
+        "id": "anno_1788431652416_2",
+        "x": 320,
+        "y": -480,
+        "width": 258.20465597427517,
+        "height": 119.2971062767856,
+        "color": "#f59e0b",
+        "note": "开启pad连接"
+      },
+      {
+        "id": "anno_1788431809222_4",
+        "x": 320,
+        "y": -180,
+        "width": 255,
+        "height": 231.00000000000023,
+        "color": "#f59e0b",
+        "note": "是否还连接着pad，如果连着就发送机器人正常。"
+      },
+      {
+        "id": "anno_1788438672054_1",
+        "x": 740,
+        "y": -220,
+        "width": 260,
+        "height": 120,
+        "color": "#f59e0b",
+        "note": "主循环"
+      },
+      {
+        "id": "anno_1788439157887_3",
+        "x": 740,
+        "y": 20,
+        "width": 350.7471700447656,
+        "height": 217.16723220969737,
+        "color": "#f59e0b",
+        "note": "先看模式"
+      },
+      {
+        "id": "anno_1788439516704_1",
+        "x": 940,
+        "y": 320,
+        "width": 489.6513180522235,
+        "height": 703.7511423939121,
+        "color": "#f59e0b",
+        "note": "人脸识别"
+      },
+      {
+        "id": "anno_1788439562945_2",
+        "x": 220,
+        "y": 300,
+        "width": 338.60527220889384,
+        "height": 145.9001756583114,
+        "color": "#f59e0b",
+        "note": "是否有盲盒任务"
+      },
+      {
+        "id": "anno_1788440123421_3",
+        "x": -1420,
+        "y": 540,
+        "width": 622,
+        "height": 920,
+        "color": "#f59e0b",
+        "note": "拿盲盒下"
+      },
+      {
+        "id": "anno_1788440147286_4",
+        "x": -780,
+        "y": 540,
+        "width": 622,
+        "height": 920,
+        "color": "#f59e0b",
+        "note": "拿盲盒中"
+      },
+      {
+        "id": "anno_1788440177555_5",
+        "x": -100,
+        "y": 540,
+        "width": 580,
+        "height": 920,
+        "color": "#f59e0b",
+        "note": "拿盲盒上"
+      },
+      {
+        "id": "anno_1788440345785_6",
+        "x": 740,
+        "y": 1100,
+        "width": 351.3171573228496,
+        "height": 474.00541480067596,
+        "color": "#f59e0b",
+        "note": "明信片任务"
       }
-    ]
+    ],
+    "detached": {
+      "nodes": [
+        {
+          "id": "node_1788330083239_6",
+          "type": "Loop",
+          "params": {
+            "count": 0,
+            "break_on_failure": true
+          }
+        },
+        {
+          "id": "node_1788330083239_7",
+          "type": "Wait",
+          "params": {
+            "duration": 3
+          }
+        },
+        {
+          "id": "node_1788330083244_8",
+          "type": "Selector",
+          "params": {}
+        },
+        {
+          "id": "node_1788333555845_1",
+          "type": "SubTask",
+          "params": {
+            "task_id": "c58f16ea",
+            "task_id_name": "明信片识别"
+          }
+        },
+        {
+          "id": "node_1788330083244_18",
+          "type": "Wait",
+          "params": {
+            "duration": 0.1
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge_node_1788330083239_6_node_1788330083239_7",
+          "source": "node_1788330083239_6",
+          "target": "node_1788330083239_7",
+          "sourceHandle": "children",
+          "targetHandle": null
+        },
+        {
+          "id": "edge_node_1788330083239_7_node_1788330083244_8",
+          "source": "node_1788330083239_7",
+          "target": "node_1788330083244_8",
+          "sourceHandle": null,
+          "targetHandle": null
+        },
+        {
+          "id": "edge_node_1788330083244_8_node_1788333555845_1",
+          "source": "node_1788330083244_8",
+          "target": "node_1788333555845_1",
+          "sourceHandle": "children",
+          "targetHandle": null
+        },
+        {
+          "id": "edge_node_1788330083244_8_node_1788330083244_18",
+          "source": "node_1788330083244_8",
+          "target": "node_1788330083244_18",
+          "sourceHandle": "children",
+          "targetHandle": null
+        }
+      ]
+    }
   },
-  "status": "cancelled"
+  "status": "failed"
 }
