@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T06:22:12.745339+00:00",
-  "updated_at": "2026-09-03T16:37:10.133835+00:00",
+  "updated_at": "2026-09-05T07:30:28.229466+00:00",
   "root": {
-    "id": "node_1788449413975_39",
+    "id": "node_1788593427647_121",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -92,7 +92,7 @@
                     },
                     "children": [
                       {
-                        "id": "node_1788449413973_25",
+                        "id": "node_1788593427633_107",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -116,7 +116,7 @@
                             },
                             "children": [
                               {
-                                "id": "node_1788449413972_21",
+                                "id": "node_1788593427632_103",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -178,7 +178,7 @@
                                 },
                                 "children": [
                                   {
-                                    "id": "node_1788449413972_22",
+                                    "id": "node_1788593427632_104",
                                     "type": "Sequence",
                                     "params": {
                                       "auto_wrap": true
@@ -240,7 +240,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1788449413973_23",
+                                        "id": "node_1788593427632_105",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -302,7 +302,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1788449413973_24",
+                                            "id": "node_1788593427633_106",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -381,7 +381,7 @@
                         },
                         "children": [
                           {
-                            "id": "node_1788449413974_30",
+                            "id": "node_1788593427643_112",
                             "type": "Sequence",
                             "params": {
                               "auto_wrap": true
@@ -405,7 +405,7 @@
                                 },
                                 "children": [
                                   {
-                                    "id": "node_1788449413973_26",
+                                    "id": "node_1788593427634_108",
                                     "type": "Sequence",
                                     "params": {
                                       "auto_wrap": true
@@ -467,7 +467,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1788449413973_27",
+                                        "id": "node_1788593427636_109",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -529,7 +529,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1788449413973_28",
+                                            "id": "node_1788593427639_110",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -591,7 +591,7 @@
                                             },
                                             "children": [
                                               {
-                                                "id": "node_1788449413974_29",
+                                                "id": "node_1788593427641_111",
                                                 "type": "Sequence",
                                                 "params": {
                                                   "auto_wrap": true
@@ -670,7 +670,7 @@
                             },
                             "children": [
                               {
-                                "id": "node_1788449413974_33",
+                                "id": "node_1788593427644_115",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -694,7 +694,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1788449413974_31",
+                                        "id": "node_1788593427644_113",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -756,7 +756,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1788449413974_32",
+                                            "id": "node_1788593427644_114",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -828,7 +828,7 @@
                     ]
                   },
                   {
-                    "id": "node_1788449413975_34",
+                    "id": "node_1788593427645_116",
                     "type": "Sequence",
                     "params": {
                       "auto_wrap": true
@@ -899,7 +899,7 @@
                     },
                     "children": [
                       {
-                        "id": "node_1788449413975_37",
+                        "id": "node_1788593427646_119",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -924,7 +924,7 @@
                             "params": {},
                             "children": [
                               {
-                                "id": "node_1788449413975_36",
+                                "id": "node_1788593427646_118",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -939,7 +939,8 @@
                                       "target_names": [
                                         "张亚洲",
                                         "张盛军区长",
-                                        "露露"
+                                        "露露",
+                                        "宋晓丽女士"
                                       ],
                                       "output_display": "",
                                       "wait_timeout": 5,
@@ -956,7 +957,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1788449413975_35",
+                                        "id": "node_1788593427646_117",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -970,17 +971,49 @@
                                             }
                                           },
                                           {
-                                            "id": "node_1788439019804_24",
-                                            "type": "TTSSpeak",
+                                            "id": "node_1788592982975_71",
+                                            "type": "ArmMoveJ",
                                             "params": {
-                                              "voice": "vivian",
-                                              "play_mode": "queue",
-                                              "play": true,
-                                              "wait_complete": true,
-                                              "volume": -1,
-                                              "timeout": 120,
-                                              "text": "尊敬的 $bb.face.result.name 您好，欢迎您参加本次服贸会，我是，景晨数智自研的首款机器人景睿，接下来让我给您演示一下我的功能吧。"
+                                              "side": "right",
+                                              "enable_mode": "joint_follow",
+                                              "pose_group": "打招呼",
+                                              "pose_name": "64db77d5",
+                                              "target_source": "preset",
+                                              "left_joints": "",
+                                              "right_joints": "",
+                                              "velocity": 0.4,
+                                              "acceleration": 0.3
                                             }
+                                          },
+                                          {
+                                            "id": "node_1788592466147_3",
+                                            "type": "Parallel",
+                                            "params": {
+                                              "success_threshold": -1
+                                            },
+                                            "children": [
+                                              {
+                                                "id": "node_1788439019804_24",
+                                                "type": "TTSSpeak",
+                                                "params": {
+                                                  "voice": "vivian",
+                                                  "play_mode": "queue",
+                                                  "play": true,
+                                                  "wait_complete": true,
+                                                  "volume": -1,
+                                                  "timeout": 120,
+                                                  "text": "尊敬的 $bb.face.result.name 您好，欢迎您参加本次服贸会，我是，景晨数智自研的首款机器人景睿，接下来让我给您演示一下我的功能吧。"
+                                                }
+                                              },
+                                              {
+                                                "id": "node_1788592484147_4",
+                                                "type": "SubTask",
+                                                "params": {
+                                                  "task_id": "35d04a82",
+                                                  "task_id_name": "打招呼"
+                                                }
+                                              }
+                                            ]
                                           }
                                         ]
                                       },
@@ -1007,7 +1040,7 @@
                         ]
                       },
                       {
-                        "id": "node_1788449413975_38",
+                        "id": "node_1788593427646_120",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -1419,6 +1452,10 @@
         "x": 180,
         "y": 1100
       },
+      "node_1788449397264_1": {
+        "x": 820,
+        "y": 1120
+      },
       "node_1788442591484_147": {
         "x": 820,
         "y": 1220
@@ -1463,9 +1500,21 @@
         "x": 1260,
         "y": 960
       },
-      "node_1788439019804_24": {
+      "node_1788592982975_71": {
         "x": 1260,
         "y": 1060
+      },
+      "node_1788592466147_3": {
+        "x": 1260,
+        "y": 1140
+      },
+      "node_1788439019804_24": {
+        "x": 1240,
+        "y": 1260
+      },
+      "node_1788592484147_4": {
+        "x": 1460,
+        "y": 1260
       },
       "node_1788439019804_25": {
         "x": 1420,
@@ -1486,10 +1535,6 @@
       "node_1788444237115_119": {
         "x": 1820,
         "y": 700
-      },
-      "node_1788449397264_1": {
-        "x": 820,
-        "y": 1120
       }
     },
     "annotations": [
@@ -1542,8 +1587,8 @@
         "id": "anno_1788439516704_1",
         "x": 1220,
         "y": 460,
-        "width": 489.6513180522235,
-        "height": 703.7511423939121,
+        "width": 536.6610484702142,
+        "height": 908.3305247685012,
         "color": "#f59e0b",
         "note": "人脸识别"
       },

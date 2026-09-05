@@ -1,0 +1,290 @@
+{
+  "id": "68fbb572",
+  "name": "测试",
+  "description": "",
+  "category": "default",
+  "created_at": "2026-09-05T07:17:03.356606+00:00",
+  "updated_at": "2026-09-05T07:55:57.211765+00:00",
+  "root": {
+    "id": "node_1788592670714_56",
+    "type": "Loop",
+    "params": {
+      "count": 0,
+      "break_on_failure": true
+    },
+    "children": [
+      {
+        "id": "node_1788592670714_57",
+        "type": "Wait",
+        "params": {
+          "duration": 1
+        }
+      },
+      {
+        "id": "node_1788592621110_43",
+        "type": "HeadControl",
+        "params": {
+          "point_name": "51b246c1",
+          "pitch_deg": 0,
+          "yaw_deg": 0.0054931640625,
+          "pitch_velocity_deg_s": 30,
+          "yaw_velocity_deg_s": 30,
+          "wait_for_reached": false,
+          "timeout": 30
+        }
+      },
+      {
+        "id": "node_1788592621110_44",
+        "type": "Selector",
+        "params": {},
+        "children": [
+          {
+            "id": "node_1788593514158_126",
+            "type": "Sequence",
+            "params": {
+              "auto_wrap": true
+            },
+            "children": [
+              {
+                "id": "node_1788592621110_45",
+                "type": "FaceRecognition",
+                "params": {
+                  "similarity_threshold": 0.45,
+                  "topk_gap": 0.05,
+                  "target_names": [
+                    "张亚洲",
+                    "张盛军区长",
+                    "露露",
+                    "宋晓丽女士"
+                  ],
+                  "output_display": "",
+                  "wait_timeout": 5,
+                  "hold_seconds": 1.5
+                }
+              },
+              {
+                "id": "node_1788592621110_46",
+                "type": "IfElse",
+                "params": {
+                  "operator": "==",
+                  "key": "$bb.face.result.success",
+                  "value": "true"
+                },
+                "children": [
+                  {
+                    "id": "node_1788593514158_125",
+                    "type": "Sequence",
+                    "params": {
+                      "auto_wrap": true
+                    },
+                    "children": [
+                      {
+                        "id": "node_1788592621110_47",
+                        "type": "Wait",
+                        "params": {
+                          "duration": 1
+                        }
+                      },
+                      {
+                        "id": "node_1788593016753_91",
+                        "type": "ArmMoveJ",
+                        "params": {
+                          "side": "both",
+                          "enable_mode": "joint_follow",
+                          "pose_group": "打招呼",
+                          "pose_name": "64db77d5",
+                          "target_source": "preset",
+                          "left_joints": "",
+                          "right_joints": "",
+                          "velocity": 0.4,
+                          "acceleration": 0.3
+                        }
+                      },
+                      {
+                        "id": "node_1788592621110_51",
+                        "type": "Parallel",
+                        "params": {
+                          "success_threshold": -1
+                        },
+                        "children": [
+                          {
+                            "id": "node_1788592621110_48",
+                            "type": "TTSSpeak",
+                            "params": {
+                              "voice": "vivian",
+                              "play_mode": "queue",
+                              "play": true,
+                              "wait_complete": true,
+                              "volume": -1,
+                              "timeout": 120,
+                              "text": "尊敬的 $bb.face.result.name 您好，欢迎您参加本次服贸会，我是，景晨数智自研的首款机器人景睿，接下来让我给您演示一下我的功能吧。"
+                            }
+                          },
+                          {
+                            "id": "node_1788592621110_52",
+                            "type": "SubTask",
+                            "params": {
+                              "task_id": "35d04a82",
+                              "task_id_name": "打招呼"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "node_1788592621110_49",
+                    "type": "Wait",
+                    "params": {
+                      "duration": 2
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node_1788592621110_50",
+            "type": "Wait",
+            "params": {
+              "duration": 0.1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "program": [
+    {
+      "type": "HeadControl",
+      "params": {
+        "point_name": "51b246c1",
+        "pitch_deg": 0,
+        "yaw_deg": 0.0054931640625,
+        "pitch_velocity_deg_s": 30,
+        "yaw_velocity_deg_s": 30,
+        "wait_for_reached": false,
+        "timeout": 30
+      },
+      "timeout": 30.0
+    },
+    {
+      "type": "FaceRecognition",
+      "params": {
+        "similarity_threshold": 0.45,
+        "topk_gap": 0.05,
+        "target_names": [
+          "张亚洲",
+          "张盛军区长",
+          "露露",
+          "宋晓丽女士"
+        ],
+        "output_display": "",
+        "wait_timeout": 5,
+        "hold_seconds": 1.5
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 1
+      },
+      "timeout": null
+    },
+    {
+      "type": "TTSSpeak",
+      "params": {
+        "voice": "vivian",
+        "play_mode": "queue",
+        "play": true,
+        "wait_complete": true,
+        "volume": -1,
+        "timeout": 120,
+        "text": "尊敬的 $bb.face.result.name 您好，欢迎您参加本次服贸会，我是，景晨数智自研的首款机器人景睿，接下来让我给您演示一下我的功能吧。"
+      },
+      "timeout": 120.0
+    },
+    {
+      "type": "SubTask",
+      "params": {
+        "task_id": "35d04a82",
+        "task_id_name": "打招呼"
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 2
+      },
+      "timeout": null
+    },
+    {
+      "type": "Wait",
+      "params": {
+        "duration": 0.1
+      },
+      "timeout": null
+    }
+  ],
+  "editor_layout": {
+    "version": 1,
+    "nodes": {
+      "node_1788592670714_56": {
+        "x": 1340,
+        "y": 280
+      },
+      "node_1788592670714_57": {
+        "x": 1340,
+        "y": 400
+      },
+      "node_1788592621110_43": {
+        "x": 1340,
+        "y": 520
+      },
+      "node_1788592621110_44": {
+        "x": 1340,
+        "y": 620
+      },
+      "node_1788592621110_45": {
+        "x": 1280,
+        "y": 760
+      },
+      "node_1788592621110_46": {
+        "x": 1280,
+        "y": 860
+      },
+      "node_1788592621110_47": {
+        "x": 1220,
+        "y": 1000
+      },
+      "node_1788593016753_91": {
+        "x": 1220,
+        "y": 1140
+      },
+      "node_1788592621110_51": {
+        "x": 1220,
+        "y": 1280
+      },
+      "node_1788592621110_48": {
+        "x": 1200,
+        "y": 1420
+      },
+      "node_1788592621110_52": {
+        "x": 1420,
+        "y": 1420
+      },
+      "node_1788592621110_49": {
+        "x": 1380,
+        "y": 1000
+      },
+      "node_1788592621110_50": {
+        "x": 1440,
+        "y": 760
+      }
+    },
+    "annotations": []
+  },
+  "status": "cancelled"
+}
