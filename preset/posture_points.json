@@ -1,7 +1,7 @@
 {
   "type": "posture_pose",
   "version": "1.0",
-  "updated_at": "2026-08-28T15:26:23.132198",
+  "updated_at": "2026-09-06T15:34:10.465351",
   "points": [
     {
       "id": "e2c2f062",
@@ -125,18 +125,18 @@
       "category": "captured",
       "is_builtin": false,
       "created_at": "2026-08-21T17:40:34.798626",
-      "updated_at": "2026-08-21T17:40:34.798626",
-      "yaw_deg": 89.8681640625,
-      "height_mm": 700.0011430862382,
-      "forward_mm": -0.0007093232789745496,
+      "updated_at": "2026-09-06T15:34:10.465222",
+      "yaw_deg": 89.9,
+      "height_mm": 705.1850243891722,
+      "forward_mm": 0.0,
       "bend_deg": 6.3611093629270335e-15,
       "velocity_scale": 1.0,
       "motion_mode": 1,
       "motor_angles_deg": [
-        89.8681640625,
-        -30.882568359375,
-        83.16650390625,
-        -52.283935546875
+        89.9,
+        -30.4,
+        81.9,
+        -51.5
       ],
       "sort_index": 5,
       "group": "默认组"
