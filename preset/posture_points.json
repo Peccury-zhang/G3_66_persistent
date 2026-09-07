@@ -1,7 +1,7 @@
 {
   "type": "posture_pose",
   "version": "1.0",
-  "updated_at": "2026-09-06T15:34:10.465351",
+  "updated_at": "2026-09-07T12:40:21.262817",
   "points": [
     {
       "id": "e2c2f062",
@@ -125,18 +125,18 @@
       "category": "captured",
       "is_builtin": false,
       "created_at": "2026-08-21T17:40:34.798626",
-      "updated_at": "2026-09-06T15:34:10.465222",
+      "updated_at": "2026-09-07T10:44:59.872993",
       "yaw_deg": 89.9,
-      "height_mm": 705.1850243891722,
+      "height_mm": 688.1121190218842,
       "forward_mm": 0.0,
-      "bend_deg": 6.3611093629270335e-15,
+      "bend_deg": -0.29999999999999405,
       "velocity_scale": 1.0,
       "motion_mode": 1,
       "motor_angles_deg": [
         89.9,
-        -30.4,
-        81.9,
-        -51.5
+        -32.2,
+        86,
+        -54.1
       ],
       "sort_index": 5,
       "group": "默认组"
@@ -171,18 +171,18 @@
       "category": "captured",
       "is_builtin": false,
       "created_at": "2026-08-21T17:44:13.623404",
-      "updated_at": "2026-08-25T15:24:48.411570",
+      "updated_at": "2026-09-07T12:40:21.262713",
       "yaw_deg": -90.0,
-      "height_mm": 877.9840514299042,
+      "height_mm": 861.9855347225698,
       "forward_mm": 0.0,
-      "bend_deg": -3.975693351829396e-16,
+      "bend_deg": 0.10000000000000253,
       "velocity_scale": 1.0,
       "motion_mode": 1,
       "motor_angles_deg": [
         -90,
-        2.6,
-        5.9,
-        -8.5
+        -6.1,
+        25.1,
+        -18.9
       ],
       "sort_index": 7,
       "group": "默认组"
@@ -241,18 +241,18 @@
       "is_builtin": false,
       "sort_index": 10,
       "created_at": "2026-08-28T13:42:41.113669",
-      "updated_at": "2026-08-28T13:42:52.921875",
+      "updated_at": "2026-09-07T10:56:16.954564",
       "yaw_deg": 140.0,
-      "height_mm": 699.8685874363092,
+      "height_mm": 688.1121190218842,
       "forward_mm": 0.0,
-      "bend_deg": 6.3611093629270335e-15,
+      "bend_deg": 0.1000000000000065,
       "velocity_scale": 0.3,
       "motion_mode": 1,
       "motor_angles_deg": [
         140,
-        -30.9,
-        83.2,
-        -52.3
+        -31.8,
+        86,
+        -54.1
       ],
       "group": "默认组"
     }

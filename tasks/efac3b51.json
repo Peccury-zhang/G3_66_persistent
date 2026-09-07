@@ -4,7 +4,7 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-23T09:41:51.755228+00:00",
-  "updated_at": "2026-09-03T16:22:56.220459+00:00",
+  "updated_at": "2026-09-07T03:55:36.249337+00:00",
   "root": {
     "id": "node_1788452575983_25",
     "type": "Sequence",
@@ -475,5 +475,5 @@
       }
     ]
   },
-  "status": "cancelled"
+  "status": "completed"
 }
