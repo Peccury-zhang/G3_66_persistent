@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-29T11:21:08.632254+00:00",
-  "updated_at": "2026-09-07T04:42:28.779092+00:00",
+  "updated_at": "2026-09-07T06:35:56.139961+00:00",
   "root": {
-    "id": "node_1788445982029_149",
+    "id": "node_1788762954836_177",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -14,7 +14,7 @@
         "id": "node_1787735294674_19",
         "type": "LightControl",
         "params": {
-          "color": "purple"
+          "color": "magenta"
         }
       },
       {

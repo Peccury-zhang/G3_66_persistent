@@ -4,7 +4,7 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-05T07:17:03.356606+00:00",
-  "updated_at": "2026-09-07T05:10:04.110282+00:00",
+  "updated_at": "2026-09-07T06:25:44.771641+00:00",
   "root": {
     "id": "node_1788592670714_56",
     "type": "Loop",
@@ -39,7 +39,7 @@
         "params": {},
         "children": [
           {
-            "id": "node_1788593514158_126",
+            "id": "node_1788762344127_145",
             "type": "Sequence",
             "params": {
               "auto_wrap": true
@@ -53,9 +53,11 @@
                   "topk_gap": 0.05,
                   "target_names": [
                     "张亚洲",
-                    "张盛军区长",
-                    "露露",
-                    "宋晓丽女士"
+                    "万隆区长",
+                    "岳赞主任",
+                    "文化区长",
+                    "杨总",
+                    "盛军区长"
                   ],
                   "output_display": "",
                   "wait_timeout": 5,
@@ -72,7 +74,7 @@
                 },
                 "children": [
                   {
-                    "id": "node_1788593514158_125",
+                    "id": "node_1788762344126_144",
                     "type": "Sequence",
                     "params": {
                       "auto_wrap": true
