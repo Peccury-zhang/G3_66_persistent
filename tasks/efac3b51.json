@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-23T09:41:51.755228+00:00",
-  "updated_at": "2026-09-07T06:37:13.842962+00:00",
+  "updated_at": "2026-09-08T05:44:52.778590+00:00",
   "root": {
-    "id": "node_1788763031979_184",
+    "id": "node_1788846145605_31",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -303,7 +303,7 @@
           "play_mode": "queue",
           "play": true,
           "wait_complete": true,
-          "volume": -1,
+          "volume": 4,
           "timeout": 120,
           "text": "请拿取您的盲盒"
         }

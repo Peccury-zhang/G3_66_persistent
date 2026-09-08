@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-08-27T10:48:21.690195+00:00",
-  "updated_at": "2026-09-07T06:34:59.102236+00:00",
+  "updated_at": "2026-09-08T05:47:37.014591+00:00",
   "root": {
-    "id": "node_1788762896491_173",
+    "id": "node_1788846456684_47",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -445,7 +445,7 @@
             }
           },
           {
-            "id": "node_1788762896491_172",
+            "id": "node_1788846456684_46",
             "type": "Sequence",
             "params": {
               "auto_wrap": true
@@ -592,7 +592,7 @@
           "play_mode": "queue",
           "play": true,
           "wait_complete": true,
-          "volume": -1,
+          "volume": 4,
           "timeout": 120,
           "text": "明信片已投递完成"
         }
