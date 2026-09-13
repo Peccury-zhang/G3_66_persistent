@@ -4,9 +4,9 @@
   "description": "",
   "category": "default",
   "created_at": "2026-09-02T06:22:12.745339+00:00",
-  "updated_at": "2026-09-13T04:39:37.808117+00:00",
+  "updated_at": "2026-09-10T09:53:41.853554+00:00",
   "root": {
-    "id": "node_1789190650241_20",
+    "id": "node_1789030189369_40",
     "type": "Sequence",
     "params": {},
     "children": [
@@ -92,7 +92,7 @@
                     },
                     "children": [
                       {
-                        "id": "node_1789190650238_5",
+                        "id": "node_1789030189366_25",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -116,7 +116,7 @@
                             },
                             "children": [
                               {
-                                "id": "node_1789190650238_1",
+                                "id": "node_1789030189365_21",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -178,7 +178,7 @@
                                 },
                                 "children": [
                                   {
-                                    "id": "node_1789190650238_2",
+                                    "id": "node_1789030189366_22",
                                     "type": "Sequence",
                                     "params": {
                                       "auto_wrap": true
@@ -240,7 +240,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1789190650238_3",
+                                        "id": "node_1789030189366_23",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -302,7 +302,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1789190650238_4",
+                                            "id": "node_1789030189366_24",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -381,7 +381,7 @@
                         },
                         "children": [
                           {
-                            "id": "node_1789190650239_10",
+                            "id": "node_1789030189367_30",
                             "type": "Sequence",
                             "params": {
                               "auto_wrap": true
@@ -405,7 +405,7 @@
                                 },
                                 "children": [
                                   {
-                                    "id": "node_1789190650239_6",
+                                    "id": "node_1789030189366_26",
                                     "type": "Sequence",
                                     "params": {
                                       "auto_wrap": true
@@ -467,7 +467,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1789190650239_7",
+                                        "id": "node_1789030189367_27",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -529,7 +529,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1789190650239_8",
+                                            "id": "node_1789030189367_28",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -591,7 +591,7 @@
                                             },
                                             "children": [
                                               {
-                                                "id": "node_1789190650239_9",
+                                                "id": "node_1789030189367_29",
                                                 "type": "Sequence",
                                                 "params": {
                                                   "auto_wrap": true
@@ -670,7 +670,7 @@
                             },
                             "children": [
                               {
-                                "id": "node_1789190650240_13",
+                                "id": "node_1789030189368_33",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -694,7 +694,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1789190650240_11",
+                                        "id": "node_1789030189367_31",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -756,7 +756,7 @@
                                         },
                                         "children": [
                                           {
-                                            "id": "node_1789190650240_12",
+                                            "id": "node_1789030189367_32",
                                             "type": "Sequence",
                                             "params": {
                                               "auto_wrap": true
@@ -828,7 +828,7 @@
                     ]
                   },
                   {
-                    "id": "node_1789190650240_14",
+                    "id": "node_1789030189368_34",
                     "type": "Sequence",
                     "params": {
                       "auto_wrap": true
@@ -899,7 +899,7 @@
                     },
                     "children": [
                       {
-                        "id": "node_1789190650241_18",
+                        "id": "node_1789030189369_38",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -924,7 +924,7 @@
                             "params": {},
                             "children": [
                               {
-                                "id": "node_1789190650241_17",
+                                "id": "node_1789030189369_37",
                                 "type": "Sequence",
                                 "params": {
                                   "auto_wrap": true
@@ -979,10 +979,7 @@
                                         "殷勇书记",
                                         "穆鹏市长",
                                         "文献市长",
-                                        "夏林茂市长",
-                                        "刘长余主任",
-                                        "全宇宙最好看的邵雨琪女神",
-                                        "最帅气的方浩明先生"
+                                        "夏林茂市长"
                                       ],
                                       "output_display": "",
                                       "wait_timeout": 5,
@@ -999,7 +996,7 @@
                                     },
                                     "children": [
                                       {
-                                        "id": "node_1789190650241_16",
+                                        "id": "node_1789030189368_36",
                                         "type": "Sequence",
                                         "params": {
                                           "auto_wrap": true
@@ -1035,7 +1032,7 @@
                                             },
                                             "children": [
                                               {
-                                                "id": "node_1789190650241_15",
+                                                "id": "node_1789030189368_35",
                                                 "type": "Sequence",
                                                 "params": {
                                                   "auto_wrap": true
@@ -1098,7 +1095,7 @@
                         ]
                       },
                       {
-                        "id": "node_1789190650241_19",
+                        "id": "node_1789030189369_39",
                         "type": "Sequence",
                         "params": {
                           "auto_wrap": true
@@ -1701,5 +1698,5 @@
       }
     ]
   },
-  "status": "cancelled"
+  "status": "failed"
 }

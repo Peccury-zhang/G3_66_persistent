@@ -1,6 +1,6 @@
 {
-  "enabled": false,
-  "task_id": "",
-  "task_name": "",
-  "delay_seconds": 10
+  "enabled": true,
+  "task_id": "146a15c9",
+  "task_name": "总任务",
+  "delay_seconds": 20
 }
